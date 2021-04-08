@@ -11,6 +11,17 @@ Dato de color: Soy hincha de Talleres, me gusta la fotografía y viajar.
 
 ---------------------------------------------------------------
 
+Nombre: Diego Ignacio Etienot Moine
+Edad: 30
+Familia: somos 4 hermanos, tengo a mis dos viejos, soy de Catamarca, vivo con mi novia.
+Dónde vivo?: Córdoba Capital, B°Lomas del Chateau.
+Profesión: Contador Público.
+Dónde trabaja: Banco Galicia.
+Por qué se anoto en el curso?: Oportunidades de Cambio. 
+Dato de color: Rugbier frustrado.
+
+---------------------------------------------------------------
+
 Nombre: 
 Edad: 
 Familia: 
