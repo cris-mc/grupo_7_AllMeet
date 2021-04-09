@@ -1,7 +1,0 @@
-Producto: All Meet brinda una amplia gama de bebidas con una fuerte impronta en la cultura vitivinícola. Por otro lado, como elemento complementario ofreceremos aperitivos.
-
-Publico: El proyecto buscará atacar a dos nichos de mercado, que si bien son opuestos, nos presentan una gran ventaja estratégica:
- • Mercado Minorista: Constituido por los consumidores finales, sin distinción de edad, sexo y clase social. Este mercado nos representará un gran costo inicial en materia de publicidad y posicionamiento del producto, pero una vez en funcionamiento nos entregará un alto margen de ganancia por unidad vendida.
- • Mercado Mayorista: Constituido por los distribuidores de bebidas. Este mercado nos representará una importante inversión inicial en materia de volumen de mercadería, pero una vez en funcionamiento nos entregará estabilidad económica a un bajo margen de ganancia por unidad vendida.
-
-Walter German Gomez Viera: Soy de Gualeguaychú, Entre Rios, pero vivo en Capital Federal. Tengo 30 años. Soy Ingeniero Industrial de la UTN y trabajo como vendedor, en ABB, de soluciones en automatización y energía eléctrica para clientes de la industria de procesos continuos. Me anote en el curso por recomendación, interés propio y porque considero que es un mercado con características sumamente atractivas para desempeñarme en él. Dato de color: Me gusta juntarme a tomar mate (c/u con el suyo) con amigos.
