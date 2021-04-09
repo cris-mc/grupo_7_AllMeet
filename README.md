@@ -33,7 +33,7 @@ Dc: Soy hincha de Talleres, me gusta la fotografía y viajar.
 
 ###### Quinteros Miguel
 31 años, nacido y viviendo en Cordoba Capital. Casado, una hija y otro en camino.  
-Soy contador y soy responsable del control de gestion de "Grido".  
+Soy contador y soy responsable del control de gestion de "Grido". git 
 Me anote en Dh por que me quiero meter en el universo de la programacion que es muy interesante y tengo ganas de cambiar de rumbo laboralmente.
 Dc: Hincha de Talleres y apasionado del deporte.
 
