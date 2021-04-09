@@ -22,6 +22,17 @@ Dato de color: Rugbier frustrado.
 
 ---------------------------------------------------------------
 
+Nombre: Joaquin Gorosito Alonso
+Edad: 31 años
+Familia: Tengo una hermana mayor, madre, padre, y una sobrina.
+Dónde vivo?: San Fernando Buenos Aires
+Profesión: Comerciante en una tienda de alimentos
+Dónde trabaja: Lucha LDG
+Por qué se anoto en el curso?: Para poder dedicarme al mundo de la programacion. Y aprender cosas nuevas. 
+Dato de color: Hincha de Racing
+
+---------------------------------------------------------------
+
 Nombre: 
 Edad: 
 Familia: 
