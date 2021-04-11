@@ -15,7 +15,7 @@ Dc: rugbier frustado.
 
 ###### Gomez Viera Walter German
 30 años, nacido en Gualeguaychú y viviendo en Capital Federal.  
-Soy ingeniero industrial y trabajo como comercial en "AAB".  
+Soy ingeniero industrial y trabajo como comercial en "ABB".  
 Me anote en DH por recomendacion de un amigo, interés propio y porque considero que es un mercado con características sumamente atractivas para desempeñarme en él.  
 Dc: Me gusta juntarme a tomar mate (c/u con el suyo) con amigos.
 
