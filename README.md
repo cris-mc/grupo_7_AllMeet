@@ -9,7 +9,7 @@ El publico al que esta apuntado es de 25 a 45 años, que busca comodidad y simpl
 
 ###### Etienot Moine Diego Ignacio
 30 años, nacido en Catamarca y vieviendo en Córdoba Capital con mi novia.  
-Soy contador publico y trabajo en el "Banco de Galicia".  
+Soy contador publico y trabajo en el "Banco Galicia".  
 Me anote en DH con la busqueda de oportunidades de cambio.  
 Dc: rugbier frustado.
 
