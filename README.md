@@ -28,7 +28,7 @@ Dc: Hinca de Racing.
 ###### Martinez Cristian
 35 años, nacido y viviendo en Cordoba Capital.  
 Soy desarrollador backend, conozco ligeramente algunas cosas de varios lenguajes. También soy Diseñador Gráfico, y casi Técnico en Higiene y Seguridad. Trabajo en "IBM Argentina".  
-Me anote en DH porque queria aprender tecnologias de vanguardia y JS Moderno.  
+Me anote en DH porque queria aprender tecnologias de vanguardia y JavaSript Moderno.  
 Dc: Soy hincha de Talleres, me gusta la fotografía y viajar.
 
 ###### Quinteros Miguel
