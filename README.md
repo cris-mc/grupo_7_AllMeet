@@ -1,5 +1,5 @@
 # **AllMeet**
-
+<img src=designs/1.2-Logotipo_Transparente.png>
 #### **Oferta de productos y servicios**
 El ecommerce va a ofrecer bebidas alcoholicas y otros productos para que consigas todo lo que necesitas para una reunion con amigos.  
 El publico al que esta apuntado es de 25 a 45 años, que busca comodidad y simpleza de las cosas.
