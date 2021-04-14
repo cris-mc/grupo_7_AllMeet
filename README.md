@@ -38,7 +38,7 @@ Soy contador y soy responsable del control de gestion de "Grido".
 Me anote en Dh por que me quiero meter en el universo de la programacion que es muy interesante y tengo ganas de cambiar de rumbo laboralmente.  
 Dc: Hincha de Talleres y apasionado del deporte.  
 
-#### **Sitios wEb de referencia**
+#### **Sitios web de referencia**
 
 ###### https://mostobebidas.mercadoshops.com.ar/ seleccionado por los productos que ofrece.
 
