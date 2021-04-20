@@ -51,3 +51,6 @@ Dc: Hincha de Talleres y apasionado del deporte.
 ###### https://www.craftsociety.com.ar/account/login?return_url=%2Faccount seleccionado por el público al que apunta.
 
 ###### http://preview.hasthemes.com/uniqlo/index-7.html seleccionado por la estetíca del sitio.
+
+
+Link Jira: https://ecommerce-dh.atlassian.net/jira/software/projects/EC/settings/details
