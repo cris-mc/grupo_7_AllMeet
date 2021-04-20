@@ -53,4 +53,6 @@ Dc: Hincha de Talleres y apasionado del deporte.
 ###### http://preview.hasthemes.com/uniqlo/index-7.html seleccionado por la estetíca del sitio.
 
 
-Link Jira: https://ecommerce-dh.atlassian.net/jira/software/projects/EC/settings/details
+#### **Link Jira** 
+
+https://ecommerce-dh.atlassian.net/secure/BrowseProjects.jspa
