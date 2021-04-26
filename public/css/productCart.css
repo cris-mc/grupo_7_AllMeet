@@ -5,6 +5,7 @@ header{
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
+    padding: 30px;
 }
 
 .burger-menu{
@@ -37,4 +38,20 @@ nav{
 
 .persona{
     margin-right: 10px;
+}
+
+
+/* MAIN */
+main{
+    background-color: white;
+}
+
+/* TABLA */
+table{
+    width: 100%;
+    text-align: left;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #717171;
+    background-color: #f6f6f6;
 }
