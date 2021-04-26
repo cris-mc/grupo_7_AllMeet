@@ -1,0 +1,22 @@
+{
+  "name": "grupo_7_allmeet",
+  "version": "1.0.0",
+  "description": "Proyecto integrador del grupo 7",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermanGomezV/grupo_7_AllMeet.git"
+  },
+  "author": "German Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GermanGomezV/grupo_7_AllMeet/issues"
+  },
+  "homepage": "https://github.com/GermanGomezV/grupo_7_AllMeet#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
