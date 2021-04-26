@@ -1,13 +1,22 @@
-/* CSS PRINCIPAL */
-
-*{
+main{
     font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    width: initial;
+    max-width: initial;
+    border: solid 1px red;
+    margin: 0px 20 px;
+}
+.botonLargo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+button{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
 }
 .logo{
     height: 40px;
     margin: auto;
 }
-
