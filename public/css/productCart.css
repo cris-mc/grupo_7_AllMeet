@@ -63,20 +63,23 @@ table{
     text-align: center}
 
     .columna8, .precioTotal, .botonComprar{
-        text-align: right}
+    text-align: right}
 
     .total, .vacio, .Fila5, .precioTotal{
-        border-top:#717171 2px solid}
+    border-top:#717171 2px solid}
 
     .botonComprar{
-        border:#717171 2px solid;
-        background-color:white ;
-        text-align: center;
-        border-radius: 30px;}
+    border:#717171 2px solid;
+    background-color:white ;
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;}
 
-    .botonSeguirComprando{
-        padding-top: 30px;
-        font-weight: bold;}
+    .seguirComprando{
+    display: flex;
+    justify-content: center;}
 
-    
-    
+    /* Tabla con scroll en x
+    @media (max-width: 480px) {table {display: block; overflow-x: auto;}}
+    */
