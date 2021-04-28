@@ -1,22 +1,131 @@
+header{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+    header div.burger-menu{
+        font-size: 25px;
+        line-height: 40px;
+        width: 30%;
+    }
+
+    header nav{
+        display: none;
+    }
+    header a img.logo{
+        height: 40px;
+    }
+    header div.user{
+        position: relative;
+        width: 30%;
+    }
+
+        header div.user div.iconos{
+            position: absolute;
+            font-size: 22px;
+            line-height: 45px;
+            right: 0;
+            width: 60px;
+            height: 30px;
+        }
+
+        header div.user div.iconos i.persona{
+                margin-right: 10px;
+            }
+
+    header p{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 800;
+    
+    }
 main{
-    font-family: 'Lato', sans-serif;
+    margin: auto;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 95%;
+}
+    main form div.ingresoManual, main form div.ingresoRedes{
+        margin: 0px 10px;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+        main form div.ingresoManual p{
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 16px;
+            padding: 1px 15px;
+            line-height: 30px;
+            border-radius: 10px;
+            height: 35px;
+            text-decoration: none;
+            color: #717171;
+        }
+        main form div.ingresoManual input{
+            width: 100%;
+            margin: 5px auto;
+            border: 1px solid #666;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    main form p{
+        color: #717171;
+        text-align: right;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    main form div.ingresar{
+        margin: 0 15px;
+    }
+        main form div.ingresar button, main form div.ingresoRedes button{
+                width: 100%;
+                margin: 15px auto;
+                border: 1px solid #666;
+                border-radius: 25px;
+                padding: 10px;                
+        }
+        main form div.ingresar button{
+            background-color: #717171;
+            color: #fff
+        }
+        main form div.ingresoRedes p{
+            display: inline-block;
+            font-size: 16px;
+            padding: 1px 15px;
+            line-height: 30px;
+            border-radius: 10px;
+            height: 35px;
+            text-decoration: none;
+            color: #717171;
+        }
+        main form div.ingresoRedes button.google{
+            background-color: #fff;
+            color: #f40000;
+        }
+        main form div.ingresoRedes button.facebook{
+            background-color: #3d57ac;
+            color: #fff
+        }
+        
+
+
+
+
+
+/* main{
     width: initial;
     max-width: initial;
     border: solid 1px red;
     margin: 0px 20 px;
 }
-.botonLargo{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding: 5px;
-}
+
 button{
     width: 100%;
     margin: auto;
     padding: 10px;
-}
-.logo{
-    height: 40px;
-    margin: auto;
-}
+} */
