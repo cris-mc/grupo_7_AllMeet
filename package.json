@@ -1,26 +1,23 @@
 {
-  "name": "grupo_7_allmeet",
+  "name": "proyecto_integrador_g7",
   "version": "1.0.0",
-  "description": "Proyecto integrador del grupo 7",
+  "description": "<div align='center'><img src=designs/1.2-Logotipo_Transparente.png></div>",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js",
-    "start": "node app.js"
+    "start": "nodemon ./app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GermanGomezV/grupo_7_AllMeet.git"
+    "url": "git+https://github.com/GermanGomezV/Proyecto_integrador_G7.git"
   },
-  "author": "German Gomez",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GermanGomezV/grupo_7_AllMeet/issues"
+    "url": "https://github.com/GermanGomezV/Proyecto_integrador_G7/issues"
   },
-  "homepage": "https://github.com/GermanGomezV/grupo_7_AllMeet#readme",
+  "homepage": "https://github.com/GermanGomezV/Proyecto_integrador_G7#readme",
   "dependencies": {
-    "express": "4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "2.0.7"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
   }
 }
