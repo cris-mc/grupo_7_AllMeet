@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Configuración para que la página sea Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Mis lineas en el HEAD-->
+    <title>All Meet - Carrito de compra</title>
+    <link rel="stylesheet" href="./css/productCart.css">
+</head>
+
+<body>
+
+    <!--Mis lineas en el HEADER-->
+    <header class="header">
+
+        <!--Menu hamburguesa-->
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <!--Display none-->
+        <nav class="nav">
+            <ul class="menu1">
+                <li><a class="link" href="#">Ofertas</a></li>
+                <li><a class="link" href="#">Tiendas oficiales</a></li>
+                <li><a class="link" href="#">Vender</a></li>
+                <li><a class="link" href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+
+         <!--Logo de All Meet-->
+        <img class="logo" src="/images/logo.png" alt="All Meet">
+         
+        <!--Login y Carrito-->
+        <div class="user">  
+            <div class="iconos">
+                <i class="fas persona fa-user"></i>
+                <i class="fas carrito fa-shopping-cart"></i> 
+            </div>
+        </div>
+
+    </header>
+ 
+    <!--Parte principal de la web: Tabla-->
+    <main>
+        <table class="tabla">
+            <!--Ecabezado de la tabla-->
+            
+            <thead class="Encabezado">
+                <tr class="Fila1">
+                    <th></th> <th class="columna2">Item</th> <th>Producto</th> <th>Precio unitario</th> <th></th> <th class="columna6">Q</th> <th></th> <th class="columna8">Subtotal</th>
+                </tr>
+            </thead>
+                
+                <tr class="Fila2">
+                <td><button>˄</button></td> <td class="columna2">1</td> <td>Fernet Branca 750 mL</td> <td class="columna4">$ 500,00</td> <td class="menos"><button>-</button></td> <td class="columna6">1</td> <td class="mas"><button>+</button></td> <td class="columna8">$ 500,00</td>
+                </tr>
+                
+                <tr class="Fila3">
+                <td><button>˅</button></td> <td class="columna2">2</td> <td>Coca cola 2,25 L</td> <td class="columna4">$ 200,00</td> <td class="menos"><button>-</button></td> <td class="columna6">2</td> <td class="mas"><button>+</button></td> <td class="columna8">$ 400,00</td>
+                </tr>
+               
+                <tr class="Fila4">
+                <td></td> <td class="columna2">Calculá tu envío</td>
+                <td>
+                    <form action="/CP" method="GET">
+                        <label>Código postal:</label>
+                        <select name="CP">
+                        <option>1425</option>
+                        <option>2820</option>
+                        </select>
+                        </form>    
+                </td>
+                <td></td> <td></td> <td></td> <td></td> <td class="columna8">$ 100,00</td>
+                </tr>
+                
+                <tr class="Fila5">
+                <td></td> <td></td> <td></td> <td></td> <td></td> <td class="total">Total</td> <td class="vacio"></td> <td class="precioTotal">$ 1.000,00</td>
+                </tr>
+                
+                <tr class="Fila6">
+                <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td><button type="submit" class="botonComprar">COMPRAR</button></td>
+                </tr>
+
+                <tr class="Fila7">
+                <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td><a class="seguirComprando" href="http://localhost:3000/">Seguir comprando</a></td>
+                </tr>
+
+        </table>
+        
+    </main>
+
+</body>
+</html>

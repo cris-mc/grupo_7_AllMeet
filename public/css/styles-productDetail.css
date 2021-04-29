@@ -1,0 +1,129 @@
+header{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+    header div.burger-menu{
+        font-size: 25px;
+        line-height: 40px;
+        width: 30%;
+    }
+
+    header nav{
+        display: none;
+    }
+    header a img.logo{
+        height: 40px;
+    }
+    header div.user{
+        position: relative;
+        width: 30%;
+    }
+
+        header div.user div.iconos{
+            position: absolute;
+            font-size: 22px;
+            line-height: 45px;
+            right: 0;
+            width: 60px;
+            height: 30px;
+        }
+
+        header div.user div.iconos i.persona{
+                margin-right: 10px;
+            }
+
+    header p{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 800;
+    
+    }
+    main article{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    main article div.caja-foto{
+        border-radius: 20px;
+        padding: 25px 15px;
+        background-color: #f6f6f6 ;
+    }
+    main article div.caja-foto img.foto{
+        width: 100%;
+    }
+    main article div.caja1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 5px;
+    }
+        main article div.caja1 div.pago p.precio{
+            margin-top: 10px;
+            font-size: 25px;
+            color: #666;
+        }
+        main article div.caja1 div.pago p.pago{
+            font-size: 8px;
+            font-weight: bold;
+        }
+        main article div.caja1 div.valoracion{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 12px;
+            align-items: center;
+        }
+                main article div.caja1 div.valoracion i.fa-star{
+                    color: #ffa400;
+                }
+                main article div.caja1 div.valoracion p{
+                    margin-right: 5px;
+                }
+        
+        main article div.compra{
+            width: 90%;
+            margin: 10px auto;
+        }
+            main article div.compra button{
+                width: 100%;
+                margin: auto;
+                border: 1px solid #666;
+                border-radius: 10px;
+                padding: 10px;  
+                background-color: #717171;
+                color: #fff
+            }
+        main article div.detalleProducto{
+            margin: 10px auto;
+            font-size: 12px;
+            border-radius: 15px;
+            padding: 10px 15px;
+            background-color: #f6f6f6 ;
+        }
+        main article div.recomendaciones{
+            font-size: 12px;
+            border-radius: 15px;
+            padding: 10px 15px;
+            background-color: #f6f6f6 ;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        main article div.recomendaciones p.recIzq{
+            width: 70%;
+        }
+        main article div.recomendaciones p.recDer{
+            width: 30%;
+            font-size: 10px;
+            align-self: flex-end;
+            color: #717171;
+        }
+            main article div.recomendaciones div.productos{
+                width: 100%;
+            } 
+            main article div.recomendaciones div.productos img{
+                width: 25%;
+            } 
