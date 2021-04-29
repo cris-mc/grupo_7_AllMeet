@@ -1,9 +1,9 @@
 header{
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
 .burger-menu{
@@ -38,6 +38,10 @@ nav{
     margin-right: 10px;
 }
 
+.slider{
+    display: none;
+    width: 100%;
+}
 
 main{
     margin: auto;
@@ -47,6 +51,7 @@ main{
     width: 100%;
     height: 100%;
     border: 0;
+    padding: 10px 0 20px 0;
 }
 
 .bienvenida{
@@ -97,7 +102,7 @@ main{
 
 .categorias{
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 1px;
     list-style: none;
 }
 
@@ -134,7 +139,6 @@ section{
     margin: auto;
     justify-content: space-around;
     width: 100%;
-    height: 200px;
     padding: 15px 5px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -142,9 +146,30 @@ section{
 }
 
 .detalle-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     right: 10px;
     width: 45%;
+}
 
+.caja-flecha{
+    display: flex;
+}
+
+.compralo{
+    position: relative;
+    font-size: 16px;
+    color: #717171;
+    top: -20px;
+}
+
+.flecha{
+    position: relative;
+    top: -17px;
+    left: 8px;
+    font-size: 16px;
+    color: #717171;
 }
 
 .caja-foto{
@@ -153,7 +178,7 @@ section{
 }
 
 .foto{
-    width: 150px;
+    width: 100%;
 }
 
 .nombre-producto{
@@ -161,4 +186,141 @@ section{
     margin-top: 10px;
     font-size: 30px;
     font-weight: 700;
+}
+
+.separador{
+    display: flex;
+    position: relative;
+    margin: 30px 0;
+    justify-content: space-between;
+    color: #717171 ;
+}
+
+.titulo{
+    position: relative;
+    font-weight: 700;
+}
+
+.mira{
+    position: relative;
+}
+
+.caja-ofertas{
+    display: flex;
+    justify-content: space-between;
+    color: #717171 ;
+}
+
+.ofe-1 {
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.foto-oferta{
+    position: relative;
+    width: 80%;
+    height: 65%;
+    margin-top: 5%;
+    left: 16%;
+}
+
+.foto-ofe{
+    margin: auto;
+    width: 80%;
+}
+
+.desc-oferta{
+    position: relative;
+    width: 80%;
+    margin: 15px 0 15px 0;
+    top: 11%;
+    left: 10%;
+    font-size: 14px;
+}
+
+.precio-oferta{
+    font-weight: 700;
+}
+
+
+@media (min-width: 570px){
+
+    .links, .disabled{
+        font-size: 18px;
+    }
+
+    .nombre-producto{
+        font-size: 42px;
+    }
+
+    .compralo, .flecha{
+        font-size: 20px;
+    }
+
+    .titulo, .mira{
+        font-size: 22px;
+    }
+
+    .nombre-oferta, .precio-oferta{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 600px){
+    .slider{
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .foto-slider{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px){
+    .header{
+        display: fixed;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .nav{
+        display: inline-block;
+    }
+
+    .menu1{
+        position: relative;
+        left: -150px;
+        display: flex;
+        height: 40px;
+        line-height: 40px;
+        
+    }
+
+    .lista-nav{
+        list-style: none;
+        margin-right: 20px;
+        
+    }
+
+    .btn-nav{
+        text-decoration: none;
+        color: black;
+    }
+
+    .bienvenida{
+        display: none;
+    }
+
+    .barra{
+        position: absolute;
+        top: -20px;
+        left: 35%;
+        width: 40%;
+    }
 }
