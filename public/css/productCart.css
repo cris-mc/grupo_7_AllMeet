@@ -5,27 +5,22 @@ header{
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
-    padding: 30px;
-}
+    padding: 30px;}
 
     .burger-menu{
         font-size: 25px;
         line-height: 40px;
-        width: 30%;
-    }
+        width: 30%;}
 
     nav{
-        display: none;
-    }
+        display: none;}
 
     .logo{
-        height: 40px;
-    }
+        height: 40px;}
 
     .user{
         position: relative;
-        width: 30%;
-    }
+        width: 30%;}
 
     .iconos{
         position: absolute;
@@ -33,19 +28,17 @@ header{
         line-height: 45px;
         right: 0;
         width: 60px;
-        height: 30px;
-    }
+        height: 30px;}
 
     .persona{
-        margin-right: 10px;
-    }
+        margin-right: 10px;}
 
 
 /* MAIN */
 main{
-    background-color: white;
-}
+    background-color: white;}
 
+    
 /* TABLA */
 table{
     width: 100%;
@@ -56,8 +49,7 @@ table{
     font-size: 14px;
     line-height: 35px;
     color: #717171;
-    background-color: #f6f6f6;
-}
+    background-color: #f6f6f6;}
    
     .menos, .mas, .Fila1, .columna4, .columna6, .columna2, .total, .botonSeguirComprando{
     text-align: center}
@@ -71,15 +63,21 @@ table{
     .botonComprar{
     border:#717171 2px solid;
     background-color:white ;
+    color: #717171;
     text-align: center;
     border-radius: 30px;
     width: 100%;
-    padding: 10px;}
+    padding: 10px;
+    transition: background-color 0.5, color 0.5s, border 0.5s}
+
+    .botonComprar:hover {
+        background-color:black ;
+        color: white;
+        border:black 2px solid;}
 
     .seguirComprando{
     display: flex;
     justify-content: center;}
 
-    /* Tabla con scroll en x
-    @media (max-width: 480px) {table {display: block; overflow-x: auto;}}
-    */
+   
+    @media (max-width: 480px) {table {display: block; overflow-x: auto; font-size: 8px;}}
