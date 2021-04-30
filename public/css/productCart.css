@@ -5,33 +5,44 @@ header{
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
-    padding: 30px;}
+}
 
-    .burger-menu{
+    header div.burger-menu{
         font-size: 25px;
         line-height: 40px;
-        width: 30%;}
+        width: 30%;
+    }
 
-    nav{
-        display: none;}
-
-    .logo{
-        height: 40px;}
-
-    .user{
+    header nav{
+        display: none;
+    }
+    header a img.logo{
+        height: 40px;
+    }
+    header div.user{
         position: relative;
-        width: 30%;}
+        width: 30%;
+    }
 
-    .iconos{
-        position: absolute;
-        font-size: 22px;
-        line-height: 45px;
-        right: 0;
-        width: 60px;
-        height: 30px;}
+        header div.user div.iconos{
+            position: absolute;
+            font-size: 22px;
+            line-height: 45px;
+            right: 0;
+            width: 60px;
+            height: 30px;
+        }
 
-    .persona{
-        margin-right: 10px;}
+        header div.user div.iconos i.persona{
+                margin-right: 10px;
+            }
+
+    header p{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 800;
+    }
 
 
 /* MAIN */
