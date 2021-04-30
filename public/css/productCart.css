@@ -138,9 +138,12 @@ footer{
     table {
     display: block; 
     overflow-x: auto;
-    font-size: 8px;}
+    font-size: 8px;
+    padding: 10px;}
 
     .PrecioUnitario {width:20%;}
 
-    .CalculaTuEnvio {width:13%;}
+    .CalculaTuEnvio {width:11%;}
+
+    .CP{width:30%;}
 }
