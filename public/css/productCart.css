@@ -90,13 +90,54 @@ table{
     display: flex;
     justify-content: center;}
 
-   
-    @media (max-width: 480px) {
-        table {
-            display: block; overflow-x: auto; font-size: 8px;
-        }
+/* FOOTERR */
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #585858;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
 
-        .PrecioUnitario {width:20%;}
-
-        .CalculaTuEnvio {width:13%;}
+    .iconos-footer{
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: space-around;
+    margin: auto;
+    width: 150px;
+    color: white;
+    font-size: 18px;
     }
+
+    .logo-footer{
+    position: relative;
+    width: 150px;
+    margin: auto;
+    top: 150px;
+    }
+
+    .logo-f{
+    width: 100%;
+    }
+
+    .derechos{
+    position: relative;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    color: #fff;
+    top: 180px;
+    }
+    
+
+@media (max-width: 480px) {
+    table {
+    display: block; 
+    overflow-x: auto;
+    font-size: 8px;}
+
+    .PrecioUnitario {width:20%;}
+
+    .CalculaTuEnvio {width:13%;}
+}
