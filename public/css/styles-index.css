@@ -1,3 +1,5 @@
+/*------- ESTILOS HEADER -------*/
+
 header{
     display: flex;
     width: 100%;
@@ -43,10 +45,27 @@ nav{
     margin-right: 10px;
 }
 
+/* ---------------------------------- */
+
+
+
+
+
+
+/*------- ESTILOS SLIDER -------*/
+
 .slider{
     display: none;
     width: 100%;
 }
+
+/* ---------------------------------- */
+
+
+
+
+
+/*------- ESTILOS MAIN -------*/
 
 main{
     margin: auto;
@@ -58,6 +77,8 @@ main{
     border: 0;
     padding: 10px 0 20px 0;
 }
+
+/* Estilos sobre frase de bienvenida */
 
 .bienvenida{
     justify-content: flex-start;
@@ -71,6 +92,8 @@ main{
     font-weight: 800;
 
 }
+
+/* Estilos barra de búsqueda */
 
 .barra{
     position: relative;
@@ -98,6 +121,7 @@ main{
     width: 100%;
 }
 
+/* Estilos del menu de productos con tabs */
 
 .tabs{
     display: flex;
@@ -133,6 +157,8 @@ main{
     color: #717171;
 }
 
+/* Estilos de las cajas y slider de productos */
+
 section{
     width: 92%;
     margin: 20px auto;
@@ -141,12 +167,19 @@ section{
 .producto{
     display: flex;
     margin: auto;
-    justify-content: space-around;
-    width: 100%;
-    padding: 15px 5px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.slider-producto{
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    margin-right: 30px;
     background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .detalle-producto{
@@ -155,6 +188,7 @@ section{
     justify-content: space-between;
     right: 10px;
     width: 45%;
+    margin: 0 auto 0 0;
 }
 
 .caja-flecha{
@@ -165,12 +199,12 @@ section{
     position: relative;
     font-size: 16px;
     color: #717171;
-    top: -5px;
+    top: 10px;
 }
 
 .flecha{
     position: relative;
-
+    top: 13px;
     left: 8px;
     font-size: 14px;
     color: #717171;
@@ -200,6 +234,8 @@ section{
     color: #717171 ;
 }
 
+/* Estilos del separador más buscados */
+
 .titulo{
     position: relative;
     font-weight: 700;
@@ -211,7 +247,6 @@ section{
 
 .caja-ofertas{
     display: flex;
-    justify-content: space-between;
     color: #717171;
     overflow-x: auto;
     
@@ -230,12 +265,11 @@ section{
     position: relative;
     width: 80%;
     height: 65%;
-    margin-top: 5%;
-    left: 16%;
+    margin: 15%;
 }
 
 .foto-ofe{
-    margin: auto;
+    position: relative;
     width: 80%;
 }
 
@@ -251,6 +285,16 @@ section{
 .precio-oferta{
     font-weight: 700;
 }
+
+/* ---------------------------------- */
+
+
+
+
+
+
+
+/*------- ESTILOS FOOTER -------*/
 
 footer{
     width: 100%;
@@ -291,6 +335,15 @@ footer{
     top: 180px;
 }
 
+/* ---------------------------------- */
+
+
+
+
+
+
+/*------- MEDIA QUERYS -------*/
+
 @media (min-width: 375px){
     .logo2{
         display: none;
@@ -312,7 +365,7 @@ footer{
     }
 
     .compralo, .flecha{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .titulo, .mira{
@@ -393,6 +446,4 @@ footer{
     .logo{
         display: inline-block;
     }
-
-
 }
