@@ -91,4 +91,12 @@ table{
     justify-content: center;}
 
    
-    @media (max-width: 480px) {table {display: block; overflow-x: auto; font-size: 8px;}}
+    @media (max-width: 480px) {
+        table {
+            display: block; overflow-x: auto; font-size: 8px;
+        }
+
+        .PrecioUnitario {width:20%;}
+
+        .CalculaTuEnvio {width:13%;}
+    }
