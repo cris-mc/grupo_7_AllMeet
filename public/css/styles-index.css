@@ -13,6 +13,11 @@ header{
 }
 
 .logo{
+    display: none;
+    height: 40px;
+}
+
+.logo2{
     height: 40px;
 }
 
@@ -102,7 +107,6 @@ main{
 
 .categorias{
     margin-top: 15px;
-    margin-right: 1px;
     list-style: none;
 }
 
@@ -131,7 +135,7 @@ main{
 
 section{
     width: 92%;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .producto{
@@ -161,14 +165,14 @@ section{
     position: relative;
     font-size: 16px;
     color: #717171;
-    top: -20px;
+    top: -5px;
 }
 
 .flecha{
     position: relative;
-    top: -17px;
+
     left: 8px;
-    font-size: 16px;
+    font-size: 14px;
     color: #717171;
 }
 
@@ -184,7 +188,7 @@ section{
 .nombre-producto{
     color: #717171;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -276,15 +280,24 @@ footer{
 
 .derechos{
     position: relative;
+    font-size: 14px;
     text-align: center;
-    width: 400px;
     margin: auto;
     color: #fff;
     top: 180px;
 }
 
+@media (min-width: 375px){
+    .logo2{
+        display: none;
+    }
 
-@media (min-width: 570px){
+    .logo{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 481px){
 
     .links, .disabled{
         font-size: 18px;
@@ -303,11 +316,20 @@ footer{
     }
 
     .nombre-oferta, .precio-oferta{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
-@media (min-width: 600px){
+@media (min-width: 769px){
+
+    .logo2{
+        display: inline-block;
+    }
+
+    .logo{
+        display: none;
+    }
+
     .slider{
         width: 100%;
         display: block;
@@ -316,12 +338,6 @@ footer{
 
     .foto-slider{
         width: 100%;
-    }
-}
-
-@media (min-width: 1000px){
-    .header{
-        display: fixed;
     }
 
     .burger-menu{
@@ -334,7 +350,7 @@ footer{
 
     .menu1{
         position: relative;
-        left: -150px;
+        left: -110px;
         display: flex;
         height: 40px;
         line-height: 40px;
@@ -359,7 +375,20 @@ footer{
     .barra{
         position: absolute;
         top: -20px;
-        left: 35%;
+        left: 40%;
         width: 40%;
     }
+}
+
+@media (min-width: 1280px){
+
+    .logo2{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+
+
 }
