@@ -62,7 +62,7 @@ table{
     color: #717171;
     background-color: #f6f6f6;}
    
-    .menos, .mas, .Fila1, .columna4, .columna6, .columna2, .total, .botonSeguirComprando{
+    .menos, .mas, .Fila1, .columna4, .columna6, .columna2,.CalculaTuEnvio, .total, .botonSeguirComprando{
     text-align: center}
 
     .columna8, .precioTotal, .botonComprar{
