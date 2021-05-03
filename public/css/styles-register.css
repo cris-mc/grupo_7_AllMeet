@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*contenedor de todo*/
+#contenedor{
+    width: 40%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow:2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    background-color: white;
+}
+
+#registro{
+    text-align: center;
+}
+
+/*formulario*/
+#contenedor #form{
+    margin-top: 10px;
+}
+/*alineacion de inputs*/
+#form .form-group{
+    
+    margin-top: 20px;
+    text-align: center;
+}
+/*estilo de inputs*/
+input[type="text"], [type="email"], [type="password"]{
+    margin-top: 5px;
+    width: 60%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]{
+    width: 60%;
+    height: 35px;
+    border-radius: 10px;
+    border:none;
+    box-shadow:1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #717171;
+    color: #fff;
+    line-height: 30px;
+    padding: 1px 15px;
+
+}
+@media (max-width: 600px) {
+        #contenedor{
+            width: 100%;
+        }
+}
+
+/*Mediaquerys-Responsive*/
+/*Tablet
+@media only screen and (min-width:701x) and (max-width:980px){
+    #contenedor{
+        width: 60%;
+        margin:0 auto;
+    }
+    
+}
+
+cel
+@media only screen and (min-width:480x) and (max-width:700px){
+    #contenedor{
+        width: 80%;
+        margin:0 auto;
+    }
+    
+}/*
+
+
+
+
+
+
