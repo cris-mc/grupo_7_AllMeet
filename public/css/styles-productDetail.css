@@ -1,51 +1,127 @@
+/*------- ESTILOS HEADER -------*/
+
 header{
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
-    header div.burger-menu{
-        font-size: 25px;
-        line-height: 40px;
-        width: 30%;
-    }
+.burger-menu{
+    font-size: 25px;
+    line-height: 40px;
+    width: 30%;
+}
 
-    header nav{
-        display: none;
-    }
-    header a img.logo{
-        height: 40px;
-    }
-    header div.user{
-        position: relative;
-        width: 30%;
-    }
+.logo{
+    display: none;
+    height: 40px;
+}
 
-        header div.user div.iconos{
-            position: absolute;
-            font-size: 22px;
-            line-height: 45px;
-            right: 0;
-            width: 60px;
-            height: 30px;
-        }
+.logo2{
+    height: 40px;
+}
 
-        header div.user div.iconos i.persona{
-                margin-right: 10px;
-            }
+nav{
+    display: none;
+}
 
-    header p{
-        margin-top: 30px;
-        width: 100%;
-        font-size: 25px;
-        font-weight: 800;
-    
-    }
+.user{
+    position: relative;
+    width: 30%;
+}
+
+.iconos{
+    position: absolute;
+    font-size: 22px;
+    line-height: 45px;
+    right: 0;
+    width: 60px;
+    height: 30px;
+}
+
+.persona{
+    margin-right: 10px;
+}
+
+/* ---------------------------------- */
+
+/* Estilos barra de búsqueda */
+
+.barra{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.lupa {
+    position: absolute;
+    background-color: white;
+    left: 10px;
+    line-height: 38px;
+    color: #666;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.busqueda{
+    border: 1px solid #666;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/*------- ESTILOS FOOTER -------*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #585858;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.iconos-footer{
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: space-around;
+    margin: auto;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+}
+
+.logo-footer{
+    position: relative;
+    width: 150px;
+    margin: auto;
+    top: 150px;
+}
+
+.logo-f{
+    width: 100%;
+}
+
+.derechos{
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    top: 180px;
+}
+
+/* ---------------------------------- */
+
     main article{
-        width: 90%;
-        margin: auto;
+        width: 100%;
+        height: 100%;
         margin-top: 10px;
     }
     main article div.caja-foto{
@@ -85,12 +161,11 @@ header{
                 }
         
         main article div.compra{
-            width: 90%;
+            width: 100%;
             margin: 10px auto;
         }
             main article div.compra button{
                 width: 100%;
-                margin: auto;
                 border: 1px solid #666;
                 border-radius: 10px;
                 padding: 10px;  
@@ -111,6 +186,7 @@ header{
             background-color: #f6f6f6 ;
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
         main article div.recomendaciones p.recIzq{
             width: 70%;
@@ -122,8 +198,160 @@ header{
             color: #717171;
         }
             main article div.recomendaciones div.productos{
-                width: 100%;
+                width: 22%;
             } 
             main article div.recomendaciones div.productos img{
-                width: 25%;
+                width: 100%;
             } 
+main section.recomendaciones {
+    background-color: #f6f6f6;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+main section.recomendaciones div.separador{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-between;
+    color: #717171;
+}
+main section.recomendaciones div.separador p.titulo{
+    font-weight: 700;
+}
+main section.recomendaciones div.cajaRecomendaciones{
+    display: flex;
+    color: #717171;
+    overflow-x: auto;
+    margin: 0 10px;
+}
+main section.recomendaciones div.cajaRecomendaciones div.cajaProducto{
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    flex: 0 0 auto;
+    margin-right: 15px;
+}
+main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.fotoDetalle{
+    position: relative;
+    width: 80%;
+    height: 65%;
+    margin: 15%;
+}
+main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.fotoDetalle img{
+    position: relative;
+    width: 80%;   
+}
+main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDetalle{
+    position: relative;
+    width: 80%;
+    margin: 15px 0;
+    top: 11%;
+    left: 10%;
+    font-size: 18px;
+}   
+main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDetalle p.precio{
+    font-weight: 700;
+}
+    /* Diseño tablet */
+@media (min-width:481px){
+    main article{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .logo2{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+    .links, .disabled{
+        font-size: 18px;
+    }
+
+    .nombre-producto{
+        font-size: 42px;
+    }
+
+    .compralo, .flecha{
+        font-size: 25px;
+    }
+
+    .titulo, .mira{
+        font-size: 22px;
+    }
+
+    .nombre-oferta, .precio-oferta{
+        font-size: 18px;
+    }
+}
+/* Diseño desktop */
+@media (min-width:769px){
+    .logo2{
+        display: inline-block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .slider{
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .foto-slider{
+        width: 100%;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .nav{
+        display: inline-block;
+    }
+
+    .menu1{
+        position: relative;
+        left: -110px;
+        display: flex;
+        height: 40px;
+        line-height: 40px;
+        
+    }
+
+    .lista-nav{
+        list-style: none;
+        margin-right: 20px;
+        
+    }
+
+    .btn-nav{
+        text-decoration: none;
+        color: black;
+    }
+
+    .bienvenida{
+        display: none;
+    }
+
+    .barra{
+        position: absolute;
+        top: -20px;
+        left: 40%;
+        width: 40%;
+    }
+}
+/* Diseño larger desktop */
+@media (min-width:1280px){
+    .logo2{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+}

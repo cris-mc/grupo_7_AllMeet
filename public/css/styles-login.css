@@ -1,57 +1,134 @@
+
+/*------- ESTILOS HEADER -------*/
+
 header{
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
-    header div.burger-menu{
-        font-size: 25px;
-        line-height: 40px;
-        width: 30%;
-    }
+.burger-menu{
+    font-size: 25px;
+    line-height: 40px;
+    width: 30%;
+}
 
-    header nav{
-        display: none;
-    }
-    header a img.logo{
-        height: 40px;
-    }
-    header div.user{
-        position: relative;
-        width: 30%;
-    }
+.logo{
+    display: none;
+    height: 40px;
+}
 
-        header div.user div.iconos{
-            position: absolute;
-            font-size: 22px;
-            line-height: 45px;
-            right: 0;
-            width: 60px;
-            height: 30px;
-        }
+.logo2{
+    height: 40px;
+}
 
-        header div.user div.iconos i.persona{
-                margin-right: 10px;
-            }
+nav{
+    display: none;
+}
 
-    header p{
-        margin-top: 30px;
-        width: 100%;
-        font-size: 25px;
-        font-weight: 800;
-    
-    }
+.user{
+    position: relative;
+    width: 30%;
+}
+
+.iconos{
+    position: absolute;
+    font-size: 22px;
+    line-height: 45px;
+    right: 0;
+    width: 60px;
+    height: 30px;
+}
+
+.persona{
+    margin-right: 10px;
+}
+
+/* ---------------------------------- */
+
+/* Estilos barra de búsqueda */
+
+.barra{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.lupa {
+    position: absolute;
+    background-color: white;
+    left: 10px;
+    line-height: 38px;
+    color: #666;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.busqueda{
+    border: 1px solid #666;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/*------- ESTILOS FOOTER -------*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #585858;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.iconos-footer{
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: space-around;
+    margin: auto;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+}
+
+.logo-footer{
+    position: relative;
+    width: 150px;
+    margin: auto;
+    top: 150px;
+}
+
+.logo-f{
+    width: 100%;
+}
+
+.derechos{
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    top: 180px;
+}
+
+/* ---------------------------------- */
+
 main{
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 30px;
     background-color: #f6f6f6;
     border-radius: 30px;
 }
     main form div.ingresoManual, main form div.ingresoRedes{
-        margin: 0px 10px;
+        margin: 0px 20px;
         border-radius: 10px;
         max-width: 100%;
     }
@@ -73,6 +150,17 @@ main{
             border-radius: 10px;
             padding: 10px;
         }
+        main form div.cajaIngreso{
+            display: flex;
+            margin: 0 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main form div.cajaIngreso label{
+            color: #717171;
+
+
+        }
     main form p{
         color: #717171;
         text-align: right;
@@ -80,11 +168,11 @@ main{
         font-weight: bold;
     }
     main form div.ingresar{
-        margin: 0 15px;
+        margin: 0 20px;
     }
         main form div.ingresar button, main form div.ingresoRedes button{
                 width: 100%;
-                margin: 15px auto;
+                margin: 20px auto;
                 border: 1px solid #666;
                 border-radius: 25px;
                 padding: 10px;                
@@ -111,21 +199,119 @@ main{
             background-color: #3d57ac;
             color: #fff
         }
+
+/* Diseño tablet */
+@media (min-width:481px){
+    header p{
+        margin-top: 30px;
+        width: 75%;
+        font-size: 25px;
+        font-weight: 800;
+    
+    }
+    main{
+        width: 100%;
+        margin: auto;
+        padding: 0 10%;
+        margin-top: 30px;
+        background-color: #f6f6f6;
+        border-radius: 30px;
+    }
+    .logo2{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+    .links, .disabled{
+        font-size: 18px;
+    }
+
+    .nombre-producto{
+        font-size: 42px;
+    }
+
+    .compralo, .flecha{
+        font-size: 25px;
+    }
+
+    .titulo, .mira{
+        font-size: 22px;
+    }
+
+    .nombre-oferta, .precio-oferta{
+        font-size: 18px;
+    }  
+}
+/* Diseño desktop */
+@media (min-width:769px){
+    .logo2{
+        display: inline-block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .slider{
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .foto-slider{
+        width: 100%;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .nav{
+        display: inline-block;
+    }
+
+    .menu1{
+        position: relative;
+        left: -110px;
+        display: flex;
+        height: 40px;
+        line-height: 40px;
+        
+    }
+
+    .lista-nav{
+        list-style: none;
+        margin-right: 20px;
+        
+    }
+
+    .btn-nav{
+        text-decoration: none;
+        color: black;
+    }
+
+    .bienvenida{
+        display: none;
+    }
+
+    .barra{
+        position: absolute;
+        top: -20px;
+        left: 40%;
+        width: 40%;
+    }
+}
+/* Diseño larger desktop */
+@media (min-width:1280px){
+    .logo2{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+}
         
 
-
-
-
-
-/* main{
-    width: initial;
-    max-width: initial;
-    border: solid 1px red;
-    margin: 0px 20 px;
-}
-
-button{
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-} */
