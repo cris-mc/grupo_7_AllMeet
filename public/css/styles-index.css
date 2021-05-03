@@ -174,7 +174,7 @@ section{
 
 .slider-producto{
     display: flex;
-    flex: 0 0 auto;
+    flex:none;
     width: 100%;
     margin-right: 30px;
     background-color: #fff;
