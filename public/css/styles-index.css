@@ -45,6 +45,10 @@ nav{
     margin-right: 10px;
 }
 
+.persona, .carrito{
+    color: #000;
+}
+
 /* ---------------------------------- */
 
 
@@ -55,7 +59,11 @@ nav{
 /*------- ESTILOS SLIDER -------*/
 
 .slider{
-    display: none;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.foto-slider{
     width: 100%;
 }
 
@@ -387,15 +395,7 @@ footer{
         display: none;
     }
 
-    .slider{
-        width: 100%;
-        display: block;
-        position: relative;
-    }
 
-    .foto-slider{
-        width: 100%;
-    }
 
     .burger-menu{
         display: none;
