@@ -1,59 +1,72 @@
-/* HEADER */
+/*------- ESTILOS HEADER -------*/
 header{
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
-    header div.burger-menu{
-        font-size: 25px;
-        line-height: 40px;
-        width: 30%;
-    }
-
-    header nav{
-        display: none;
-    }
-    header a img.logo{
-        height: 40px;
-    }
-    header div.user{
-        position: relative;
-        width: 30%;
-    }
-
-        header div.user div.iconos{
-            position: absolute;
-            font-size: 22px;
-            line-height: 45px;
-            right: 0;
-            width: 60px;
-            height: 30px;
-        }
-
-        header div.user div.iconos i.persona{
-                margin-right: 10px;
-            }
-
-    header p{
-        margin-top: 30px;
-        width: 100%;
-        font-size: 25px;
-        font-weight: 800;
-    }
-
-.FraseCarrito2{
-    text-align: center;
+.burger-menu{
+    font-size: 25px;
+    line-height: 40px;
+    width: 30%;
 }
+
+.logo{
+    display: none;
+    height: 40px;
+}
+
+.logo2{
+    height: 40px;
+}
+
+nav{
+    display: none;
+}
+
+.user{
+    position: relative;
+    width: 30%;
+}
+
+.iconos{
+    position: absolute;
+    font-size: 22px;
+    line-height: 45px;
+    right: 0;
+    width: 60px;
+    height: 30px;
+}
+
+.persona{
+    margin-right: 10px;
+}
+
+.persona, .carrito{
+    color: #000;
+}
+ 
+    .FraseCarrito1{
+        text-align: left;
+        padding-top: 40px;
+        color: #717171;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+    }
+/* ---------------------------------- */
+
+
 
 /* MAIN */
 main{
     background-color: white;}
+/* ---------------------------------- */
 
-    
-/* TABLA */
+
+
+/*------- ESTILOS DE LA TABLA -------*/
 table{
     width: 100%;
     text-align: left;
@@ -92,8 +105,11 @@ table{
     .seguirComprando{
     display: flex;
     justify-content: center;}
+/* ---------------------------------- */
 
-/* FOOTERR */
+
+
+/*------- ESTILOS FOOTER -------*/
 footer{
     width: 100%;
     height: 300px;
@@ -102,7 +118,7 @@ footer{
     border-radius: 20px 20px 0 0;
 }
 
-    .iconos-footer{
+.iconos-footer{
     display: flex;
     position: relative;
     top: 100px;
@@ -111,29 +127,32 @@ footer{
     width: 150px;
     color: white;
     font-size: 18px;
-    }
+}
 
-    .logo-footer{
+.logo-footer{
     position: relative;
     width: 150px;
     margin: auto;
     top: 150px;
-    }
+}
 
-    .logo-f{
+.logo-f{
     width: 100%;
-    }
+}
 
-    .derechos{
+.derechos{
     position: relative;
+    font-size: 14px;
     text-align: center;
-    width: 400px;
     margin: auto;
     color: #fff;
     top: 180px;
-    }
-    
+}
+/* ---------------------------------- */
 
+
+
+/*------- MEDIA QUERYS -------*/
 @media (max-width: 480px) {
     table {
     display: block; 
@@ -147,3 +166,25 @@ footer{
 
     .CP{width:30%;}
 }
+
+@media (min-width: 769px){
+    .logo2{
+        display: none;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 769px){
+    .logo2{
+        display: inline-block;
+    }
+
+    .logo{
+        display: none;
+    }
+}
+/* ---------------------------------- */
