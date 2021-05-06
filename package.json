@@ -1,0 +1,25 @@
+{
+  "name": "grupo_7_AllMeet",
+  "version": "1.0.0",
+  "description": "<div align='center'><img src=designs/1.2-Logotipo_Transparente.png></div>",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermanGomezV/grupo_7_AllMeet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GermanGomezV/grupo_7_AllMeet/issues"
+  },
+  "homepage": "https://github.com/GermanGomezV/grupo_7_AllMeet#readme"
+}
