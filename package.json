@@ -4,7 +4,7 @@
   "description": "<div align='center'><img src=designs/1.2-Logotipo_Transparente.png></div>",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./app.js"
+    "start": "nodemon ./src/app.js"
   },
   "repository": {
     "type": "git",
