@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Configuración para que la página sea Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Mis lineas en el HEAD-->
+    <title>All Meet - Carrito de compra</title>
+    <link rel="stylesheet" href="/css/productCart.css">
+
+    <!--Lineas de los chicos en el HEAD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="/css/normalize.css" >
+    <link rel="stylesheet" href="/css/styles-login.css" >
+    <link rel="stylesheet" href="/css/styles.css" >
+
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+
+         <!--Menu hamburguesa-->
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!--Logo de All Meet-->
+        <a href="/" class="logo"> <img src="/images/logo.png" alt="All Meet"> </a>
+        <a href="/" class="logo2"> <img src="/images/logo2.png" alt="All Meet"> </a>
+        
+        <!--Login y Carrito-->
+        <div class="user">  
+            <div class="iconos">
+                <a href="/login"><i class="fas persona fa-user"></i></a>
+                <a href="/productCart"><i class="fas carrito fa-shopping-cart"></i> </a>
+            </div>
+        </div>
+        
+        <p class="FraseCarrito1">
+            Andá poniendo la mesa...
+        </p>
+
+    </header>
+
+    <!--Parte principal de la web: Tabla-->
+    <main>
+        <table class="tabla">
+            <!--Ecabezado de la tabla-->
+            
+            <thead class="Encabezado">
+                <tr class="Fila1">
+                    <th></th> <th class="columna2">Item</th> <th>Producto</th> <th class="PrecioUnitario">Precio U</th> <th></th> <th class="columna6">Q</th> <th></th> <th class="columna8">Subtotal</th>
+                </tr>
+            </thead>
+                
+                <tr class="Fila2">
+                <td><button>˄</button></td> <td class="columna2">1</td> <td>Fernet Branca 750 mL</td> <td class="columna4">$ 550,00</td> <td class="menos"><button>-</button></td> <td class="columna6">1</td> <td class="mas"><button>+</button></td> <td class="columna8">$ 550,00</td>
+                </tr>
+                
+                <tr class="Fila3">
+                <td><button>˅</button></td> <td class="columna2">2</td> <td>Coca cola 2,25 L</td> <td class="columna4">$ 200,00</td> <td class="menos"><button>-</button></td> <td class="columna6">2</td> <td class="mas"><button>+</button></td> <td class="columna8">$ 400,00</td>
+                </tr>
+               
+                <tr class="Fila4">
+                <td></td> <td class="CalculaTuEnvio">Calculá tu envío</td>
+                <td class="CP">
+                    <form action="/CP" method="GET">
+                        <label>Código postal:</label>
+                        <select name="CP">
+                        <option>1425</option>
+                        <option>2820</option>
+                        </select>
+                        </form>    
+                </td>
+                <td></td> <td></td> <td></td> <td></td> <td class="columna8">$ 100,00</td>
+                </tr>
+                
+                <tr class="Fila5">
+                <td></td> <td></td> <td></td> <td></td> <td></td> <td class="total">Total</td> <td class="vacio"></td> <td class="precioTotal">$ 1.050,00</td>
+                </tr>
+                
+                <tr class="Fila6">
+                <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td><button type="submit" class="botonComprar">COMPRAR</button></td>
+                </tr>
+
+                <tr class="Fila7">
+                <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td><a class="seguirComprando" href="/">Seguir comprando</a></td>
+                </tr>
+
+        </table>
+        
+    </main>
+
+ <!--FOOTER-->
+    <footer>
+        <div class="iconos-footer">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="logo-footer">
+            <img class="logo-f" src="/images/logo-white.png" alt="All Meet">
+        </div>
+        <div class="derechos">Allmeet 2021. Todos los derechos reservados.</div>
+    </footer>
+
+</body>
+</html>
