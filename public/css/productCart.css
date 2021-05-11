@@ -1,4 +1,5 @@
 /*------- ESTILOS HEADER -------*/
+
 header{
     display: flex;
     width: 100%;
@@ -44,17 +45,78 @@ nav{
     margin-right: 10px;
 }
 
-.persona, .carrito{
-    color: #000;
+/* ---------------------------------- */
+
+/* Estilos barra de búsqueda */
+
+.barra{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
 }
- 
-    .FraseCarrito1{
-        text-align: left;
-        padding-top: 40px;
-        color: #717171;
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-    }
+
+.lupa {
+    position: absolute;
+    background-color: white;
+    left: 10px;
+    line-height: 38px;
+    color: #666;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.busqueda{
+    border: 1px solid #666;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/*------- ESTILOS FOOTER -------*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #585858;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.iconos-footer{
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: space-around;
+    margin: auto;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+}
+
+.logo-footer{
+    position: relative;
+    width: 150px;
+    margin: auto;
+    top: 150px;
+}
+
+.logo-f{
+    width: 100%;
+}
+
+.derechos{
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    top: 180px;
+}
+
 /* ---------------------------------- */
 
 
@@ -108,50 +170,6 @@ table{
 /* ---------------------------------- */
 
 
-
-/*------- ESTILOS FOOTER -------*/
-footer{
-    width: 100%;
-    height: 300px;
-    background-color: #585858;
-    margin-top: 20px;
-    border-radius: 20px 20px 0 0;
-}
-
-.iconos-footer{
-    display: flex;
-    position: relative;
-    top: 100px;
-    justify-content: space-around;
-    margin: auto;
-    width: 150px;
-    color: white;
-    font-size: 18px;
-}
-
-.logo-footer{
-    position: relative;
-    width: 150px;
-    margin: auto;
-    top: 150px;
-}
-
-.logo-f{
-    width: 100%;
-}
-
-.derechos{
-    position: relative;
-    font-size: 14px;
-    text-align: center;
-    margin: auto;
-    color: #fff;
-    top: 180px;
-}
-/* ---------------------------------- */
-
-
-
 /*------- MEDIA QUERYS -------*/
 @media (max-width: 480px) {
     table {
@@ -166,25 +184,3 @@ footer{
 
     .CP{width:30%;}
 }
-
-@media (min-width: 769px){
-    .logo2{
-        display: none;
-    }
-
-    .logo{
-        display: inline-block;
-    }
-}
-
-
-@media (max-width: 769px){
-    .logo2{
-        display: inline-block;
-    }
-
-    .logo{
-        display: none;
-    }
-}
-/* ---------------------------------- */
