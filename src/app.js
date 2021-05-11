@@ -1,5 +1,4 @@
 const express = require('express'); 
-const process = require('process');
 const app = express();
 const path = require('path');
 const rutasProductos= require('./routes/products')
