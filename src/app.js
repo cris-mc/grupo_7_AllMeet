@@ -9,8 +9,12 @@ const path = require('path');
 //Accediendo a los archivos de la carpeta public
 app.use(express.static(path.resolve(__dirname, '../public')));
 
-// app.set('views', __dirname + './src/views'); ver de solucionar esto
-app.set('view engine', 'ejs');
+//POR DEFECTO
+//Comando para decirle a express que vamos a usar archivos con extensión ejs
+//Comando para cuando la carpeta views esta en la raiz: app.set("view engine", "ejs");
+//Comando para cuando la carpeta views no esta en la raiz
+//La ruta la defino desde el archivo app.js porque estoy parado en él
+app.set('views', __dirname + '/views')
 
 // Ruteo: Link hacia con el sistema de ruteo
 const rutasPrincipal= require('./routes/main')
