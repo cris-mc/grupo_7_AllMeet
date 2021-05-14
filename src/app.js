@@ -1,4 +1,5 @@
 const express = require('express'); 
+const process = require('process');
 const app = express();
 const path = require('path');
 const rutasProductos= require('./routes/products')
@@ -6,6 +7,9 @@ const rutasPrincipal= require('./routes/main')
 const rutasUsuario= require('./routes/users')
 
 app.use(express.static(path.resolve(__dirname, '../public')));
+
+app.set('view engine', 'ejs');
+// app.set('views', __dirname + './src/views'); ver de solucionar esto
 
 //Ruteo
 app.use('/', rutasPrincipal);
