@@ -10,8 +10,9 @@ const productsController = require('../controllers/productsController');
 
 //Rutas (sin el prefijo definido en app.js)
 //En el mismo defino la ruta relativa, el controlador y su metodo asociado
+router.get('/list', productsController.productList);
 router.get('/cart', productsController.productCart);
-router.get('/detail', productsController.productDetail)
+router.get('/detail', productsController.productDetail);
 
 //Exportando al router para que pueda ser usado por el entry point
 module.exports = router;
