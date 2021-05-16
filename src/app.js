@@ -14,8 +14,8 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 //Comando para cuando la carpeta views esta en la raiz: app.set("view engine", "ejs");
 //Comando para cuando la carpeta views no esta en la raiz
 //La ruta la defino desde el archivo app.js porque estoy parado en él
-app.set('views', path.resolve(__dirname, 'views'))
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 // Ruteo: Link hacia con el sistema de ruteo
 const rutasPrincipal= require('./routes/main')

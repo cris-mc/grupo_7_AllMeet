@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+<body>
+    <%- include('./partials/header') %>
+    <main>
+        <form action="" method="POST">
+            <div class=ingresoManual>
+                <p>Ingreso manual</p>
+                <label for="email" ></label>
+                <input type="email" placeholder="E-mail *" name="email">
+                <label for="password"></label>
+                <input type="password" placeholder="Contraseña *" name="password">
+            </div>
+            <div class="cajaIngreso">
+                <label for="recordarUsuario"><input type="checkbox" name="recordarUsuario"> Recordar usuario</label>
+                <p>¿Olvidaste tu contraseña?</p>
+            </div>
+            <div class="ingresar">
+                <button >INGRESAR</button>
+            </div>        
+            <div class="ingresoRedes">
+                <p>o con tus redes</p>
+                <button class="google">INGRESÁ CON GOOGLE</button>
+                <button class="facebook">INGRESÁ CON FACEBOOK</button>
+            </div> 
+        </form>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+</html>

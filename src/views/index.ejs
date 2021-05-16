@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+<body>
+    <%- include('./partials/header') %>
+    <div class="slider">
+        <img class="foto-slider" src="/images/slider1.jpg" alt="">
+    </div>
+
+    <main class="main-index">
+        <ul class="tabs">
+            <li class="categorias"><a href="#" class="links">Bebidas</a></li>
+            <li class="categorias"><a href="#" class="disabled">Asado</a></li>
+            <li class="categorias"><a href="#" class="disabled">Picadas</a></li>
+        </ul>
+        <section>
+            <article class="productos">
+                <div class="slider-productos">
+                    <div class="detalle-productos">
+                        <p class="nombre-productos">Fernet Branca 750cc</p>
+                        <div class="caja-flecha">
+                            <p class="compralo">Compralo</p>
+                            <i class="fas flecha fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="caja-foto-productos">
+                        <img class="fotos" src="/images/fernet-750.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider-productos">
+                    <div class="detalle-productos">
+                        <p class="nombre-productos">Coca Cola 2,5 L</p>
+                        <div class="caja-flecha">
+                            <p class="compralo">Compralo</p>
+                            <i class="fas flecha fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="caja-foto-productos">
+                        <img class="fotos" src="/images/cocacola.jpg" alt="">
+                    </div>
+                </div>  
+                <div class="slider-productos">
+                    <div class="detalle-productos">
+                        <p class="nombre-productos">Vodka Absolut 1L</p>
+                        <div class="caja-flecha">
+                            <p class="compralo">Compralo</p>
+                            <i class="fas flecha fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="caja-foto-productos">
+                        <img class="fotos" src="/images/absolut.jpg" alt="">
+                    </div>
+                </div> 
+                <div class="slider-productos">
+                    <div class="detalle-productos">
+                        <p class="nombre-productos">Aperol Spirit 1L</p>
+                        <div class="caja-flecha">
+                            <p class="compralo">Compralo</p>
+                            <i class="fas flecha fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="caja-foto-productos">
+                        <img class="fotos" src="/images/aperol.jpg" alt="">
+                    </div>
+                </div>             
+            </article>
+        </section>  
+        
+        <section>
+            <div class="separador-index">
+                <p class="titulo">Los más buscados</p>
+                <p class="mira"> Mirá todo</p>
+            </div>
+            <div class="caja-ofertas">   
+                <div class="ofe-1">
+                    <div class="foto-oferta">
+                        <img class="foto-ofe" src="/images/picada.jpg" alt="">
+                    </div>
+                    <div class="desc-oferta">
+                        <p class="nombre-oferta">Tabla de Picada XL</p>
+                        <p class="precio-oferta">$1200</p>
+                    </div>
+                </div>
+                <div class="ofe-1">
+                    <div class="foto-oferta">
+                        <img class="foto-ofe" src="/images/fernet-750.jpg" alt="">
+                    </div>
+                    <div class="desc-oferta">
+                        <p class="nombre-oferta">Fernet Branca 750cc</p>
+                        <p class="precio-oferta">$550</p>
+                    </div>
+                </div>
+                <div class="ofe-1">
+                    <div class="foto-oferta">
+                        <img class="foto-ofe" src="/images/carne.jpg" alt="">
+                    </div>
+                    <div class="desc-oferta">
+                        <p class="nombre-oferta">Costilla ternera 1Kg</p>
+                        <p class="precio-oferta">$750</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+</html>
