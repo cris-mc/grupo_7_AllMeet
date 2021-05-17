@@ -149,10 +149,6 @@ footer{
         font-size: 42px;
     }
 
-    .compralo, .flecha{
-        font-size: 25px;
-    }
-
     .titulo, .mira{
         font-size: 22px;
     }
@@ -164,6 +160,10 @@ footer{
 
 /*------- DISEÑO DESKTOP -------*/
 @media (min-width: 769px){
+
+    .slider{
+        margin-top: 0; 
+    }
 
     .logo2{
         display: inline-block;

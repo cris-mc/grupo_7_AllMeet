@@ -6,6 +6,42 @@
 .slider{
     margin-top: 15px;
     width: 100%;
+    position: relative;
+}
+
+.texto-slider{
+    position: absolute;
+    color: #fff;
+    font-size: 5vw;
+    top: 30%;
+    left: 5%;
+    animation: texto-slider 5s infinite;
+}
+
+.texto-slider2{
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    font-size: 6vw;
+    top: 48%;
+    left: 5%;
+    animation: texto-slider2 5s infinite;
+}
+
+@keyframes texto-slider{
+    0% {opacity: 0%}
+    50% {opacity: 100%; transform: translateX(30px);}
+    100% {opacity: 0%}
+}
+
+@keyframes texto-slider2{
+    0% {opacity: 0%}
+    90% {opacity: 100%; transform: translateX(45px)}
+    100% {opacity: 0%}
+}
+
+.caja-foto-slider{
+    width: 100%;
 }
 
 .foto-slider{
@@ -219,25 +255,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-/*------- MEDIA QUERYS -------*/
-
-@media (min-width: 375px){
-    .logo2{
-        display: none;
-    }
-
-    .logo{
-        display: inline-block;
-    }
-}
-
 @media (min-width: 481px){
 
     .links, .disabled{
@@ -311,6 +328,40 @@ section{
         left: 40%;
         width: 40%;
     }
+
+    .productos{
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .slider-productos{
+        width: 48%;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .compralo{
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .flecha{
+        font-size: 13px;
+        top: 20px;
+    }
+
+    .caja-ofertas{
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .ofe-1{
+        width: 23%;
+    }
+
+    
 }
 
 @media (min-width: 1280px){
@@ -321,5 +372,9 @@ section{
 
     .logo{
         display: inline-block;
+    }
+
+    .slider-productos{
+        width: 32%;
     }
 }
