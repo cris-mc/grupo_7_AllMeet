@@ -22,6 +22,11 @@ header{
     width: 30%;
 }
 
+.link-logo{
+    display: none;
+}
+
+
 .logo{
     display: none;
     height: 40px;
@@ -30,6 +35,7 @@ header{
 .logo2{
     height: 40px;
 }
+
 
 nav{
     display: none;
@@ -137,10 +143,19 @@ footer{
     .logo2{
         display: none;
     }
+
+    .link-logo{
+        display: none;
+    }
     
     .logo{
         display: inline-block;
     }
+    
+    .link-logo{
+        display: inline-block;
+    }
+
     .links, .disabled{
         font-size: 18px;
     }
@@ -169,8 +184,16 @@ footer{
         display: inline-block;
     }
 
+    .link-logo2{
+        display: inline-block;
+    }
+
     .logo{
         display: none;
+    }
+
+    .link-logo{
+        display: none; 
     }
 
 
@@ -185,7 +208,7 @@ footer{
 
     .menu1{
         position: relative;
-        left: -110px;
+        left: -130px;
         display: flex;
         height: 40px;
         line-height: 40px;
@@ -222,7 +245,15 @@ footer{
         display: none;
     }
 
+    .link-logo2{
+        display: none; 
+    }
+
     .logo{
+        display: inline-block;
+    }
+
+    .link-logo{
         display: inline-block;
     }
 }
