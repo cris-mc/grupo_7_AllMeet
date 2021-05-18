@@ -4,8 +4,11 @@
         margin-top: 10px;
     }
     main article div.caja-foto{
+        font-size: 30px;
+        color: #717171;
+        font-weight: 700;
         border-radius: 20px;
-        padding: 25px 15px;
+        padding: 25px 5%;
         background-color: #f6f6f6 ;
     }
     main article div.caja-foto img.foto{
@@ -86,6 +89,8 @@ main section.recomendaciones {
     background-color: #f6f6f6;
     width: 100%;
     margin: 20px auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-radius: 10px;
 }
 main section.recomendaciones div.separador{
@@ -132,11 +137,30 @@ main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDe
 main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDetalle p.precio{
     font-weight: 700;
 }
+article.listadoArticulo img{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+div.cajaArticulo p{
+    color: #717171;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
     /* Diseño tablet */
 @media (min-width:481px){
     main article{
         width: 100%;
         margin-top: 10px;
+    }
+    main article div.caja-foto{
+        margin: auto;
+        height: 80%;
+        width: 80%;
+        border-radius: 20px;
+        padding: 25px 15px;
+        background-color: #f6f6f6 ;
     }
     .logo2{
         display: none;
@@ -164,6 +188,22 @@ main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDe
 }
 /* Diseño desktop */
 @media (min-width:769px){
+    
+    main article div.caja-foto{
+        margin: 10px auto;
+        height: 60%;
+        width: 60%;
+        border-radius: 20px;
+        padding: 25px 15px;
+        background-color: #f6f6f6 ;
+    }   
+
+    main article div.compra{
+        width:  60%;
+    }
+    main article div.caja1{
+        flex-wrap: nowrap;
+    }
     .logo2{
         display: inline-block;
     }
@@ -230,4 +270,8 @@ main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDe
     .logo{
         display: inline-block;
     }
+    main article div.caja-foto{
+        height: 40%;
+        width: 40%;
+    }   
 }
