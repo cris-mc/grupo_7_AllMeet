@@ -1,6 +1,6 @@
 const mainController = {
     inicio : (req, res) => {
-        res.render('index');
+        res.render('main/index');
     }
 };
 
