@@ -13,6 +13,8 @@ const productsController = require('../controllers/productsController');
 router.get('/list', productsController.productList);
 router.get('/cart', productsController.productCart);
 router.get('/detail', productsController.productDetail);
+router.get('/charge', productsController.productCharge);
+router.get('/edit', productsController.productEdit);
 
 //Exportando al router para que pueda ser usado por el entry point
 module.exports = router;

@@ -12,6 +12,12 @@ const productsController = {
     },
     productDetail : (req, res) => {
         res.render('products/productDetail');
+    },
+    productCharge : (req, res) => {
+        res.render('products/productCharge');
+    },
+    productEdit : (req, res) => {
+        res.render('products/productEdit');
     }
 };
 

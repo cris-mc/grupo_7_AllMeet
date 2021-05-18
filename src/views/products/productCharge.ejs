@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+
+    <main>
+        
+    <div id="contenedor">
+        <div id="registro"><h1>Carga de productos</h1></div>
+        <div id="form">
+            <form action="register.html" method="POST">
+                <div class="form-group">
+                    
+                    <input type="text" name="Producto"placeholder="Nombre del Producto" required>
+                </div>
+                <div class="form-group">
+                
+                    <!--<input type="text" name="Descripcion" value="Descripcion breve del producto" required>-->
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
+
+                </div>
+                <div class="form-group">
+                <div class="edicion">
+                    <input type="number" name="Price" placeholder="Precio" >
+                </div>
+                <div class="form-group">
+               
+                    <input type="text" name="sale" placeholder="Descuento"> 
+             </div>
+                <h3 class="cat">*Categoria</h3>
+                <div class="eleccion">
+                <select name="categoria">
+
+                    <option>Comida</option>
+                    
+                    <option>Bebida</option>
+                    
+                    <option>Otros</option>
+                    
+                    </select> 
+                </div>
+                
+                <h3 class="cat">Cargar imagen</h3>
+                <div class="prueba">
+                    <i class="fas fa-camera"></i><input type="file" name="ImagenDeProducto" acept=".jpg, .png"></input></div>
+                
+        
+                    <input type="submit" value="Enviar">
+         
+
+            <div><input type="reset" value="Borrar"></div>
+            </form>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+
+
+    
+</body>
+</html>
+
+  
+    
