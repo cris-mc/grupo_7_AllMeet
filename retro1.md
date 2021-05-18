@@ -15,7 +15,3 @@ Cambio de fechas y horarios.
 
 #### Dejar de hacer: 
 Daylis/Weeklys antes o después de la clase en vivo. Tiempo muerto en git y jira, a veces no hay interacción.
-
-
-
- 
