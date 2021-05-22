@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Fernet Branca",
+        "description": "El fernet es una bebida alcohólica amarga del tipo amaro elaborada a partir de varios tipos de hierbas (mirra, ruibarbo, manzanilla, cardamomo y azafrán, entre otras), que son maceradas en alcohol de uva, filtradas y añejadas en toneles de roble durante un período que puede ser de seis a doce meses. Posee un color oscuro, un aroma intenso y una graduación alcohólica de 45° grados. Originalmente era sólo una bebida digestiva pero actualmente suele servirse como aperitivo antes o como digestivo después de una comida, también puede servirse con el café y el café expreso. Si bien puede consumirse puro, dado su sabor y contenido alcohólico normalmente se bebe combinado con soda, agua mineral o mezclado en cócteles, en especial con bebida cola.",
+        "price": "$732.95",
+        "discount": 20,
+        "category": "Bebida",
+        "image": "fernet-750.jpg",
+        "origin": "Argentina",
+        "volume": 750
+    },
+    {
+        "id": 2,
+        "name": "Coca Cola",
+        "description": "Coca-Cola es la bebida más vendida en la historia desde 1886. Es la marca más famosa del mundo. Bien fría, hace disfrutar cada instante de la vida ya que añade magia a casa momento.",
+        "price": "$4195.46",
+        "discount": 10,
+        "category": "Bebida",
+        "image": "cocacola.jpg",
+        "origin": "Argentina",
+        "volume": 2250
+    },
+    {
+        "id": 3,
+        "name": "Vodka Absolut 1L",
+        "description": "Absolut Vodka se hace exclusivamente a partir de ingredientes naturales y, a diferencia de lo que ocurre con muchos otros vodkas, no contiene azúcar añadido. Absolut es, de hecho, tan puro como puede ser el vodka. Aún así, la pureza tiene un sabor: rico, con cuerpo y complejo, pero suave y maduro con el carácter distintivo del grano de trigo, seguido de un toque a frutas secas.",
+        "price": "$1143.82",
+        "discount": 35,
+        "category": "Bebida",
+        "image": "absolut.jpg",
+        "origin": "Argentina",
+        "volume": 1000
+    },
+    {
+        "id": 4,
+        "name": "Aperol Sprit 1L",
+        "description": "Aperol esta compuesto de naranja amarga, ruibarbo, gentiana, cinchona. Aunque sabe y huele muy similar al Campari, Aperol tiene una graduación alcohólica de 11%, menos de la mitad que Campari. Sin embargo, es más suave y menos amargo, mientras que el Campari es más oscuro de color.",
+        "price": "$503.00",
+        "discount": 0,
+        "category": "Bebida",
+        "image": "aperol.jpg",
+        "origin": "Argentina",
+        "volume": 1000
+    },
+    {
+        "id": 5,
+        "name": "Speed Unlimited",
+        "description": "Speed Unlimited Energy Drink es una bebida sin alcohol, que contiene Cafeína, Taurina y Vitaminas. Speed Unlimited Energy Drink ayuda a estimular el metabolismo de la energía, facilita la eliminación de toxinas, contribuye a mejorar el estado de animo, la concentración y la recuperación.",
+        "price": "$3242.99",
+        "discount": 15,
+        "category": "Bebida",
+        "image": "speed.png",
+        "origin": "Argentina",
+        "volume": 250
+    },
+    {
+        "id": 6,
+        "name": "Red Bull",
+        "description": "Red Bull Energy Drink es reconocida mundialmente por los mejores atletas, estudiantes y profesiones de alta demanda, incluso durante largas jornadas de manejo.",
+        "price": "$1624.63",
+        "discount": 50,
+        "category": "Bebida",
+        "image": "redbull.png",
+        "origin": "Argentina",
+        "volume": 250
+    },
+    {
+        "id": 7,
+        "name": "Citric Naranja",
+        "description": "Jugo De Naranja Valencia Tardia Citric 1,5lt.",
+        "price": "$1518.08",
+        "discount": 15,
+        "category": "Bebida",
+        "image": "citric.png",
+        "origin": "Argentina",
+        "volume": 750
+    },
+    {
+        "id": 8,
+        "name": "Sprite Zero",
+        "description": "Sprite Zero es una versión sin calorías y baja en sodio que ofrece hidratación con el mismo sabor natural lima-limón más famoso del mundo.",
+        "price": "$138.51",
+        "discount": 10,
+        "category": "Bebida",
+        "image": "spritezero.png",
+        "origin": "Argentina",
+        "volume": 1500
+    },
+    {
+        "id": 9,
+        "name": "Sprite Lima Limón",
+        "description": "Bebida sin alcohol artificial dietética gasificada con sabor a lima-limón.",
+        "price": "$1000.07",
+        "discount": 25,
+        "category": "Bebida",
+        "image": "spritelimalimon.png",
+        "origin": "Argentina",
+        "volume": 2000
+    },
+    {
+        "id": 10,
+        "name": "Santa Julia Magna",
+        "description": "La linea Magna esta elaborada a partir de uvas seleccionadas en viñedos de altura, de muy bajo rendimientos y crianza de más de 10 meses en barricas de roble fránces.",
+        "price": "$2567.20",
+        "discount": 35,
+        "category": "Bebida",
+        "image": "magna.png",
+        "origin": "Argentina",
+        "volume": 750
+    }
+]

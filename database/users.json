@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Jose Peralta",
+        "email": "mvitler0@diigo.com",
+        "password": "4324532"
+    },
+    {
+        "id": 2,
+        "name": "David Gonzalez",
+        "email": "gstonner1@virginia.edu",
+        "password": "dgonzalez4*"
+    },
+    {
+        "id": 3,
+        "name": "Micaela Perez",
+        "email": "bread2@zimbio.com",
+        "password": "perez.mica23"
+    },
+    {
+        "id": 4,
+        "name": "Josefina Lana",
+        "email": "dkinforth3@nature.com",
+        "password": "jose1990*"
+    },
+    {
+        "id": 5,
+        "name": "Julian Alonso",
+        "email": "dtidridge4@youku.com",
+        "password": "ja4967892$"
+    },
+    {
+        "id": 6,
+        "name": "Pedro Martin",
+        "email": "dpetel5@xinhuanet.com",
+        "password": "pedroraul55"
+    },
+    {
+        "id": 7,
+        "name": "Gaspar Jose",
+        "email": "tsanthouse6@alexa.com",
+        "password": "gasparmjose1193"
+    },
+    {
+        "id": 8,
+        "name": "Joaquin Vega",
+        "email": "hredshaw7@wikispaces.com",
+        "password": "joaco45vega1"
+    },
+    {
+        "id": 9,
+        "name": "Rodrigo Mansilla",
+        "email": "mohrtmann8@npr.org",
+        "password": "rodri!14"
+    },
+    {
+        "id": 10,
+        "name": "Martin Rodriguez",
+        "email": "mkeme9@princeton.edu",
+        "password": "rodriguez9martin4"
+    }
+]
