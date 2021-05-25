@@ -9,24 +9,24 @@
     <div id="contenedor">
         <div id="registro"><h1>Carga de productos</h1></div>
         <div id="form">
-            <form action="register.html" method="POST">
+            <form action="/products/charge" method="POST">
+                <%/*
                 <div class="form-group">
-                    
-                    <input type="text" name="Producto"placeholder="Nombre del Producto" required>
+                    <input type="text" name="nombre" placeholder="Nombre del Producto" value="juan" required>
                 </div>
                 <div class="form-group">
                 
                     <!--<input type="text" name="Descripcion" value="Descripcion breve del producto" required>-->
-                    <textarea name="textarea" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
+                    <textarea name="descripccion" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
 
                 </div>
                 <div class="form-group">
                 <div class="edicion">
-                    <input type="number" name="Price" placeholder="Precio" >
+                    <input type="text" name="precio" placeholder="Precio" >
                 </div>
                 <div class="form-group">
                
-                    <input type="text" name="sale" placeholder="Descuento"> 
+                    <input type="text" name="descuento" placeholder="Descuento"> 
              </div>
                 <h3 class="cat">*Categoria</h3>
                 <div class="eleccion">
@@ -43,13 +43,19 @@
                 
                 <h3 class="cat">Cargar imagen</h3>
                 <div class="prueba">
-                    <i class="fas fa-camera"></i><input type="file" name="ImagenDeProducto" acept=".jpg, .png"></input></div>
+                    <i class="fas fa-camera"></i><input type="file" name="imagen" acept=".jpg, .png"></input></div>
                 
         
                     <input type="submit" value="Enviar">
-         
+                
 
             <div><input type="reset" value="Borrar"></div>
+            </form>
+            */%>
+            <form action="/products/charge" method="POST">
+                <label for="">Nombre</label>
+                <input type="text" name="nombre">
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </div>

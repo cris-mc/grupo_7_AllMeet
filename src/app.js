@@ -26,6 +26,8 @@ const rutasUsuario= require('./routes/users')
 app.use('/', rutasPrincipal);
 app.use('/products', rutasProductos);
 app.use('/users', rutasUsuario);
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 //Levantando un servidor en el puerto 3000
 app.listen(process.env.PORT || 3000, function(){
