@@ -109,5 +109,12 @@
         "imagen": "magna.png",
         "origen": "Argentina",
         "volumen": 750
+    },
+    {
+        "nombre": "juan",
+        "precio": "",
+        "descuento": "",
+        "categoria": "Comida",
+        "imagen": ""
     }
 ]

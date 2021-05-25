@@ -8,55 +8,41 @@
         
     <div id="contenedor">
         <div id="registro"><h1>Carga de productos</h1></div>
-        <div id="form">
-            <form action="/products/charge" method="POST">
-                <%/*
-                <div class="form-group">
-                    <input type="text" name="nombre" placeholder="Nombre del Producto" value="juan" required>
-                </div>
-                <div class="form-group">
-                
-                    <!--<input type="text" name="Descripcion" value="Descripcion breve del producto" required>-->
-                    <textarea name="descripccion" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
-
-                </div>
-                <div class="form-group">
-                <div class="edicion">
-                    <input type="text" name="precio" placeholder="Precio" >
-                </div>
-                <div class="form-group">
-               
-                    <input type="text" name="descuento" placeholder="Descuento"> 
-             </div>
-                <h3 class="cat">*Categoria</h3>
-                <div class="eleccion">
-                <select name="categoria">
-
-                    <option>Comida</option>
-                    
-                    <option>Bebida</option>
-                    
-                    <option>Otros</option>
-                    
-                    </select> 
-                </div>
-                
-                <h3 class="cat">Cargar imagen</h3>
-                <div class="prueba">
-                    <i class="fas fa-camera"></i><input type="file" name="imagen" acept=".jpg, .png"></input></div>
-                
-        
+            <div id="form">
+                <form action="/products/charge" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Nombre del Producto" value="juan" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Descripcion" value="Descripcion breve del producto" required>
+                        <textarea name="descripccion" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="edicion">
+                            <input type="text" name="precio" placeholder="Precio" >
+                        </div>
+                        <div class="form-group">
+                        </div>
+                        <input type="text" name="descuento" placeholder="Descuento"> 
+                    </div>
+                    <h3 class="cat">*Categoria</h3>
+                    <div class="eleccion">
+                        <select name="categoria">
+                            <option>Comida</option>
+                            <option>Bebida</option>
+                            <option>Otros</option>
+                        </select> 
+                    </div>
+                    <h3 class="cat">Cargar imagen</h3>
+                    <i class="fas fa-camera"></i>
+                    <input type="file" name="imagen" acept=".jpg, .png">
+                    <!-- <button type="submit" value="guardar">ee</button> -->
                     <input type="submit" value="Enviar">
-                
-
-            <div><input type="reset" value="Borrar"></div>
-            </form>
-            */%>
-            <form action="/products/charge" method="POST">
-                <label for="">Nombre</label>
-                <input type="text" name="nombre">
-                <button type="submit">Enviar</button>
-            </form>
+                    <div>
+                        <input type="reset" value="Borrar">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <%- include('../partials/footer') %>

@@ -1,6 +1,7 @@
 //Ejecutando la funcionalidad de path que resuelve rutas
 const path = require('path');
-const fs = require('fs')
+const fs = require('fs');
+const {readJson, writeJson} = require('./helpers');
 
 //Definiendo la logica del controlador: Renderizando vistas EJS
 //El controlador está compuesto por un objeto literal que a su vez compuesto por métodos (funciones o callbacks)
@@ -20,8 +21,13 @@ const productsController = {
     productEdit : (req, res) => {
         res.render('products/productEdit');
     },
-    createProduct: (req, res) => {
-        /*
+    // store : (req , res) => {
+        // res.send('logica de crear');
+        // res.send(req.body);
+    // }
+    store: (req, res) => {
+        let archivoProductos = readJson('products.json');
+
         let producto = {
             nombre: req.body.nombre,
             descripcion: req.body.descripcion,
@@ -31,21 +37,12 @@ const productsController = {
             imagen: req.body.imagen,
             origen: req.body.origin,
             volumen: req.body.volumen,
-            marca: req.body.marca,
+            marca: req.body.marca
         };
-        let archivoProductos = fs.readFileSync('../../database/products.json', 'utf-8');
-        let productos;
-        if(archivoProductos == ''){
-            productos = [];
-        }else{
-            productos = JSON.parse(productos)
-        };
-        productos.push(producto);
-        productosJSON = JSON.stringify(productos)
+        archivoProductos.push(producto);
+        writeJson('products.json', archivoProductos);
 
-        res.redirect('/')
-        */
-        res.send(req.body);
+        return res.redirect('/products/charge');
     }
 };
 

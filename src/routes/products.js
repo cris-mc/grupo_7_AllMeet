@@ -15,7 +15,7 @@ router.get('/cart', productsController.productCart);
 router.get('/detail', productsController.productDetail);
 
 router.get('/charge', productsController.productCharge);
-router.post('/charge', productsController.createProduct);
+router.post('/charge', productsController.store);
 
 router.get('/edit', productsController.productEdit);
 
