@@ -58,5 +58,13 @@
         "name": "Martin Rodriguez",
         "email": "mkeme9@princeton.edu",
         "password": "rodriguez9martin4"
+    },
+    {
+        "nombre": "gfgfg",
+        "email": "gfgf@fgfd",
+        "password": [
+            "123",
+            "123"
+        ]
     }
 ]

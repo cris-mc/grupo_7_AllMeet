@@ -116,5 +116,20 @@
         "descuento": "",
         "categoria": "Comida",
         "imagen": ""
+    },
+    {
+        "nombre": "coca cola ",
+        "precio": "50",
+        "descuento": "10",
+        "categoria": "Bebida",
+        "imagen": ""
+    },
+    {
+        "nombre": "sprite",
+        "descripcion": "fdsfdsds",
+        "precio": "60",
+        "descuento": "5",
+        "categoria": "Bebida",
+        "imagen": ""
     }
 ]

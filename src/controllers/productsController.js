@@ -42,7 +42,7 @@ const productsController = {
         archivoProductos.push(producto);
         writeJson('products.json', archivoProductos);
 
-        return res.redirect('/products/charge');
+        return res.redirect('/');
     }
 };
 
