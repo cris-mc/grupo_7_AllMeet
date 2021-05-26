@@ -9,7 +9,7 @@
     <div id="contenedor">
         <div id="registro"><h1>Carga de productos</h1></div>
             <div id="form">
-                <form action="/products/charge" method="POST">
+                <form action="/products/charge" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="text" name="nombre" placeholder="Nombre del Producto" required>
                     </div>
@@ -46,9 +46,6 @@
         </div>
     </div>
     <%- include('../partials/footer') %>
-
-
-    
 </body>
 </html>
 

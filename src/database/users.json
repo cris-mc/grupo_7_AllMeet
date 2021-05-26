@@ -3,7 +3,11 @@
         "id": 1,
         "name": "Jose Peralta",
         "email": "mvitler0@diigo.com",
-        "password": "4324532"
+        "password": "4324532",
+        "imagen": "dsdasfsfdsfds.png",
+        "direccion": "p.sherman 42",
+        "telefono": "4962753",
+        "nacimiento": "12/02/1990"
     },
     {
         "id": 2,

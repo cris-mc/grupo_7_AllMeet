@@ -21,10 +21,6 @@ const productsController = {
     productEdit : (req, res) => {
         res.render('products/productEdit');
     },
-    // store : (req , res) => {
-        // res.send('logica de crear');
-        // res.send(req.body);
-    // }
     store: (req, res) => {
         let archivoProductos = readJson('products.json');
 

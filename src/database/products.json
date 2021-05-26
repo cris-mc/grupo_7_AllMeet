@@ -6,10 +6,7 @@
         "precio": "$732.95",
         "descuento": 20,
         "categoria": "Bebida",
-        "imagen": "fernet-750.jpg",
-        "origen": "Argentina",
-        "volumen": 750,
-        "marca": "Fernet"
+        "imagen": "fernet-750.jpg"
     },
     {
         "id": 2,
@@ -18,9 +15,7 @@
         "precio": "$4195.46",
         "descuento": 10,
         "categoria": "Bebida",
-        "imagen": "cocacola.jpg",
-        "origen": "Argentina",
-        "volumen": 2250
+        "imagen": "cocacola.jpg"
     },
     {
         "id": 3,
@@ -29,9 +24,7 @@
         "precio": "$1143.82",
         "descuento": 35,
         "categoria": "Bebida",
-        "imagen": "absolut.jpg",
-        "origen": "Argentina",
-        "volumen": 1000
+        "imagen": "absolut.jpg"
     },
     {
         "id": 4,
@@ -40,9 +33,7 @@
         "precio": "$503.00",
         "descuento": 0,
         "categoria": "Bebida",
-        "imagen": "aperol.jpg",
-        "origen": "Argentina",
-        "volumen": 1000
+        "imagen": "aperol.jpg"
     },
     {
         "id": 5,
@@ -51,9 +42,7 @@
         "precio": "$3242.99",
         "descuento": 15,
         "categoria": "Bebida",
-        "imagen": "speed.png",
-        "origen": "Argentina",
-        "volumen": 250
+        "imagen": "speed.png"
     },
     {
         "id": 6,
@@ -62,9 +51,7 @@
         "precio": "$1624.63",
         "descuento": 50,
         "categoria": "Bebida",
-        "imagen": "redbull.png",
-        "origen": "Argentina",
-        "volumen": 250
+        "imagen": "redbull.png"
     },
     {
         "id": 7,
@@ -73,9 +60,7 @@
         "precio": "$1518.08",
         "descuento": 15,
         "categoria": "Bebida",
-        "imagen": "citric.png",
-        "origen": "Argentina",
-        "volumen": 750
+        "imagen": "citric.png"
     },
     {
         "id": 8,
@@ -84,9 +69,7 @@
         "precio": "$138.51",
         "descuento": 10,
         "categoria": "Bebida",
-        "imagen": "spritezero.png",
-        "origen": "Argentina",
-        "volumen": 1500
+        "imagen": "spritezero.png"
     },
     {
         "id": 9,
@@ -95,9 +78,7 @@
         "precio": "$1000.07",
         "descuento": 25,
         "categoria": "Bebida",
-        "imagen": "spritelimalimon.png",
-        "origen": "Argentina",
-        "volumen": 2000
+        "imagen": "spritelimalimon.png"
     },
     {
         "id": 10,
@@ -106,9 +87,7 @@
         "precio": "$2567.20",
         "descuento": 35,
         "categoria": "Bebida",
-        "imagen": "magna.png",
-        "origen": "Argentina",
-        "volumen": 750
+        "imagen": "magna.png"
     },
     {
         "nombre": "juan",
@@ -131,5 +110,12 @@
         "descuento": "5",
         "categoria": "Bebida",
         "imagen": ""
+    },
+    {
+        "nombre": "Pepsi",
+        "descripcion": "dsfds fdfd fdsfd",
+        "precio": "123",
+        "descuento": "3",
+        "categoria": "Bebida"
     }
 ]
