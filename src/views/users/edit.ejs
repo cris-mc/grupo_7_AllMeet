@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+    <body>
+    <%- include('../partials/header') %>
+    <main>
+    <div id="contenedor">
+        <div id="registro"><h1>Editar Perfil</h1></div>
+        <div id="form">
+            <form action="/users/edit?_method=PATCH" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <img src="/images/usuarios/default.jpg" alt="defaul-profile-image">
+                </div>
+                <div class="form-group">
+                    <h4 class="cat">Modificar imagen</h4>
+                    <i class="fas fa-camera"></i>
+                    <input type="file" name="imagen" acept=".jpg, .png">
+                </div>
+                <div class="form-group">
+                   <label for=""></label> 
+                   <input type="text" name="nombre" placeholder="Modificar nombre">
+                </div>
+                <div class="form-group">
+                    <label for=""></label> 
+                    <input type="email" name="email" placeholder="Modificar email">
+                </div>
+                <div class="form-group"> 
+                    <label for=""></label> 
+                    <input type="password" name="password" placeholder="Modificar contraseña">
+                </div>
+               <div class="form-group">
+                    <label for=""></label> 
+                    <input type="password" name="password" placeholder="Confirmar contraseña">
+                </div>
+                <div class="form-group">
+                    <label for=""></label> 
+                    <input type="text" name="direccion" placeholder="Agregar direccion de envio" required>
+                </div>
+                <div class="form-group">
+                    <label for=""></label> 
+                    <input type="text" name="telefono" placeholder="Telefono de contacto" required>
+                </div>
+                <div class="form-group">
+                    <label for=""></label> 
+                    <input class="edad" type="date" name="edad" placeholder="Fecha de nacimiento" required>
+                </div>
+                <div class="form-group"> 
+                    <input type="submit" value="Modificar Perfil">
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>    
+</body>
+</html>

@@ -88,34 +88,5 @@
         "descuento": 35,
         "categoria": "Bebida",
         "imagen": "magna.png"
-    },
-    {
-        "nombre": "juan",
-        "precio": "",
-        "descuento": "",
-        "categoria": "Comida",
-        "imagen": ""
-    },
-    {
-        "nombre": "coca cola ",
-        "precio": "50",
-        "descuento": "10",
-        "categoria": "Bebida",
-        "imagen": ""
-    },
-    {
-        "nombre": "sprite",
-        "descripcion": "fdsfdsds",
-        "precio": "60",
-        "descuento": "5",
-        "categoria": "Bebida",
-        "imagen": ""
-    },
-    {
-        "nombre": "Pepsi",
-        "descripcion": "dsfds fdfd fdsfd",
-        "precio": "123",
-        "descuento": "3",
-        "categoria": "Bebida"
     }
 ]
