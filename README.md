@@ -1,4 +1,4 @@
-<div align='center'><img src=designs/1.2-Logotipo_Transparente.png></div>
+<div align='center'><img src=public/designs/1.2-Logotipo_Transparente.png></div>
   
 # **AllMeet**
 #### **Oferta de productos y servicios**
