@@ -9,18 +9,19 @@ const productsController = {
     productList : (req, res) => {
         res.render('products/productlist');
     },
+
     productCart : (req, res) => {
         res.render('products/productCart');
     },
+
     productDetail : (req, res) => {
         res.render('products/productDetail');
     },
+
     productCharge : (req, res) => {
         res.render('products/productCharge');
     },
-    productEdit : (req, res) => {
-        res.render('products/productEdit');
-    },
+
     store: (req, res) => {
         let archivoProductos = readJson('products.json');
 
@@ -39,6 +40,14 @@ const productsController = {
         writeJson('products.json', archivoProductos);
 
         return res.redirect('/');
+    },
+
+    productEdit : (req, res) => {
+        //let idProduct = req.params.id
+        // //De todos los productos, vamos a editar el sumistrado como parametro de la URL:
+        // //¿Como traigo a la vista los productos del JSON 
+        //let productToEdit = archivoProductos[idProduct];
+        res.render('products/productEdit');
     }
 };
 

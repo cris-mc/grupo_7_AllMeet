@@ -34,7 +34,8 @@ router.get('/detail', productsController.productDetail);
 router.get('/charge', productsController.productCharge);
 router.post('/charge', upload.single('imagen'), productsController.store);
 
-router.get('/edit', productsController.productEdit);
+router.get('/edit/:id', productsController.productEdit);
+//router.put('/edit', (req, res) => {res.send("Fui por PUT")} );
 
 //Exportando al router para que pueda ser usado por el entry point
 module.exports = router;
