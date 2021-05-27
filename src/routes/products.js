@@ -29,7 +29,7 @@ const upload = multer({ storage });
 //En el mismo defino la ruta relativa, el controlador y su metodo asociado
 router.get('/list', productsController.productList);
 router.get('/cart', productsController.productCart);
-router.get('/detail', productsController.productDetail);
+router.get('/detail/:id', productsController.productDetail);
 
 router.get('/charge', productsController.productCharge);
 router.post('/charge', upload.single('imagen'), productsController.store);
