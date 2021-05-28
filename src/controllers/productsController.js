@@ -1,6 +1,11 @@
-//Ejecutando la funcionalidad de path que resuelve rutas
+//Requiriendo la funcionalidad path que resuelve rutas
 const path = require('path');
+
+//Requiriendo la funcionalidad fs
+//fs convierte un objeto literal (el cual puede ser obtenido de un formulario) en un archivo JSON
 const fs = require('fs');
+
+//Requerir la funcionalidad para leer y leer/actualizar el archivo .json 
 const {readJson, writeJson} = require('./helpers');
 
 //Definiendo la logica del controlador: Renderizando vistas EJS
@@ -43,12 +48,26 @@ const productsController = {
     },
 
     productEdit : (req, res) => {
-        //let idProduct = req.params.id
-        // //De todos los productos, vamos a editar el sumistrado como parametro de la URL:
-        // //¿Como traigo a la vista los productos del JSON 
-        //let productToEdit = archivoProductos[idProduct];
-        res.render('products/productEdit');
-    }
+        //Nota: De todos los productos, vamos a editar el sumistrado como parametro de la URL
+        let idProduct = req.params.id
+
+        //Nota: El archivo products.json ya fue leido gracias al helper 
+        let archivoProductos = readJson('products.json');
+        
+        //Crear una variable que filtre y luego envío está variable a la vista
+        let idProductToEdit = archivoProductos.filter ( (product) => { 
+            return product.id == idProduct
+        });
+
+        res.render('products/productEdit',
+        {idProductToEdit: idProductToEdit });
+    
+    },
+   
+        productUpdate : (req, res) => {
+            return res.redirect('/');
+        }
+    
 };
 
 //Exportando al controlador para que pueda ser usado por la ruta.

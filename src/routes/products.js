@@ -9,10 +9,10 @@ const router = express.Router();
 //El "../" sirve para ir una carpeta hacia atras
 const productsController = require('../controllers/productsController');
 
-//Requerir multer
+//Requiriendo Multer para enviar archivos desde un formulario
 const multer = require('multer')
 
-//Configurar Multer
+//Configurando Multer
 const storage = multer.diskStorage({
     destination : (req, file, cb) => {
         cb(null, path.join(__dirname, '../../public/images/productos'));
@@ -34,8 +34,8 @@ router.get('/detail', productsController.productDetail);
 router.get('/charge', productsController.productCharge);
 router.post('/charge', upload.single('imagen'), productsController.store);
 
-router.get('/edit/:id', productsController.productEdit);
-//router.put('/edit', (req, res) => {res.send("Fui por PUT")} );
+router.get('/:id/edit', productsController.productEdit);
+router.put('/edit', productsController.productUpdate);
 
 //Exportando al router para que pueda ser usado por el entry point
 module.exports = router;
