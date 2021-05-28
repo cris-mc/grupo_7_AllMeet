@@ -171,6 +171,7 @@ section{
 
 .caja-flecha{
     display: flex;
+    text-decoration: none;
 }
 
 .compralo{
@@ -222,6 +223,8 @@ section{
     background-color: #fff;
     flex: 0 0 auto;
     margin-right: 15px;
+    text-decoration: none;
+    color: #717171;
 }
 
 .foto-oferta{

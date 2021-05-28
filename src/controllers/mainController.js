@@ -1,6 +1,7 @@
 const mainController = {
     inicio : (req, res) => {
-        res.render('main/index');
+        let idProducto = 1;
+        res.render('main/index', { idProducto: idProducto});
     }
 };
 

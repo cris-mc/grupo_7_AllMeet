@@ -20,7 +20,8 @@ const productsController = {
     },
 
     productDetail : (req, res) => {
-        res.render('products/productDetail');
+        let idProducto = req.params.id;
+        res.render('products/productDetail', { idProducto: idProducto });
     },
 
     productCharge : (req, res) => {
