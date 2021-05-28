@@ -31,7 +31,7 @@
         "nombre": "Aperol Sprit 1L",
         "descripcion": "Aperol esta compuesto de naranja amarga, ruibarbo, gentiana, cinchona. Aunque sabe y huele muy similar al Campari, Aperol tiene una graduación alcohólica de 11%, menos de la mitad que Campari. Sin embargo, es más suave y menos amargo, mientras que el Campari es más oscuro de color.",
         "precio": "$503.00",
-        "descuento": 0,
+        "descuento": 20,
         "categoria": "Bebida",
         "imagen": "aperol.jpg"
     },

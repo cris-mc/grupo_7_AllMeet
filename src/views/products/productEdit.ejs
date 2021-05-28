@@ -7,48 +7,57 @@
     <main>
         
     <div id="contenedor">
+        
         <div id="registro"><h1>Edicion de productos</h1></div>
+
         <div id="form">
             
-            <!-- Formulario-->
+            <!-- Formulario -->
             <form method="POST" action="/products/edit?_method=PUT" enctype="multipart/form-data">
                 
+                <!-- input type="Tipo de valor: Texto, number, file"   name="Descripcion oculta"   value="Descripcion visible"   value="Valor forzado" -->
+                
+                <!-- OK -->
                 <div class="form-group">
-                    <input type="text" name="Producto" placeholder="Nombre del Producto" value="<%=idProductToEdit[0].nombre%>" required>
+                <h4>Producto</h4>
+                <div>
+                <input type="text" name="Producto" placeholder="Nombre del Producto" value="<%=idProductToEdit[0].nombre%>" required>
+                </div>
+                
+                <div class="form-group">
+                <h4>Descripcion</h4>
+                <div>
+                <textarea type="text" name="textarea" rows="10" cols="50" placeholder="Descripcion del producto"><%=idProductToEdit[0].descripcion%> </textarea>
+                </div>
+                
+                <div class="form-group">
+                
+                <!-- Si le pongo input type="number" no me toma el value -->
+                <h4 class="form-group">Precio</h4>
+                <div>
+                <input type="text" name="Price" placeholder="Precio" value="<%=idProductToEdit[0].precio%>" >
+                </div>
+                
+                <!-- Si le pongo input type="number" no me toma el value -->
+                <h4 class="form-group">Descuento</h4>
+                <div>
+                <input type="text" name="sale" placeholder="Descuento" value="<%=idProductToEdit[0].descuento%>" > 
+                </div>
+                
+                <h4 class="form-group">Categoria</h4>
+                <div>
+                <input type="text" name="categoria" placeholder="categoria" value="<%=idProductToEdit[0].categoria%>" > 
                 </div>
 
-                <div class="form-group">
-                <!--<input type="text" name="Descripcion" value="Descripcion breve del producto" required>-->
-                <textarea name="textarea" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
+                <h4 class="form-group">Borrar Imagenes</h4>
+                <div>
+                <input type="reset" value="Borrar">
                 </div>
                 
-                <div class="form-group">
-                
-                <div class="edicion">
-                <input type="number" name="Price" placeholder="Precio" >
-                </div>
-                
-                <div class="form-group">
-                <input type="text" name="sale" placeholder="Descuento"> 
-                </div>
-                
-                <h3 class="cat">*Categoria</h3>
-                <div class="eleccion">
-                <select name="categoria">
-                    <option>Comida</option>                  
-                    <option>Bebida</option>
-                    <option>Otros</option>
-                </select> 
-                </div>
-
-                <h3 class="cat">Borrar Imagenes</h3>
-                <div class =" fotos"></div>
-
-                <div><input type="reset" value="Borrar"></div>
-                
-                <h3 class="cat">Añadir imagen</h3>
-                <div class="prueba">
-                <i class="fas fa-camera"></i><input type="file" name="ImagenDeProducto" acept=".jpg, .png"></input>
+                <h4 class="form-group">Añadir imagen</h4>
+                <div>
+                <i class="fas fa-camera"></i>
+                <input type="file" name="ImagenDeProducto" acept=".jpg, .png"></input>
                 </div>
                 
                 <input type="submit" value="Subir">
