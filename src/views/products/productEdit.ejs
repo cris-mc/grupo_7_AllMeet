@@ -9,56 +9,50 @@
     <div id="contenedor">
         <div id="registro"><h1>Edicion de productos</h1></div>
         <div id="form">
-
+            
+            <!-- Formulario-->
             <form method="POST" action="/products/edit?_method=PUT" enctype="multipart/form-data">
+                
                 <div class="form-group">
                     <input type="text" name="Producto" placeholder="Nombre del Producto" value="<%=idProductToEdit[0].nombre%>" required>
                 </div>
 
                 <div class="form-group">
-                    <!--<input type="text" name="Descripcion" value="Descripcion breve del producto" required>-->
-                    <textarea name="textarea" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
-
+                <!--<input type="text" name="Descripcion" value="Descripcion breve del producto" required>-->
+                <textarea name="textarea" rows="10" cols="50" placeholder="Descripcion del producto"></textarea>
                 </div>
+                
                 <div class="form-group">
+                
                 <div class="edicion">
-                    <input type="number" name="Price" placeholder="Precio" >
+                <input type="number" name="Price" placeholder="Precio" >
                 </div>
+                
                 <div class="form-group">
-               
-                    <input type="text" name="sale" placeholder="Descuento"> 
-             </div>
+                <input type="text" name="sale" placeholder="Descuento"> 
+                </div>
+                
                 <h3 class="cat">*Categoria</h3>
                 <div class="eleccion">
                 <select name="categoria">
-
-                    <option>Comida</option>
-                    
+                    <option>Comida</option>                  
                     <option>Bebida</option>
-                    
                     <option>Otros</option>
-                    
-                    </select> 
+                </select> 
                 </div>
 
                 <h3 class="cat">Borrar Imagenes</h3>
+                <div class =" fotos"></div>
 
-                <div class =" fotos">
-                    
-                </div>
                 <div><input type="reset" value="Borrar"></div>
-
-              
                 
                 <h3 class="cat">Añadir imagen</h3>
                 <div class="prueba">
-                    <i class="fas fa-camera"></i><input type="file" name="ImagenDeProducto" acept=".jpg, .png"></input></div>
+                <i class="fas fa-camera"></i><input type="file" name="ImagenDeProducto" acept=".jpg, .png"></input>
+                </div>
                 
-        
-                    <input type="submit" value="Subir">
-         
+                <input type="submit" value="Subir">
 
-            
             </form>
         </div>
     </div>
