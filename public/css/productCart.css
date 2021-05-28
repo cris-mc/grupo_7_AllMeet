@@ -43,55 +43,54 @@ table{
         border:black 2px solid;}
 
     .seguirComprando{
-    display: flex;
-    justify-content: center;}
+        display: flex;
+        justify-content: center;}
 
     .CPseleccionables{
         border:#717171 2px solid;
         background-color:white ;
         color: #717171;
-        border-radius: 30px;
+        border-radius: 30px;}
+    
+    #tachoDelete{
+        width: 30px;
+        padding-left: 10px;
     }
+
 /* ---------------------------------- */
 
 
 /*------- MEDIA QUERYS -------*/
+/*------- Vista mobile -------*/
 @media (max-width: 480px) {
+    
     table {
     display: block; 
     overflow-x: auto;
     font-size: 11px;
     padding: 10px;}
 
-    .Fila1{
-        font-size: 12px;
-    }
+    .Fila1{font-size: 12px;}
 
-    .columna2{
-        width: 35px;
-    }
+    .columna2{width: 35px;}
 
     .PrecioUnitario {width:20%;}
 
-    .CalculaTuEnvio2 {
-        display:none;
-    }
+    .CalculaTuEnvio2 {display:none;}
 
-    .CP{
-        width:33%;
-    }
+    .CP{width:33%;}
 
-    .CPtext2 {
-        display:none;
-    }
+    .CPtext2 {display:none;}
+
+    .seguirComprando{display:none;}
 }
 
+/*------- MEDIA QUERYS -------*/
+/*------- Desktop -------*/
 @media (min-width: 480px) {
-    .CalculaTuEnvio1 {
-        display:none;
-    }
 
-    .CPtext1 {
-        display:none;
-    }
+    .CalculaTuEnvio1 {display:none;}
+
+    .CPtext1 {display:none;}
+
 }
