@@ -28,19 +28,24 @@ const usersController = {
         res.render('users/edit')
     },
     store : (req, res) => {
-        let archivosUsusarios = readJson('users.json');
-        let usuario = {
-            imagen: req.body.imagen,
-            nombre: req.body.nombre,
-            email: req.body.email,
-            password: req.body.password,
-            direccion : req.body.direccion,
-            telefono : req.body.telefono,
-            nacimiento : req.body.nacimiento
-        };
-        archivosUsusarios.push(usuario);
-        writeJson('users.json', archivosUsusarios);
-        return res.redirect('/')
+        //Falta crear el metodo que le da un id
+        if(req.file){
+            let archivosUsusarios = readJson('users.json');
+            let usuario = {
+                imagen: req.file.filename,
+                nombre: req.body.nombre,
+                email: req.body.email,
+                password: req.body.password,
+                direccion : req.body.direccion,
+                telefono : req.body.telefono,
+                nacimiento : req.body.nacimiento
+            };
+            archivosUsusarios.push(usuario);
+            writeJson('users.json', archivosUsusarios);
+            return res.redirect('/')
+        }else{
+            res.render('users/edit')
+        }
     }
 };
 

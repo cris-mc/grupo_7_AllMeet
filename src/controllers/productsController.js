@@ -35,23 +35,28 @@ const productsController = {
     },
 
     store: (req, res) => {
-        let archivoProductos = readJson('products.json');
-
-        let producto = {
-            nombre: req.body.nombre,
-            descripcion: req.body.descripcion,
-            precio: req.body.precio,
-            descuento: req.body.descuento,
-            categoria: req.body.categoria,
-            imagen: req.body.imagen,
-            origen: req.body.origin,
-            volumen: req.body.volumen,
-            marca: req.body.marca
-        };
-        archivoProductos.push(producto);
-        writeJson('products.json', archivoProductos);
-
-        return res.redirect('/');
+        //Falta crear el metodo que le da un id
+        if(req.file) {
+            let archivoProductos = readJson('products.json');
+    
+            let producto = {
+                nombre: req.body.nombre,
+                descripcion: req.body.descripcion,
+                precio: req.body.precio,
+                descuento: req.body.descuento,
+                categoria: req.body.categoria,
+                imagen: req.file.filename,
+                origen: req.body.origin,
+                volumen: req.body.volumen,
+                marca: req.body.marca,
+            };
+            archivoProductos.push(producto);
+            writeJson('products.json', archivoProductos);
+    
+            return res.redirect('/');
+        }else{
+            res.render('products/productCharge');
+        }
     },
 
     productEdit : (req, res) => {

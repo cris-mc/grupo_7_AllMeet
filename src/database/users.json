@@ -89,23 +89,5 @@
         "direccion": "p.sherman 42",
         "telefono": "4962753",
         "nacimiento": "12/02/1990"
-    },
-    {
-        "nombre": "gfgfg",
-        "email": "gfgf@fgfd",
-        "password": [
-            "123",
-            "123"
-        ]
-    },
-    {
-        "nombre": "dsad",
-        "email": "saddas@dsdsad.c",
-        "password": [
-            "dsad",
-            "dasdas"
-        ],
-        "direccion": "4324324 dsdasd asdas",
-        "telefono": "4324324324"
     }
 ]
