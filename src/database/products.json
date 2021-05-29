@@ -42,7 +42,7 @@
         "precio": "3242.99",
         "descuento": 15,
         "categoria": "Bebida",
-        "imagen": "speed.png"
+        "imagen": "speed.PNG"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "precio": "1624.63",
         "descuento": 50,
         "categoria": "Bebida",
-        "imagen": "redbull.png"
+        "imagen": "redbull.PNG"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "precio": "1518.08",
         "descuento": 15,
         "categoria": "Bebida",
-        "imagen": "citric.png"
+        "imagen": "citric.PNG"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "precio": "138.51",
         "descuento": 10,
         "categoria": "Bebida",
-        "imagen": "spritezero.png"
+        "imagen": "spritezero.PNG"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "precio": "1000.07",
         "descuento": 25,
         "categoria": "Bebida",
-        "imagen": "spritelimalimon.png"
+        "imagen": "spritelimalimon.PNG"
     },
     {
         "id": 10,
