@@ -20,8 +20,14 @@ const productsController = {
     },
 
     productDetail : (req, res) => {
-        let idProducto = req.params.id;
-        res.render('products/productDetail', { idProducto: idProducto });
+        let idProduct = req.params.id;
+        let archivoProductos = readJson('products.json');
+
+        let idProductDetail = archivoProductos.filter ( (product) => { 
+            return product.id == idProduct
+        });
+        
+        res.render('products/productDetail', { idProductDetail: idProductDetail });
     },
 
     productCharge : (req, res) => {

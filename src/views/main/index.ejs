@@ -2,165 +2,24 @@
 <html lang="en">
     <%- include('../partials/head') %>
 <body>
+    <!-- header -->
     <%- include('../partials/header') %>
-    <div class="slider">
-        <div class="texto-slider"> Comprando por la web</div>
-        <div class="texto-slider2"> 50% off</div>
-        <div class="caja-foto-s">
-            <img class="foto-slider" src="/images/logos/slider.jpg" alt="">
-        </div>
-    </div>
+
+    <!-- Slider -->
+    <%- include('../partials/index/slider') %>
 
     <main class="main-index">
-        <ul class="tabs">
-            <li class="categorias"><a href="#" class="links">Bebidas</a></li>
-            <li class="categorias"><a href="#" class="disabled">Asado</a></li>
-            <li class="categorias"><a href="#" class="disabled">Picadas</a></li>
-        </ul>
+        <!-- menu tabs -->
+        <%- include('../partials/index/tabs') %>
+
+        <!-- Seccion de productos -->
         <section>
-            <article class="productos">
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Fernet Branca 750cc</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/fernet-750.jpg" alt="">
-                    </div>
-                </div>
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Coca Cola 2,5 L</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/cocacola.jpg" alt="">
-                    </div>
-                </div>  
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Vodka Absolut 1L</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/absolut.jpg" alt="">
-                    </div>
-                </div> 
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Aperol Sprit 1L</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/aperol.jpg" alt="">
-                    </div>
-                </div>  
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Fernet Branca 750cc</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/fernet-750.jpg" alt="">
-                    </div>
-                </div>
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Coca Cola 2,5 L</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/cocacola.jpg" alt="">
-                    </div>
-                </div>  
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Vodka Absolut 1L</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/absolut.jpg" alt="">
-                    </div>
-                </div> 
-                <div class="slider-productos">
-                    <div class="detalle-productos">
-                        <p class="nombre-productos">Aperol Spirit 1L</p>
-                        <a href="/products/detail/<%= idProducto %>" class="caja-flecha">
-                            <p class="compralo">Compralo</p>
-                            <i class="fas flecha fa-arrow-right"></i>
-                        </a> 
-                    </div>
-                    <div class="caja-foto-productos">
-                        <img class="fotos" src="/images/productos/aperol.jpg" alt="">
-                    </div>
-                </div>             
-            </article>
+            <%- include('../partials/index/productos') %>
         </section>  
         
+        <!-- Seccion de mas buscados -->
         <section>
-            <div class="separador-index">
-                <p class="titulo">Los más buscados</p>
-                <p class="mira"> Mirá todo</p>
-            </div>
-            <div class="caja-ofertas">   
-                <a href="/products/detail/<%= idProducto %>" class="ofe-1">
-                    <div class="foto-oferta">
-                        <img class="foto-ofe" src="/images/productos/picada.jpg" alt="">
-                    </div>
-                    <div class="desc-oferta">
-                        <p class="nombre-oferta">Tabla de Picada XL</p>
-                        <p class="precio-oferta">$1200</p>
-                    </div>
-                </a>
-                <a href="/products/detail/<%= idProducto %>" class="ofe-1">
-                    <div class="foto-oferta">
-                        <img class="foto-ofe" src="/images/productos/fernet-750.jpg" alt="">
-                    </div>
-                    <div class="desc-oferta">
-                        <p class="nombre-oferta">Fernet Branca 750cc</p>
-                        <p class="precio-oferta">$550</p>
-                    </div>
-                </a>
-                <a href="/products/detail/<%= idProducto %>" class="ofe-1">
-                    <div class="foto-oferta">
-                        <img class="foto-ofe" src="/images/productos/carne.jpg" alt="">
-                    </div>
-                    <div class="desc-oferta">
-                        <p class="nombre-oferta">Costilla ternera 1Kg</p>
-                        <p class="precio-oferta">$750</p>
-                    </div>
-                </a>
-                <a href="/products/detail/<%= idProducto %>" class="ofe-1">
-                    <div class="foto-oferta">
-                        <img class="foto-ofe" src="/images/productos/absolut.jpg" alt="">
-                    </div>
-                    <div class="desc-oferta">
-                        <p class="nombre-oferta">Vodka Absolut</p>
-                        <p class="precio-oferta">$1750</p>
-                    </div>
-                </a>
-            </div>
+            <%- include('../partials/index/mas-buscados') %>
         </section>
     </main>
 

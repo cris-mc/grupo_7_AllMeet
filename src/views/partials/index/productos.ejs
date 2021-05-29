@@ -1,0 +1,16 @@
+<article class="productos">
+    <% for(i in archivoProductos) {%>
+    <div class="slider-productos">
+        <div class="detalle-productos">
+            <p class="nombre-productos"><%= archivoProductos[i].nombre %></p>
+            <a href="/products/detail/<%= archivoProductos[i].id %>" class="caja-flecha">
+                <p class="compralo">Compralo</p>
+                <i class="fas flecha fa-arrow-right"></i>
+            </a> 
+        </div>
+        <div class="caja-foto-productos">
+            <img class="fotos" src="/images/productos/<%= archivoProductos[i].imagen %>" alt="">
+        </div>
+    </div> 
+    <% } %>
+</article>
