@@ -1,6 +1,5 @@
 //Requiriendo express para obtener sus funcionalidades
 const express = require('express');
-const path = require('path');
 
 //Ejecutando la funcionalidad de rutas de express
 const router = express.Router();
@@ -10,20 +9,7 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 //Requiriendo Multer para enviar archivos desde un formulario
-const multer = require('multer')
-
-//Configurando Multer
-const storage = multer.diskStorage({
-    destination : (req, file, cb) => {
-        cb(null, path.join(__dirname, '../../public/images/productos'));
-    },
-    filename : (req, file, cb) => {
-        const newFileName = 'product' + Date.now() + path.extname(file.originalname);
-        cb(null, newFileName);
-    }
-});
-
-const upload = multer({ storage });
+const upload = require('../controllers/multer')
 
 //Rutas (sin el prefijo definido en app.js)
 //En el mismo defino la ruta relativa, el controlador y su metodo asociado

@@ -1,6 +1,11 @@
+//Requiriendo la funcionalidad fyle sinc que resuelve rutas
 const fs = require('fs');
+
+//Requiriendo la funcionalidad de read y write json
 const {readJson, writeJson} = require('./helpers');
 
+//Definiendo la logica del controlador: Renderizando vistas EJS
+//El controlador está compuesto por un objeto literal que a su vez compuesto por métodos (funciones o callbacks)
 const usersController = {
     register : (req, res) => {
         res.render('users/register');
@@ -39,4 +44,5 @@ const usersController = {
     }
 };
 
+//Exportando al router para que pueda ser usado por el entry point
 module.exports = usersController;
