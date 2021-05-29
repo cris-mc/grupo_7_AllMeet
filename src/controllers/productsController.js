@@ -27,7 +27,7 @@ const productsController = {
             return product.id == idProduct
         });
         
-        res.render('products/productDetail', { idProductDetail: idProductDetail });
+        res.render('products/productDetail', { idProductDetail: idProductDetail, archivoProductos : archivoProductos });
     },
 
     productCharge : (req, res) => {

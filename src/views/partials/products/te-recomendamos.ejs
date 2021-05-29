@@ -1,0 +1,17 @@
+<div class="separador">
+    <p class="titulo">Te recomendamos</p>
+    <p class="mira"> Mirá todo</p>
+</div>
+<div class="cajaRecomendaciones">
+    <% for (i in archivoProductos) { %>
+        <a href="/products/detail/<%= archivoProductos[i].id %> %>" class="cajaProducto">
+            <div class="fotoDetalle">
+                <img class="prod" src="/images/productos/<%= archivoProductos[i].imagen %>" alt="">
+            </div>
+            <div class="descDetalle">
+                <p class="nombre"><%= archivoProductos[i].nombre %></p>
+                <p class="precio">$ <%= archivoProductos[i].precio %></p>
+            </div>
+        </a>
+    <% } %>
+</div>

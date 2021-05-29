@@ -108,25 +108,28 @@ main section.recomendaciones div.cajaRecomendaciones{
     overflow-x: auto;
     margin: 0 10px;
 }
-main section.recomendaciones div.cajaRecomendaciones div.cajaProducto{
-    width: 47%;
-    height: 100%;
+main section.recomendaciones div.cajaRecomendaciones a.cajaProducto{
+    height: 47%;
     border-radius: 10px;
     background-color: #fff;
     flex: 0 0 auto;
     margin-right: 15px;
+    width: 40%;
 }
-main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.fotoDetalle{
+main section.recomendaciones div.cajaRecomendaciones a.cajaProducto{
+    text-decoration: none;
+}
+main section.recomendaciones div.cajaRecomendaciones a.cajaProducto div.fotoDetalle{
     position: relative;
     width: 80%;
     height: 65%;
     margin: 15%;
 }
-main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.fotoDetalle img{
+main section.recomendaciones div.cajaRecomendaciones a.cajaProducto div.fotoDetalle img{
     position: relative;
     width: 80%;   
 }
-main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDetalle{
+main section.recomendaciones div.cajaRecomendaciones a.cajaProducto div.descDetalle{
     position: relative;
     width: 80%;
     margin: 15px 0;
@@ -134,8 +137,15 @@ main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDe
     left: 10%;
     font-size: 18px;
 }   
-main section.recomendaciones div.cajaRecomendaciones div.cajaProducto div.descDetalle p.precio{
+main section.recomendaciones div.cajaRecomendaciones a.cajaProducto div.descDetalle p.nombre{
     font-weight: 700;
+    font-size: 18px;
+    color: #717171;
+}
+main section.recomendaciones div.cajaRecomendaciones a.cajaProducto div.descDetalle p.precio{
+    font-weight: 700;
+    font-size: 18px;
+    color: #717171;
 }
 article.listadoArticulo img{
     margin: auto;
