@@ -1,69 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head') %>
-
 <body>
     <%- include('../partials/header') %>
-
     <main>
-        <article>
-            <div class="caja-foto">
-                <p class="tituloDetalle"><%= idProductDetail[0].nombre %></p>
-                <img class="foto" src="/images/productos/<%= idProductDetail[0].imagen %>" alt="">
-            </div>
-            <div class="caja1">
-                <div class="pago">
-                    <p class="precio"><%= idProductDetail[0].precio %></p>
-                    <p class="descuento"><%= idProductDetail[0].descuento %></p>
-                    <p class="pago">Ver medios de pago</p>
-                </div>
-                <div class="valoracion">
-                    <i class="fas fa-star"></i>
-                    <p>4.8</p>
-                    <p class="opiniones">540 opiniones</p>
-                </div>
-            </div>
-            <div class="compra">
-                <button>Agregar a mi previa</button>
-            </div>
-            <div class="detalleProducto">
-                <p><%= idProductDetail[0].descripcion %></p>
-            </div>
-        </article>
+        <%- include('../partials/products/productDetail') %>
         <section class="recomendaciones">
-            <div class="separador">
-                <p class="titulo">Te recomendamos</p>
-                <p class="mira"> Mirá todo</p>
-            </div>
-            <div class="cajaRecomendaciones">   
-                <div class="cajaProducto">
-                    <div class="fotoDetalle">
-                        <img class="prod" src="/images/productos/cocacola.jpg" alt="">
-                    </div>
-                    <div class="descDetalle">
-                        <p class="nombre">Coca Cola 2,5 L</p>
-                        <p class="precio">$200</p>
-                    </div>    
-                </div>
-                <div class="cajaProducto">
-                    <div class="fotoDetalle">
-                        <img class="prod" src="/images/productos/picada.jpg" alt="">
-                    </div>
-                    <div class="descDetalle">
-                        <p class="nombre">Tabla de picada XL</p>
-                        <p class="precio">$1200</p>
-                    </div>    
-                </div>
-                <div class="cajaProducto">
-                    <div class="fotoDetalle">
-                        <img class="prod" src="/images/productos/carne.jpg" alt="">
-                    </div>
-                    <div class="descDetalle">
-                        <p class="nombre">Costilla ternera 1kg</p>
-                        <p class="precio">$750</p>
-                    </div>    
-                </div>
-            </div>
+            <%- include('../partials/products/te-recomendamos') %>
         </section>
     </main>
     <%- include('../partials/footer') %>
