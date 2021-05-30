@@ -12,6 +12,17 @@ let helpers = {
     },
     writeJson: function (nameJson, data) {
         fs.writeFileSync(path.resolve(__dirname, '../database/' + nameJson), JSON.stringify(data, null, 4)  );
+    },
+    newId: function (nameJson) {
+        let data = helpers.readJson(nameJson);
+        let ultimo = 0;
+        data.forEach(objeto => {
+            if (ultimo < objeto.id) {
+                ultimo = objeto.id;
+            }
+        });
+        newId = ultimo + 1;
+        return newId
     }
 }
 

@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 //Requiriendo la funcionalidad de read y write json
-const {readJson, writeJson} = require('./helpers');
+const {readJson, writeJson, newId} = require('./helpers');
 
 //Definiendo la logica del controlador: Renderizando vistas EJS
 //El controlador está compuesto por un objeto literal que a su vez compuesto por métodos (funciones o callbacks)
@@ -16,6 +16,7 @@ const usersController = {
     create : (req, res) => {
         let archivosUsusarios = readJson('users.json');
         let usuario = {
+            id : newId('users.json'),
             nombre: req.body.nombre,
             email: req.body.email,
             password: req.body.password
@@ -28,10 +29,10 @@ const usersController = {
         res.render('users/edit')
     },
     store : (req, res) => {
-        //Falta crear el metodo que le da un id
         if(req.file){
             let archivosUsusarios = readJson('users.json');
             let usuario = {
+                id : newId('users.json'),
                 imagen: req.file.filename,
                 nombre: req.body.nombre,
                 email: req.body.email,

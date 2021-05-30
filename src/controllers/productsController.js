@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 
 //Requerir la funcionalidad para leer y leer/actualizar el archivo .json 
-const {readJson, writeJson} = require('./helpers');
+const {readJson, writeJson, newId} = require('./helpers');
 
 //Definiendo la logica del controlador: Renderizando vistas EJS
 //El controlador está compuesto por un objeto literal que a su vez compuesto por métodos (funciones o callbacks)
@@ -35,11 +35,11 @@ const productsController = {
     },
 
     store: (req, res) => {
-        //Falta crear el metodo que le da un id
         if(req.file) {
             let archivoProductos = readJson('products.json');
     
             let producto = {
+                id : newId('products.json'),
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
                 precio: req.body.precio,
@@ -76,9 +76,9 @@ const productsController = {
     
     },
    
-        productUpdate : (req, res) => {
-            return res.redirect('/');
-        }
+    productUpdate : (req, res) => {
+        return res.redirect('/');
+    }
     
 };
 
