@@ -19,14 +19,15 @@ const usersController = {
             id : newId('users.json'),
             nombre: req.body.nombre,
             email: req.body.email,
-            password: req.body.password
+            password: req.body.password,
+            imagen: "",
+            direccion: "",
+            telefono: "",
+            nacimiento: ""
         };
         archivosUsusarios.push(usuario);
         writeJson('users.json', archivosUsusarios);
         return res.redirect('/')
-    },
-    edit : (req, res) => {
-        res.render('users/edit')
     },
     store : (req, res) => {
         if(req.file){
@@ -47,6 +48,25 @@ const usersController = {
         }else{
             res.render('users/edit')
         }
+    },
+    userEdit : (req, res) => {
+        
+        //Nota: De todos los productos, vamos a editar el sumistrado como parametro de la URL
+        let idUsuario = req.params.id
+
+        //Nota: El archivo users.json ya fue leido gracias al helper 
+        let archivoUsuarios = readJson('users.json');
+        
+        //Crear una variable que filtre y luego envío está variable a la vista
+        let idUsuarioToEdit = archivoUsuarios.filter( (usuario) => { 
+            return usuario.id == idUsuario
+        });
+        res.render('users/edit',
+        { idUsuarioToEdit: idUsuarioToEdit });
+
+    },
+    userUpdate : (req, res) => {
+        return res.redirect('/');
     }
 };
 

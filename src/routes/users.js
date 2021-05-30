@@ -8,7 +8,7 @@ const router = express.Router();
 const usersController = require('../controllers/usersController')
 
 //Requiriendo Multer para enviar archivos desde un formulario
-const upload = require('../controllers/multer')
+const uploadUsuario = require('../controllers/multer')
 
 //Rutas (sin el prefijo definido en app.js)
 router.get('/register', usersController.register);
@@ -16,8 +16,8 @@ router.post('/register', usersController.create);
 
 router.get('/login', usersController.login);
 
-router.get('/edit', usersController.edit);
-router.patch('/edit', upload.single('imagen'), usersController.store);
+router.get('/:id/edit', usersController.userEdit);
+router.put('/edit', uploadUsuario.single('imagen'), usersController.userUpdate);
 
 //Exportando al router para que pueda ser usado por el entry point
 module.exports = router;

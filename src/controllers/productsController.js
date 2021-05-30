@@ -14,11 +14,9 @@ const productsController = {
     productList : (req, res) => {
         res.render('products/productlist');
     },
-
     productCart : (req, res) => {
         res.render('products/productCart');
     },
-
     productDetail : (req, res) => {
         let idProduct = req.params.id;
         let archivoProductos = readJson('products.json');
@@ -29,11 +27,9 @@ const productsController = {
         
         res.render('products/productDetail', { idProductDetail: idProductDetail, archivoProductos : archivoProductos });
     },
-
     productCharge : (req, res) => {
         res.render('products/productCharge');
     },
-
     store: (req, res) => {
         if(req.file) {
             let archivoProductos = readJson('products.json');
@@ -58,7 +54,6 @@ const productsController = {
             res.render('products/productCharge');
         }
     },
-
     productEdit : (req, res) => {
         //Nota: De todos los productos, vamos a editar el sumistrado como parametro de la URL
         let idProduct = req.params.id
@@ -75,11 +70,9 @@ const productsController = {
         {idProductToEdit: idProductToEdit });
     
     },
-   
     productUpdate : (req, res) => {
         return res.redirect('/');
     }
-    
 };
 
 //Exportando al controlador para que pueda ser usado por la ruta.

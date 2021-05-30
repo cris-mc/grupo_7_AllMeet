@@ -9,7 +9,7 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 //Requiriendo Multer para enviar archivos desde un formulario
-const upload = require('../controllers/multer')
+const uploadProducto = require('../controllers/multer')
 
 //Rutas (sin el prefijo definido en app.js)
 //En el mismo defino la ruta relativa, el controlador y su metodo asociado
@@ -18,7 +18,7 @@ router.get('/cart', productsController.productCart);
 router.get('/detail/:id', productsController.productDetail);
 
 router.get('/charge', productsController.productCharge);
-router.post('/charge', upload.single('imagen'), productsController.store);
+router.post('/charge', uploadProducto.single('imagen'), productsController.store);
 
 router.get('/:id/edit', productsController.productEdit);
 router.put('/edit', productsController.productUpdate);

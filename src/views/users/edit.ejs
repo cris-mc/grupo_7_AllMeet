@@ -7,9 +7,9 @@
     <div id="contenedor">
         <div id="registro"><h1>Editar Perfil</h1></div>
         <div id="form">
-            <form action="/users/edit?_method=PATCH" method="POST" enctype="multipart/form-data">
+            <form action="/users/edit?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                    <img src="/images/usuarios/default.jpg" alt="defaul-profile-image">
+                    <img src="/images/usuarios/<%=idUsuarioToEdit[0].imagen%>" alt="defaul-profile-image">
                 </div>
                 <div class="form-group">
                     <h4 class="cat">Modificar imagen</h4>
@@ -17,32 +17,25 @@
                     <input type="file" name="imagen" acept=".jpg, .png">
                 </div>
                 <div class="form-group">
-                   <label for=""></label> 
-                   <input type="text" name="nombre" placeholder="Modificar nombre">
+                   <input type="text" name="nombre" placeholder="Modificar nombre"  value="<%=idUsuarioToEdit[0].nombre%>">
                 </div>
                 <div class="form-group">
-                    <label for=""></label> 
-                    <input type="email" name="email" placeholder="Modificar email">
+                    <input type="email" name="email" placeholder="Modificar email" value="<%=idUsuarioToEdit[0].email%>">
                 </div>
                 <div class="form-group"> 
-                    <label for=""></label> 
                     <input type="password" name="password" placeholder="Modificar contraseña">
                 </div>
                <div class="form-group">
-                    <label for=""></label> 
                     <input type="password" name="password" placeholder="Confirmar contraseña">
                 </div>
                 <div class="form-group">
-                    <label for=""></label> 
-                    <input type="text" name="direccion" placeholder="Agregar direccion de envio" required>
+                    <input type="text" name="direccion" placeholder="Agregar direccion de envio" required value="<%=idUsuarioToEdit[0].direccion%>">
                 </div>
                 <div class="form-group">
-                    <label for=""></label> 
-                    <input type="text" name="telefono" placeholder="Telefono de contacto" required>
+                    <input type="text" name="telefono" placeholder="Telefono de contacto" required value="<%=idUsuarioToEdit[0].telefono%>">
                 </div>
                 <div class="form-group">
-                    <label for=""></label> 
-                    <input class="edad" type="date" name="edad" placeholder="Fecha de nacimiento" required>
+                    <input class="edad" type="date" name="nacimiento" placeholder="Fecha de nacimiento" required value="<%=idUsuarioToEdit[0].nacimiento%>">
                 </div>
                 <div class="form-group"> 
                     <input type="submit" value="Modificar Perfil">

@@ -5,7 +5,7 @@ const path = require('path');
 const multer = require('multer')
 
 //Configurando multer para guardar las imagenes
-const storage = multer.diskStorage({
+const storageProducto = multer.diskStorage({
     destination : (req, file, cb) => {
         cb(null, path.join(__dirname, '../../public/images/productos'));
     },
@@ -16,7 +16,24 @@ const storage = multer.diskStorage({
 })
 
 //Crear la constante para ejecutar la configuracion
-const upload = multer({ storage });
+const uploadProducto = multer({ storageProducto });
 
 //Exportando al router para que pueda ser usado por el entry point
-module.exports = upload;
+module.exports = uploadProducto;
+
+//Configurando multer para guardar las imagenes
+const storageUsuario = multer.diskStorage({
+    destination : (req, file, cb) => {
+        cb(null, path.join(__dirname, '../../public/images/usuarios'));
+    },
+    filename : (req, file, cb) => {
+        const newFileName = 'user' + Date.now() + path.extname(file.originalname);
+        cb(null, newFileName);
+    }
+})
+
+//Crear la constante para ejecutar la configuracion
+const uploadUsuario = multer({ storageUsuario });
+
+//Exportando al router para que pueda ser usado por el entry point
+module.exports = uploadUsuario;
