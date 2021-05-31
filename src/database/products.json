@@ -109,11 +109,11 @@
     },
     {
         "id": 13,
-        "nombre": "Fernet Branca Menta 750 ml",
+        "nombre": "Fernet Branca Menta",
         "descripcion": "El fernet es una bebida alcohólica amarga elaborada a partir de varios tipos de hierbas, que son maceradas en alcohol de uva, filtradas y añejadas en toneles de roble durante un período que puede ser de 6 a 12 meses. Su graduación alcohólica es del 45% y posee un color oscuro y un aroma intenso.Su origen se remonta a mediados del siglo XIX, y hay varias versiones sobre su verdadero origen. Hay quienes sostienen que fue creado en Francia, otras versiones indican que fue en Checoslovaquia, pero la mayoría nos lleva a Italia, más precisamente en la provincia de Lombardia. Hay quienes dicen que fue creado por un boticario extranjero, aparentemente austríaco, de apellido Fernet. Otros prefieren y sostienen la historia contada por una de las empresas más antiguas en la elaboración de esta bebida: Fratelli Branca, quien le atribuye la invención al farmacéutico Bernardino Branca en 1836, quien en 1845 creó precisamente dicha compañía, para su comercialización. La bebida fue ingresada a la Argentina por los inmigrantes italianos, que la bebían tanto con fin\r\nmedicinal como digestivo. El fernet puede ser servido como un digestivo después de las comidas, en el café, con agua mineral o cualquier bebida gasificada.",
         "precio": "650",
         "descuento": "3",
         "categoria": "Bebida",
-        "imagen": "product1622391356306.PNG"
+        "imagen": "branca-menta-750.png"
     }
 ]
