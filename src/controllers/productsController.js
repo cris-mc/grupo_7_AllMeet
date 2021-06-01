@@ -56,7 +56,7 @@ const productsController = {
     },
     productEdit : (req, res) => {
         //Nota: De todos los productos, vamos a editar el sumistrado como parametro de la URL
-        let idProduct = req.params.id
+        let idProduct = req.params.id;
 
         //Nota: El archivo products.json ya fue leido gracias al helper 
         let archivoProductos = readJson('products.json');
@@ -71,7 +71,65 @@ const productsController = {
     
     },
     productUpdate : (req, res) => {
-        return res.redirect('/');
+        let idProduct = req.params.id;
+        let archivoProductos = readJson('products.json');
+
+
+        if(req.file) {
+            let producto = {
+                id : req.body.id,
+                nombre: req.body.nombre,
+                descripcion: req.body.descripcion,
+                precio: req.body.precio,
+                descuento: req.body.descuento,
+                categoria: req.body.categoria,
+                imagen: req.file.filename,
+                origen: req.body.origin,
+                volumen: req.body.volumen,
+                marca: req.body.marca,
+            }
+            
+            for(i in archivoProductos ){
+                if(archivoProductos[i].id == idProduct){
+                    archivoProductos.splice(i,1)
+                }
+            }
+
+            archivoProductos.push(producto);
+            writeJson('products.json', archivoProductos);
+    
+            return res.redirect('/');
+        }else{
+            let imagen;
+
+            for(i in archivoProductos ){
+                if(archivoProductos[i].id == idProduct){
+                    imagen = archivoProductos[i].imagen
+                    archivoProductos.splice(i,1)
+                }
+            }
+
+            let producto = {
+                id : req.body.id,
+                nombre: req.body.nombre,
+                descripcion: req.body.descripcion,
+                precio: req.body.precio,
+                descuento: req.body.descuento,
+                categoria: req.body.categoria,
+                imagen: imagen,
+                origen: req.body.origin,
+                volumen: req.body.volumen,
+                marca: req.body.marca,
+            };
+            
+
+            archivoProductos.push(producto);
+            writeJson('products.json', archivoProductos);
+    
+            return res.redirect('/');
+           
+        }
+        
     }
 };
 
