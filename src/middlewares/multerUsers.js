@@ -10,12 +10,12 @@ const storageUsuario = multer.diskStorage({
         cb(null, path.join(__dirname, '/../../public/images/usuarios'));
     },
     filename: function(req, file, cb){
-        const newFileName = 'user' + Date.now() + path.extname(file.originalname);
+        const newFileName = 'user-' + Date.now() + path.extname(file.originalname);
         cb(null, newFileName);
     }
 })
 
 //Crear la constante para ejecutar la configuracion
-const uploadUsuario = multer({ storageUsuario: storageUsuario });
+const uploadUsuario = multer({ storage: storageUsuario });
 
 module.exports = uploadUsuario;
