@@ -7,7 +7,7 @@ const multer = require('multer');
 //Configurando multer para guardar las imagenes
 const storageProducto = multer.diskStorage({
     destination : function(req, file, cb){
-        cb(null, (__dirname, '../../public/images/productos'));
+        cb(null, path.join(__dirname + '../../public/images/productos'));
     },
     filename : function(req, file, cb){
         const newFileName = 'product' + Date.now() + path.extname(file.originalname);
@@ -22,7 +22,7 @@ const uploadProducto = multer({ storageProducto: storageProducto });
 //Configurando multer para guardar las imagenes
 const storageUsuario = multer.diskStorage({
     destination: function(req, file, cb){
-        cb(null, path.join(__dirname, '../../public/images/usuarios'));
+        cb(null, path.join(__dirname + '../../public/images/usuarios'));
     },
     filename: function(req, file, cb){
         const newFileName = 'user' + Date.now() + path.extname(file.originalname);
