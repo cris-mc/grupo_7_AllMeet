@@ -21,7 +21,7 @@ router.get('/charge', productsController.productCharge);
 router.post('/charge', uploadProducto.single('imagen'), productsController.store);
 
 router.get('/:id/edit', productsController.productEdit);
-router.put('/edit', productsController.productUpdate);
+router.put('/:id/edit', uploadProducto.single('imagen'), productsController.productUpdate);
 
 //Exportando al router para que pueda ser usado por el entry point
 module.exports = router;

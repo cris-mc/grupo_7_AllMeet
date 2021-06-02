@@ -8,28 +8,29 @@
         <div id="registro"><h1>Edicion de productos</h1></div>
         <div id="form">
             <!-- Formulario -->
-            <form method="POST" action="/products/edit?_method=PUT" enctype="multipart/form-data">
+            <form method="POST" action="/products/<%=idProductToEdit[0].id%>/edit?_method=PUT" enctype="multipart/form-data">
                 <!-- input type="Tipo de valor: Texto, number, file"   name="Descripcion oculta"   value="Descripcion visible"   value="Valor forzado" -->
                 <div class="form-group">
                 <h4>Producto</h4>
                 <div>
-                <input type="text" name="Producto" placeholder="Nombre del Producto" value="<%=idProductToEdit[0].nombre%>" required>
+                <input type="hidden" name="id" value="<%=idProductToEdit[0].id%>">    
+                <input type="text" name="nombre" placeholder="Nombre del Producto" value="<%=idProductToEdit[0].nombre%>" required>
                 </div>
                 <div class="form-group">
                 <h4>Descripcion</h4>
                 <div>
-                <textarea type="text" name="textarea" rows="10" cols="50" placeholder="Descripcion del producto"><%=idProductToEdit[0].descripcion%> </textarea>
+                <textarea type="text" name="descripcion" rows="10" cols="50" placeholder="Descripcion del producto"><%=idProductToEdit[0].descripcion%> </textarea>
                 </div>
                 <div class="form-group">
                 <!-- Si le pongo input type="number" no me toma el value -->
                 <h4 class="form-group">Precio</h4>
                 <div>
-                <input type="text" name="Price" placeholder="Precio" value="<%=idProductToEdit[0].precio%>" >
+                <input type="text" name="precio" placeholder="Precio" value="<%=idProductToEdit[0].precio%>" >
                 </div>
                 <!-- Si le pongo input type="number" no me toma el value -->
                 <h4 class="form-group">Descuento</h4>
                 <div>
-                <input type="text" name="sale" placeholder="Descuento" value="<%=idProductToEdit[0].descuento%>" > 
+                <input type="text" name="descuento" placeholder="Descuento" value="<%=idProductToEdit[0].descuento%>" > 
                 </div>
                 <h4 class="form-group">Categoria</h4>
                 <div>
@@ -42,7 +43,7 @@
                 <h4 class="form-group">Añadir imagen</h4>
                 <div>
                 <i class="fas fa-camera"></i>
-                <input type="file" name="ImagenDeProducto" acept=".jpg, .png"></input>
+                <input type="file" name="imagen" accept=".jpg, .png"></input>
                 </div>
                 <input type="submit" value="Subir">
             </form>

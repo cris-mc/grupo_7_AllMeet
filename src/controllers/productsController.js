@@ -127,6 +127,7 @@ const productsController = {
             writeJson('products.json', archivoProductos);
     
             return res.redirect('/');
+          
            
         }
         
