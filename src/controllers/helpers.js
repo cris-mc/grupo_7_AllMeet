@@ -21,8 +21,8 @@ let helpers = {
                 ultimo = objeto.id;
             }
         });
-        newId = ultimo + 1;
-        return newId
+        ultimo = parseInt(ultimo) + 1;
+        return ultimo;
     }
 }
 

@@ -9,7 +9,7 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 //Requiriendo Multer para enviar archivos desde un formulario
-const { uploadProducto } = require('../middlewares/multer')
+const uploadProducto = require('../middlewares/multerProducts')
 
 //Rutas (sin el prefijo definido en app.js)
 //En el mismo defino la ruta relativa, el controlador y su metodo asociado
