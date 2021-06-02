@@ -4,11 +4,13 @@ const express = require('express');
 //Ejecutando la funcionalidad de rutas de express
 const router = express.Router();
 
+//Requiriendo Multer para enviar archivos desde un formulario
+const uploadUsuario = require('../middlewares/multerUsers')
+
 //Requiriendo el controlador para obtener sus funcionalidades
 const usersController = require('../controllers/usersController')
 
-//Requiriendo Multer para enviar archivos desde un formulario
-const uploadUsuario = require('../middlewares/multerUsers')
+
 
 //Rutas (sin el prefijo definido en app.js)
 router.get('/register', usersController.register);

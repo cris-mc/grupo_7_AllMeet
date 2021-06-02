@@ -4,12 +4,14 @@ const express = require('express');
 //Ejecutando la funcionalidad de rutas de express
 const router = express.Router();
 
+
+//Requiriendo Multer para enviar archivos desde un formulario
+const uploadProducto = require('../middlewares/multerProducts')
+
 //Requiriendo el controlador para obtener sus funcionalidades
 //El "../" sirve para ir una carpeta hacia atras
 const productsController = require('../controllers/productsController');
 
-//Requiriendo Multer para enviar archivos desde un formulario
-const uploadProducto = require('../middlewares/multerProducts')
 
 //Rutas (sin el prefijo definido en app.js)
 //En el mismo defino la ruta relativa, el controlador y su metodo asociado

@@ -1,13 +1,13 @@
-//Requiriendo la funcionalidad path que resuelve rutas
-const path = require('path');
-
 //Requiriendo la funcionalidad multer que resuelve rutas
 const multer = require('multer');
+
+//Requiriendo la funcionalidad path que resuelve rutas
+const path = require('path');
 
 //Configurando multer para guardar las imagenes
 const storageProducto = multer.diskStorage({
     destination : function(req, file, cb){
-        cb(null, path.join(__dirname, './../../public/images/productos'));
+        cb(null, path.join(__dirname, '../../public/images/productos'));
     },
     filename : function(req, file, cb){
         const newFileName = 'product' + Date.now() + path.extname(file.originalname);
@@ -16,7 +16,7 @@ const storageProducto = multer.diskStorage({
 })
 
 //Crear la constante para ejecutar la configuracion
-const uploadProducto = multer({ storageProducto: storageProducto });
+const uploadProducto = multer({ storageProducto });
 
 
 
