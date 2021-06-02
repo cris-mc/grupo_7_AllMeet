@@ -8,7 +8,7 @@ const router = express.Router();
 const usersController = require('../controllers/usersController')
 
 //Requiriendo Multer para enviar archivos desde un formulario
-const uploadUsuario = require('../controllers/multer')
+const { uploadUsuario } = require('../middlewares/multer')
 
 //Rutas (sin el prefijo definido en app.js)
 router.get('/register', usersController.register);

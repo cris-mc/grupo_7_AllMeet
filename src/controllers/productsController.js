@@ -98,7 +98,7 @@ const productsController = {
             archivoProductos.push(producto);
             writeJson('products.json', archivoProductos);
     
-            return res.redirect('/');
+            return res.send(req.file);
         }else{
             let imagen;
 
