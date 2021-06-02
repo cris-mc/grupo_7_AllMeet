@@ -51,10 +51,10 @@ const productsController = {
                 precio: req.body.precio,
                 descuento: req.body.descuento,
                 categoria: req.body.categoria,
-                imagen: req.file.filename,
-                origen: req.body.origin,
-                volumen: req.body.volumen,
-                marca: req.body.marca,
+                imagen: req.file.filename
+                // origen: req.body.origin,
+                // volumen: req.body.volumen,
+                // marca: req.body.marca,
             };
             archivoProductos.push(producto);
             writeJson('products.json', archivoProductos);
