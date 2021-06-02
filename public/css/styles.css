@@ -168,6 +168,10 @@ footer{
         font-size: 22px;
     }
 
+    .titulo, a, .mira{
+        text-decoration: none;
+    }
+
     .nombre-oferta, .precio-oferta{
         font-size: 18px;
     }

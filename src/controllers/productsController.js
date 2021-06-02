@@ -8,11 +8,21 @@ const fs = require('fs');
 //Requerir la funcionalidad para leer y leer/actualizar el archivo .json 
 const {readJson, writeJson, newId} = require('./helpers');
 
+//arrays de productos por categoria
+const productos = readJson('products.json');
+const productosBebida = productos.filter (producto => producto.categoria == 'Bebida');
+const productosAsado = productos.filter (producto => producto.categoria == 'Asado');
+const productosPicada = productos.filter (producto => producto.categoria == 'Picada');
+
 //Definiendo la logica del controlador: Renderizando vistas EJS
 //El controlador está compuesto por un objeto literal que a su vez compuesto por métodos (funciones o callbacks)
 const productsController = {
     productList : (req, res) => {
-        res.render('products/productlist');
+        res.render('products/productlist',{
+        productosBebida,
+        productosAsado,
+        productosPicada
+        });
     },
     productCart : (req, res) => {
         res.render('products/productCart');
@@ -131,7 +141,12 @@ const productsController = {
            
         }
         
-    }
+    },
+    destroy : (req, res) => {
+		let nuevaBase = productos.filter (producto => producto.id != req.params.id);
+		writeJson ('products.json', nuevaBase)
+		res.redirect('/');
+	}
 };
 
 //Exportando al controlador para que pueda ser usado por la ruta.

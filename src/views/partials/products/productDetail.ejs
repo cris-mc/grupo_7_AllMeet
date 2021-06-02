@@ -18,6 +18,8 @@
     <div class="compra">
         <a href="/products/cart/"><button>Agregar a mi previa</button></a>
     </div>
+    <form action="/products/<%= idProductDetail[0].id %>/delete" method="POST" >
+        <button type="submit" class="action-button delete">ELIMINAR</button>
     <div class="detalleProducto">
         <p><%= idProductDetail[0].descripcion %></p>
     </div>
