@@ -110,9 +110,9 @@
     {
         "id": 14,
         "nombre": "Costilla Cerdo Kg",
-        "descripcion": "c",
-        "precio": "c",
-        "descuento": "c",
+        "descripcion": "Costilla Cerdo Kg",
+        "precio": "670",
+        "descuento": "10",
         "categoria": "Comida",
         "imagen": "product-1622661571512.jpg"
     },
@@ -128,9 +128,9 @@
     {
         "id": 15,
         "nombre": "Picada XL",
-        "descripcion": "w",
-        "precio": "w",
-        "descuento": "w",
+        "descripcion": "Picada XL",
+        "precio": "1200",
+        "descuento": "5",
         "categoria": "Comida",
         "imagen": "product-1622661643060.jpg"
     }
