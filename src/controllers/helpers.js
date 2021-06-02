@@ -15,14 +15,14 @@ let helpers = {
     },
     newId: function (nameJson) {
         let data = helpers.readJson(nameJson);
-        let ultimo = 0;
-        data.forEach(objeto => {
-            if (ultimo < objeto.id) {
-                ultimo = objeto.id;
+        let mayor = 0;
+        for(i in data){
+            if(data[i].id > mayor){
+                mayor = data[i].id;
             }
-        });
-        ultimo = parseInt(ultimo) + 1;
-        return ultimo;
+        }
+        mayor = parseInt(mayor) + 1;
+        return mayor;
     }
 }
 

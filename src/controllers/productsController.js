@@ -87,7 +87,7 @@ const productsController = {
 
         if(req.file) {
             let producto = {
-                id : req.body.id,
+                id : parseInt(req.body.id),
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
                 precio: req.body.precio,
@@ -120,7 +120,7 @@ const productsController = {
             }
 
             let producto = {
-                id : req.body.id,
+                id : parseInt(req.body.id),
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
                 precio: req.body.precio,
