@@ -118,11 +118,20 @@
     },
     {
         "id": 1,
-        "nombre": "Fernet Branca 750",
-        "descripcion": "El fernet es una bebida alcohólica amarga del tipo amaro elaborada a partir de varios tipos de hierbas (mirra, ruibarbo, manzanilla, cardamomo y azafrán, entre otras), que son maceradas en alcohol de uva, filtradas y añejadas en toneles de roble durante un período que puede ser de seis a doce meses. Posee un color oscuro, un aroma intenso y una graduación alcohólica de 45° grados. Originalmente era sólo una bebida digestiva pero actualmente suele servirse como aperitivo antes o como digestivo después de una comida, también puede servirse con el café y el café expreso. Si bien puede consumirse puro, dado su sabor y contenido alcohólico normalmente se bebe combinado con soda, agua mineral o mezclado en cócteles, en especial con bebida cola.  ",
+        "nombre": "Fernet Branca ",
+        "descripcion": "El fernet es una bebida alcohólica amarga del tipo amaro elaborada a partir de varios tipos de hierbas (mirra, ruibarbo, manzanilla, cardamomo y azafrán, entre otras), que son maceradas en alcohol de uva, filtradas y añejadas en toneles de roble durante un período que puede ser de seis a doce meses. Posee un color oscuro, un aroma intenso y una graduación alcohólica de 45° grados. Originalmente era sólo una bebida digestiva pero actualmente suele servirse como aperitivo antes o como digestivo después de una comida, también puede servirse con el café y el café expreso. Si bien puede consumirse puro, dado su sabor y contenido alcohólico normalmente se bebe combinado con soda, agua mineral o mezclado en cócteles, en especial con bebida cola.   ",
         "precio": "600",
         "descuento": 10,
         "categoria": "Bebida",
         "imagen": "product-1622663376784.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Costilla Cerdo Kg",
+        "descripcion": "Costilla Cerdo por Kg ",
+        "precio": "620",
+        "descuento": 15,
+        "categoria": "Comida",
+        "imagen": "product-1622700982381.jpg"
     }
 ]
