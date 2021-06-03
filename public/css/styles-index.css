@@ -84,11 +84,11 @@
     display: none;
     justify-content: space-between;
     width: 90%;
-    margin: 15vh auto;
+    margin: 10vh auto;
 }
 
 .destacado1, .destacado2{
-    width: 44vw;
+    width: 43vw;
     height: 41vh;
     border-radius: 10px;
 }
@@ -96,7 +96,6 @@
 .destacado1{
     background-image: url(../images/minibanners-01.png);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .destacado2{
