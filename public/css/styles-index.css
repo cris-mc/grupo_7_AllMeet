@@ -203,10 +203,13 @@ section{
 .titulo{
     position: relative;
     font-weight: 700;
+    
 }
 
 .mira{
     position: relative;
+    color: #717171;
+    text-decoration: none;
 }
 
 .caja-ofertas{
