@@ -108,15 +108,6 @@
         "imagen": "branca-menta-750.png"
     },
     {
-        "id": 14,
-        "nombre": "Costilla Cerdo Kg",
-        "descripcion": "Costilla Cerdo Kg",
-        "precio": "670",
-        "descuento": 10,
-        "categoria": "Comida",
-        "imagen": "product-1622661571512.jpg"
-    },
-    {
         "id": 15,
         "nombre": "Picada XL",
         "descripcion": "Picada XL",

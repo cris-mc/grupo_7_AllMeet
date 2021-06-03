@@ -8,186 +8,138 @@ main{
     border-radius: 30px;
 }
     main form div.ingresoManual, main form div.ingresoRedes{
-        margin: 0px 20px;
+        margin: auto;
+        margin-bottom: 10px;
         border-radius: 10px;
-        max-width: 100%;
+        width: 90%;
+        
     }
         main form div.ingresoManual p{
             margin-top: 20px;
+            margin-bottom: 10px;
             display: inline-block;
-            font-size: 16px;
-            padding: 1px 15px;
+            font-size: 18px;
             line-height: 30px;
             border-radius: 10px;
             height: 35px;
             text-decoration: none;
             color: #717171;
         }
-        main form div.ingresoManual input{
+        main form div.ingresoManual input.email,
+        main form div.ingresoManual input.password{
             width: 100%;
+            height: 40px;
             margin: 5px auto;
-            border: 1px solid #666;
+            border: 1px solid #585858;
             border-radius: 10px;
             padding: 10px;
         }
         main form div.cajaIngreso{
             display: flex;
-            margin: 0 20px;
+            margin: auto;
+            margin-bottom: 20px;
             justify-content: space-between;
             align-items: center;
+            width: 90%;
         }
         main form div.cajaIngreso label{
             color: #717171;
 
 
         }
+
     main form p{
         color: #717171;
         text-align: right;
         font-size: 12px;
         font-weight: bold;
+
+        
     }
-    main form div.ingresar{
-        margin: 0 20px;
+
+
+
+    .ingresos{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        width: 90%;
     }
-        main form div.ingresar button, main form div.ingresoRedes button{
-                width: 100%;
-                margin: 20px auto;
-                border: 1px solid #666;
-                border-radius: 25px;
-                padding: 10px;                
-        }
-        main form div.ingresar button{
-            background-color: #717171;
-            color: #fff
-        }
-        main form div.ingresoRedes p{
-            display: inline-block;
-            font-size: 16px;
-            padding: 1px 15px;
-            line-height: 30px;
-            border-radius: 10px;
-            height: 35px;
-            text-decoration: none;
-            color: #717171;
-        }
-        main form div.ingresoRedes button.google{
-            background-color: #fff;
-            color: #f40000;
-        }
-        main form div.ingresoRedes button.facebook{
-            background-color: #3d57ac;
-            color: #fff
-        }
+
+    .ingresar, .registrate{
+        width: 90px;
+        display: inline-block;
+        font-size: 14px;
+        padding: 1px 15px;
+        line-height: 30px;
+        border: none;
+        border-radius: 10px;
+        height: 35px;
+        text-decoration: none;
+        color: #fff;
+        
+    }
+    
+    .ingresar{
+        background-color: #585858;
+    }
+
+    .registrate{
+        background-color: #838282;
+    }
+
+    .redes{
+        margin-right: 20px;
+        margin-bottom: 150px;
+        line-height: 38px;
+    }
+
+    .redes .fa-facebook-f{
+        width: 30px;
+        margin-right: 10px;
+        color: #585858;
+        font-size: 20px;
+        border: 1px solid #585858;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .redes .fa-google{
+        color: #585858;
+        font-size: 20px;
+        border: 1px solid #585858;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+        
+ 
 
 /* Diseño tablet */
 @media (min-width:481px){
-    header p{
-        margin-top: 30px;
-        width: 75%;
-        font-size: 25px;
-        font-weight: 800;
-    
-    }
-    main{
-        width: 100%;
-        margin: auto;
-        padding: 0 10%;
-        margin-top: 30px;
-        background-color: #f6f6f6;
-        border-radius: 30px;
-    }
-    .logo2{
-        display: none;
+    .ingresar, .registrate{
+        width: 118px;
     }
 
-    .logo{
-        display: inline-block;
+    main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
+       width: 70%;
     }
-    .links, .disabled{
-        font-size: 18px;
-    }
-
-    .nombre-producto{
-        font-size: 42px;
-    }
-
-    .titulo, .mira{
-        font-size: 22px;
-    }
-
-    .nombre-oferta, .precio-oferta{
-        font-size: 18px;
-    }  
 }
 /* Diseño desktop */
 @media (min-width:769px){
-    .logo2{
-        display: inline-block;
+    .ingresar, .registrate{
+        width: 130px;
     }
 
-    .logo{
-        display: none;
-    }
-
-    .slider{
-        width: 100%;
-        display: block;
-        position: relative;
-    }
-
-    .foto-slider{
-        width: 100%;
-    }
-
-    .burger-menu{
-        display: none;
-    }
-
-    .nav{
-        display: inline-block;
-    }
-
-    .menu1{
-        position: relative;
-        left: -110px;
-        display: flex;
-        height: 40px;
-        line-height: 40px;
-        
-    }
-
-    .lista-nav{
-        list-style: none;
-        margin-right: 20px;
-        
-    }
-
-    .btn-nav{
-        text-decoration: none;
-        color: black;
-    }
-
-    .bienvenida{
-        display: none;
-    }
-
-    .barra{
-        position: absolute;
-        top: -20px;
-        left: 40%;
-        width: 40%;
-    }
+    main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
+        width: 50%;
+     }
 }
 /* Diseño larger desktop */
 @media (min-width:1280px){
-    .logo2{
-        display: none;
-    }
-
-    .logo{
-        display: inline-block;
-    }
+    main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
+        width: 40%;
+     }
 }
         
 

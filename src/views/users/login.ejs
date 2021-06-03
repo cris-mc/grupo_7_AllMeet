@@ -6,24 +6,24 @@
     <main>
         <form action="" method="POST">
             <div class=ingresoManual>
-                <p>Ingreso manual</p>
+                <p class="ingresa-cuenta">Ingresá con tu cuenta</p>
                 <label for="email" ></label>
-                <input type="email" placeholder="E-mail *" name="email">
+                <input class="email" type="email" placeholder="E-mail *" name="email">
                 <label for="password"></label>
-                <input type="password" placeholder="Contraseña *" name="password">
+                <input class="password" type="password" placeholder="Contraseña *" name="password">
             </div>
             <div class="cajaIngreso">
                 <label for="recordarUsuario"><input type="checkbox" name="recordarUsuario"> Recordar usuario</label>
                 <p>¿Olvidaste tu contraseña?</p>
             </div>
-            <div class="ingresar">
-                <button >INGRESAR</button>
+            <div class="ingresos">
+                <button class="ingresar" >Ingresá</button>
+                <button class="registrate" >Registrate</button>
+                <div class="redes">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google"></i>
+                </div>
             </div>        
-            <div class="ingresoRedes">
-                <p>o con tus redes</p>
-                <button class="google">INGRESÁ CON GOOGLE</button>
-                <button class="facebook">INGRESÁ CON FACEBOOK</button>
-            </div> 
         </form>
     </main>
     <%- include('../partials/footer') %>
