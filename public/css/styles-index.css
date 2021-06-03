@@ -80,6 +80,31 @@
 
 }
 
+.destacados{
+    display: none;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15vh auto;
+}
+
+.destacado1, .destacado2{
+    width: 44vw;
+    height: 41vh;
+    border-radius: 10px;
+}
+
+.destacado1{
+    background-image: url(../images/minibanners-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destacado2{
+    background-image: url(../images/minibanners-02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 
 /* Estilos del menu de productos con tabs */
@@ -286,6 +311,8 @@ section{
 
 @media (min-width: 769px){
 
+
+
     .logo2{
         display: inline-block;
     }
@@ -365,6 +392,10 @@ section{
 }
 
 @media (min-width: 1280px){
+
+    .destacados{
+        display: flex;
+    }
 
     .logo2{
         display: none;
