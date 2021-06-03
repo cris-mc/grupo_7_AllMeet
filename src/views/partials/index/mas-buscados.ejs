@@ -1,17 +1,19 @@
-<div class="separador-index">
-    <p class="titulo">Los más buscados</p>
-    <a href="/products/list" class="mira"> Mirá todo</a>
-</div>
-<div class="caja-ofertas">   
-    <% for(i in archivoProductos) {%>
-    <a href="/products/detail/<%= archivoProductos[i].id %> %>" class="ofe-1">
-        <div class="foto-oferta">
-            <img class="foto-ofe" src="/images/productos/<%= archivoProductos[i].imagen %>" alt="">
-        </div>
-        <div class="desc-oferta">
-            <p class="nombre-oferta"><%= archivoProductos[i].nombre %></p>
-            <p class="precio-oferta">$ <%= archivoProductos[i].precio %></p>
-        </div>
-    </a>
-    <% } %>
-</div>
+<section>  
+    <div class="separador-index">
+        <p class="titulo">Los más buscados</p>
+        <a href="/products/list" class="mira"> Mirá todo</a>
+    </div>
+    <div class="caja-ofertas">   
+        <% for(i in archivoProductos) {%>
+        <a href="/products/detail/<%= archivoProductos[i].id %> %>" class="ofe-1">
+            <div class="foto-oferta">
+                <img class="foto-ofe" src="/images/productos/<%= archivoProductos[i].imagen %>" alt="">
+            </div>
+            <div class="desc-oferta">
+                <p class="nombre-oferta"><%= archivoProductos[i].nombre %></p>
+                <p class="precio-oferta">$ <%= archivoProductos[i].precio %></p>
+            </div>
+        </a>
+        <% } %>
+    </div>
+</section>    

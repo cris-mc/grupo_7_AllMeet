@@ -8,26 +8,25 @@
     <!-- Slider -->
     <%- include('../partials/index/slider') %>
 
-    <div class="destacados">
-        <div class="destacado1"></div>
-        <div class="destacado2"></div>
-    </div>
+    <!-- Destacados -->
 
-    <main class="main-index">
+    <%- include('../partials/index/destacados') %>
+
+    <main class="main-index">   
+
+    <!-- menu tabs -->
+    
+    <%- include('../partials/index/tabs') %>
+
+    <!-- Seccion de productos -->
+    
+    <%- include('../partials/index/productos') %>
         
-
-        <!-- menu tabs -->
-        <%- include('../partials/index/tabs') %>
-
-        <!-- Seccion de productos -->
-        <section>
-            <%- include('../partials/index/productos') %>
-        </section>  
+    
+    <!-- Seccion de mas buscados -->
+    
+    <%- include('../partials/index/mas-buscados') %>
         
-        <!-- Seccion de mas buscados -->
-        <section>
-            <%- include('../partials/index/mas-buscados') %>
-        </section>
     </main>
 
     <%- include('../partials/footer') %>
