@@ -81,7 +81,7 @@ main{
         main form div.cajaIngreso{
             display: flex;
             margin: auto;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             justify-content: space-between;
             align-items: center;
             width: 90%;
