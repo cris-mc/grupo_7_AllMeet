@@ -32,6 +32,9 @@ app.use(express.json());
 app.use('/', rutasPrincipal);
 app.use('/products', rutasProductos);
 app.use('/users', rutasUsuario);
+app.use((req, res, next)=>{
+    res.status(404).render('404');
+});
 
 //Levantando un servidor en el puerto 3000
 app.listen(process.env.PORT || 3000, function(){
