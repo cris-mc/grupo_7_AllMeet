@@ -5,6 +5,8 @@ const fs = require('fs');
 //Requerir la funcionalidad para leer y leer/actualizar el archivo .json 
 const {readJson, writeJson} = require('./helpers');
 
+//Definiendo la logica del controlador: Renderizando vistas EJS
+//El controlador está compuesto por un objeto literal que a su vez compuesto por métodos (funciones o callbacks)
 const mainController = {
     inicio : (req, res) => {
         let archivoProductos = readJson('products.json');
@@ -12,4 +14,5 @@ const mainController = {
     }
 };
 
+//Exportando al router para que pueda ser usado por el entry point
 module.exports = mainController;

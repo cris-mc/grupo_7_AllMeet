@@ -1,28 +1,23 @@
+//Requiriendo express para obtener sus funcionalidades
 const express = require('express');
+
+//Ejecutando la funcionalidad de rutas de express
 const router = express.Router();
+
+//Requiriendo el controlador para obtener sus funcionalidades
 const usersController = require('../controllers/usersController')
-const path = require('path');
-const multer = require('multer')
 
-//Configurar Multer
-const storage = multer.diskStorage({
-    destination : (req, file, cb) => {
-        cb(null, path.join(__dirname, '../../public/images/usuarios'));
-    },
-    filename : (req, file, cb) => {
-        const newFileName = 'user' + Date.now() + path.extname(file.originalname);
-        cb(null, newFileName);
-    }
-});
+//Requiriendo Multer para enviar archivos desde un formulario
+const uploadUsuario = require('../middlewares/multerUsers')
 
-const upload = multer({ storage });
-
+//Rutas (sin el prefijo definido en app.js)
 router.get('/register', usersController.register);
 router.post('/register', usersController.create);
 
 router.get('/login', usersController.login);
 
-router.get('/edit', usersController.edit);
-router.patch('/edit', upload.single('imagen'), usersController.store);
+router.get('/:id/edit', usersController.userEdit);
+router.put('/edit', uploadUsuario.single('imagen'), usersController.userUpdate);
 
+//Exportando al router para que pueda ser usado por el entry point
 module.exports = router;

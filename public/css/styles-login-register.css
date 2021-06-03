@@ -1,0 +1,151 @@
+
+
+main{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+}
+    main form div.ingresoManual, main form div.ingresoRedes{
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        width: 90%;
+        
+    }
+        main form div.ingresoManual p{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-size: 18px;
+            line-height: 40px;
+            width: 100%;
+            height: 40px;
+            text-decoration: none;
+            color: #585858;
+            background-color: #e6e6e6;
+            padding: auto;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .ingresoManual label{
+            display: inline-block;
+            font-weight: 700;
+            color: #585858;
+            margin: 3px 0;
+        }
+
+        main form div.ingresoManual input.nombre,
+        main form div.ingresoManual input.apellido,
+        main form div.ingresoManual input.email,
+        main form div.ingresoManual input.password,
+        main form div.ingresoManual input.password2{
+            width: 100%;
+            height: 40px;
+            margin: 5px auto;
+            border: 1px solid #585858;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        main form div.cajaIngreso{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+        }
+        main form div.cajaIngreso label{
+            color: #717171;
+
+
+        }
+
+
+
+    .ingresos{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .ingresar, .registrate{
+        width: 90px;
+        display: inline-block;
+        font-size: 14px;
+        padding: 1px 15px;
+        line-height: 30px;
+        border: none;
+        border-radius: 10px;
+        height: 35px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none ;
+    }
+    
+    .ingresar{
+        background-color: #585858;
+    }
+
+    .registrate{
+        background-color: #838282;
+    }
+
+    .redes{
+        margin-right: 20px;
+        margin-bottom: 150px;
+        line-height: 38px;
+    }
+
+    .redes .fa-facebook-f{
+        width: 30px;
+        margin-right: 10px;
+        color: #585858;
+        font-size: 20px;
+        border: 1px solid #585858;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .redes .fa-google{
+        color: #585858;
+        font-size: 20px;
+        border: 1px solid #585858;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+        
+ 
+
+/* Diseño tablet */
+@media (min-width:481px){
+    .ingresar, .registrate{
+        width: 118px;
+    }
+
+    main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
+       width: 70%;
+    }
+}
+/* Diseño desktop */
+@media (min-width:769px){
+    .ingresar, .registrate{
+        width: 130px;
+    }
+
+    main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
+        width: 50%;
+     }
+}
+/* Diseño larger desktop */
+@media (min-width:1280px){
+    main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
+        width: 40%;
+     }
+}
+        
+

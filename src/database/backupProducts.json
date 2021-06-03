@@ -1,12 +1,21 @@
 [
     {
+        "id": 1,
+        "nombre": "Fernet Branca",
+        "descripcion": "El fernet es una bebida alcohólica amarga del tipo amaro elaborada a partir de varios tipos de hierbas (mirra, ruibarbo, manzanilla, cardamomo y azafrán, entre otras), que son maceradas en alcohol de uva, filtradas y añejadas en toneles de roble durante un período que puede ser de seis a doce meses. Posee un color oscuro, un aroma intenso y una graduación alcohólica de 45° grados. Originalmente era sólo una bebida digestiva pero actualmente suele servirse como aperitivo antes o como digestivo después de una comida, también puede servirse con el café y el café expreso. Si bien puede consumirse puro, dado su sabor y contenido alcohólico normalmente se bebe combinado con soda, agua mineral o mezclado en cócteles, en especial con bebida cola.",
+        "precio": "732,95",
+        "descuento": 20,
+        "categoria": "Bebida",
+        "imagen": "fernet-750.jpg"
+    },
+    {
         "id": 2,
-        "nombre": "Coca Cola 2L",
-        "descripcion": "Coca-Cola es la bebida más vendida en la historia desde 1886. Es la marca más famosa del mundo. Bien fría, hace disfrutar cada instante de la vida ya que añade magia a casa momento. ",
+        "nombre": "Coca Cola",
+        "descripcion": "Coca-Cola es la bebida más vendida en la historia desde 1886. Es la marca más famosa del mundo. Bien fría, hace disfrutar cada instante de la vida ya que añade magia a casa momento.",
         "precio": "200",
         "descuento": 10,
         "categoria": "Bebida",
-        "imagen": "product-1622653652971.jpg"
+        "imagen": "cocacola.jpg"
     },
     {
         "id": 3,
@@ -99,30 +108,12 @@
         "imagen": "hielo5k.png"
     },
     {
-        "id": 13,
+        "id": "13",
         "nombre": "Fernet Branca Menta",
         "descripcion": "El fernet es una bebida alcohólica amarga elaborada a partir de varios tipos de hierbas, que son maceradas en alcohol de uva, filtradas y añejadas en toneles de roble durante un período que puede ser de 6 a 12 meses. Su graduación alcohólica es del 45% y posee un color oscuro y un aroma intenso.Su origen se remonta a mediados del siglo XIX, y hay varias versiones sobre su verdadero origen. Hay quienes sostienen que fue creado en Francia, otras versiones indican que fue en Checoslovaquia, pero la mayoría nos lleva a Italia, más precisamente en la provincia de Lombardia. Hay quienes dicen que fue creado por un boticario extranjero, aparentemente austríaco, de apellido Fernet. Otros prefieren y sostienen la historia contada por una de las empresas más antiguas en la elaboración de esta bebida: Fratelli Branca, quien le atribuye la invención al farmacéutico Bernardino Branca en 1836, quien en 1845 creó precisamente dicha compañía, para su comercialización. La bebida fue ingresada a la Argentina por los inmigrantes italianos, que la bebían tanto con fin\r\nmedicinal como digestivo. El fernet puede ser servido como un digestivo después de las comidas, en el café, con agua mineral o cualquier bebida gasificada. ",
         "precio": "650",
-        "descuento": 3,
-        "categoria": "Bebida",
+        "descuento": "3",
+        "categoria": "Bebida", 
         "imagen": "branca-menta-750.png"
-    },
-    {
-        "id": 15,
-        "nombre": "Picada XL",
-        "descripcion": "Picada XL",
-        "precio": "1200",
-        "descuento": 5,
-        "categoria": "Comida",
-        "imagen": "product-1622661643060.jpg"
-    },
-    {
-        "id": 1,
-        "nombre": "Fernet Branca 750",
-        "descripcion": "El fernet es una bebida alcohólica amarga del tipo amaro elaborada a partir de varios tipos de hierbas (mirra, ruibarbo, manzanilla, cardamomo y azafrán, entre otras), que son maceradas en alcohol de uva, filtradas y añejadas en toneles de roble durante un período que puede ser de seis a doce meses. Posee un color oscuro, un aroma intenso y una graduación alcohólica de 45° grados. Originalmente era sólo una bebida digestiva pero actualmente suele servirse como aperitivo antes o como digestivo después de una comida, también puede servirse con el café y el café expreso. Si bien puede consumirse puro, dado su sabor y contenido alcohólico normalmente se bebe combinado con soda, agua mineral o mezclado en cócteles, en especial con bebida cola.  ",
-        "precio": "600",
-        "descuento": 10,
-        "categoria": "Bebida",
-        "imagen": "product-1622663376784.jpg"
     }
 ]
