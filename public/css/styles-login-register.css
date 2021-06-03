@@ -19,14 +19,29 @@ main{
             margin-bottom: 10px;
             display: inline-block;
             font-size: 18px;
-            line-height: 30px;
-            border-radius: 10px;
-            height: 35px;
+            line-height: 40px;
+            width: 100%;
+            height: 40px;
             text-decoration: none;
-            color: #717171;
+            color: #585858;
+            background-color: #e6e6e6;
+            padding: auto;
+            font-weight: bold;
+            text-align: center;
         }
+
+        .ingresoManual label{
+            display: inline-block;
+            font-weight: 700;
+            color: #585858;
+            margin: 3px 0;
+        }
+
+        main form div.ingresoManual input.nombre,
+        main form div.ingresoManual input.apellido,
         main form div.ingresoManual input.email,
-        main form div.ingresoManual input.password{
+        main form div.ingresoManual input.password,
+        main form div.ingresoManual input.password2{
             width: 100%;
             height: 40px;
             margin: 5px auto;
@@ -48,15 +63,6 @@ main{
 
         }
 
-    main form p{
-        color: #717171;
-        text-align: right;
-        font-size: 12px;
-        font-weight: bold;
-
-        
-    }
-
 
 
     .ingresos{
@@ -75,9 +81,9 @@ main{
         border: none;
         border-radius: 10px;
         height: 35px;
-        text-decoration: none;
         color: #fff;
-        
+        text-align: center;
+        text-decoration: none ;
     }
     
     .ingresar{
