@@ -88,10 +88,11 @@ nav{
     height: 40px;
 }
 
+
 .lupa {
     position: absolute;
     background-color: white;
-    left: 10px;
+    right: 10px;
     line-height: 38px;
     color: #666;
     padding-right: 10px;
@@ -102,6 +103,12 @@ nav{
     border: 1px solid #666;
     border-radius: 10px;
     width: 100%;
+    padding-left: 15px;
+}
+
+.busqueda:focus{
+    outline: none;
+    border: 1px solid #000;
 }
 
 /* ---------------------------------- */
@@ -458,6 +465,8 @@ section{
 **************************************************************
 *************************************************************/
 
+
+
 main form div.ingresoManual, main form div.ingresoRedes{
     margin: auto;
     margin-bottom: 10px;
@@ -543,6 +552,12 @@ main form div.cajaIngreso{
 main form div.cajaIngreso label{
             color: #717171;
     }
+
+main form div.ingresoManual input:focus{
+color: #585858 ;
+border: 1px solid #000;
+outline: none;
+}
 
 .ingresos{
         display: flex;
