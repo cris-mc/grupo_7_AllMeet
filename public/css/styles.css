@@ -109,6 +109,7 @@ nav{
 .busqueda:focus{
     outline: none;
     border: 1px solid #000;
+    background-color: rgb(252, 252, 252);
 }
 
 /* ---------------------------------- */
@@ -557,6 +558,7 @@ main form div.ingresoManual input:focus{
 color: #585858 ;
 border: 1px solid #000;
 outline: none;
+background-color: rgb(252, 252, 252);
 }
 
 .ingresos{
