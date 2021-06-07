@@ -686,8 +686,8 @@ background-color: rgb(252, 252, 252);
 .compras{
     margin: auto;
     overflow-y: scroll;
-    height: 250px;
     width: 95%;
+    height: 140px;
     background-color: #f6f6f6;
     }
 
@@ -699,14 +699,15 @@ background-color: rgb(252, 252, 252);
     align-items: center;
 }
 .titulo{
-    margin: 0px 10px;    
+    margin: 0px 25px 25px 10px;    
     font-size: 20px;
     font-weight: bold;
     color:#4e4e4eef;
 }
+
 /*------- Caja principal 2 -------*/
 .caja-producto{
-    height: 40%;
+    height: 100px;
     width: 100%;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -915,7 +916,7 @@ background-color: rgb(252, 252, 252);
     /* CART */
 
     .caja-producto{
-        height: 50%;
+        height: 120px;
     }
 }
 
