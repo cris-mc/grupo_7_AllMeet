@@ -187,6 +187,10 @@ footer{
     position: relative;
 }
 
+.btn-registro{
+    display: none;
+}
+
 .texto-slider{
     position: absolute;
     color: #fff;
@@ -1120,6 +1124,28 @@ background-color: rgb(252, 252, 252);
     .link-logo{
         display: inline-block;
     }
+
+    .btn-registro{
+        display: block;
+        top: 43%;
+        right: 15%;
+        background-color: #0387B7;
+        width: 250px;
+        padding: 15px 25px;
+        position: absolute;
+        border: none;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .btn-registro:hover{
+        background-color: #46bbe6;
+        color: #000;
+    }
+    
 
     /* INDEX */
 
