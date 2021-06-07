@@ -674,6 +674,129 @@ background-color: rgb(252, 252, 252);
     
 
 
+/*************************************************************
+**************************************************************
+****************  C   A   R   R   I   T   O   ****************
+**************************************************************
+**************************************************************
+
+/*------- Caja principal 1 -------*/
+.caja-titulo{
+    height: 10%;
+    width: 100%;
+    border-bottom:#b1afaf 2px solid;
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    margin: 15px 0px 20px 0px;    
+    font-size: 32px;
+    font-weight: bold;
+    color:#4e4e4eef;
+}
+/*------- Caja principal 2 -------*/
+.caja-producto{
+    height: 40%;
+    width: 100%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color:#4e4e4eef;
+}
+/*------- Caja 2 -------*/
+/*------- Izquierda -------*/
+.carrito-fotos{
+    height: 100%;
+    width: 100%;
+}
+/*------- Caja 2 -------*/
+/*------- Derecha -------*/
+.caja-detalles-compra{
+    width: 25%;
+    padding-right: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.filaCantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.carrito-nombre, .carrito-precioUni, .filaCantidad{
+    margin-top: 2vh;
+}
+/*------- Caja principal 3 -------*/
+.caja-valores{
+    height: 40%;
+    width: 100%;
+    margin-top: 3vh;
+    padding: 1vh;
+    background-color: #f3f2f2;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.lbl-dto{
+    margin-top: 4%;
+}
+.caja-aplicar{
+    margin-top: 3%;
+}
+.aplicar{
+    height: 34px;
+    width: 70%;
+    border-radius: 10px;
+    border-color:  #94939342;
+}
+.btn-aplicar{
+    height: 32px;
+    width: 28%;
+    border: none;
+    border-radius: 10px;
+    background-color: #a1a1a1d8;
+}
+.lbl-dto, .titulo-total, .total{
+    font-weight: bold;
+    color:#4e4e4eef;
+}
+.btn-aplicar, .btn-comprar, .btn-tienda{
+    color: white;
+    font-size: 17px;
+}
+.caja-subtotal, .caja-descuento, .caja-total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.caja-subtotal, .caja-total{
+    border-top:#b1afaf 1px solid;
+    padding-top: 3%;
+}
+.btn-comprar{
+    height: 32px;
+    width: 49%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #747272;   
+}
+.btn-tienda{
+    height: 32px;
+    width: 49%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #a1a1a1d8;
+}
+.btn-principales{
+    margin-bottom: 4%;
+}
+
+
+
+
 
 /*------- MEDIA QUERYS -------*/
 

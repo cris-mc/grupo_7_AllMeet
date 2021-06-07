@@ -4,55 +4,62 @@
 <body>
     <%- include('../partials/header') %>
     <!--Parte principal de la web: Tabla-->
-    <main>
-        <table class="tabla">
-            <!--Ecabezado de la tabla-->
-            <!--Fila 1-->
-            <thead class="Encabezado">
-            <tr class="Fila1">
-                <th></th> <th class="columna2">Item</th> <th>Producto</th> <th class="PrecioUnitario">Precio U</th> <th></th> <th class="columna6">Q</th> <th></th> <th class="columna8">Subtotal</th> <th></th>
-            </tr>
-            </thead>
-            <!--Fila 2-->
-            <tr class="Fila2">
-                <td><button>˄</button></td> <td class="columna2">1</td> <td>Fernet Branca 750 mL</td> <td class="columna4">$ 550,00</td> <td class="menos"><button>-</button></td> <td class="columna6">1</td> <td class="mas"><button>+</button></td> <td class="columna8">$ 550,00</td> <th class="fas fa-trash" id="tachoDelete"></th>
-            </tr>
-            <!--Fila 3-->    
-            <tr class="Fila3">
-                <td><button>˅</button></td> <td class="columna2">2</td> <td>Coca cola 2,25 L</td> <td class="columna4">$ 200,00</td> <td class="menos"><button>-</button></td> <td class="columna6">2</td> <td class="mas"><button>+</button></td> <td class="columna8">$ 400,00</td> <th class="fas fa-trash" id="tachoDelete"></th>
-            </tr>
-            <!--Fila 4-->   
-            <tr class="Fila4">
-                <td>
-                <label class="CalculaTuEnvio1">Envío </label>
-                <label class="CalculaTuEnvio2">Calculá tu envío</label>
-                </td>   
-                <td class="CP">
-                    <form action="/CP" method="GET">
-                        <label class="CPtext1">CP :</label>
-                        <label class="CPtext2">Código postal :</label>
-                        <select class="CPseleccionables" name="CP">
-                        <option>1425</option>
-                        <option>2820</option>
-                        <option>5000</option>
-                        </select>
-                    </form>    
-                </td>
-                <td></td> <td></td> <td></td> <td></td> <td class="columna8">$ 100,00</td> <th></th>
-            </tr>
-            <!--Fila 5-->
-            <tr class="Fila5">
-                <td></td> <td></td> <td></td> <td></td> <td></td> <td class="total">Total</td> <td class="vacio"></td> <td class="precioTotal">$ 1.050,00</td> <th></th>
-            </tr>
-            <!--Fila 6-->
-            <tr class="Fila6">
-                <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td><button type="submit" class="botonComprar">COMPRAR</button></td> <th></th>
-            </tr>
-            <!--Fila 7-->
-            <tr class="Fila7">
-                <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td><a class="seguirComprando" href="/">Seguir comprando</a></td> <th></th>
-            </tr>
-        </table>
+    <main class="main">
+        <!--Caja principal 1-->
+        <div class="caja-titulo">
+            <p class="titulo">Tu carrito</p>
+        </div>
+    
+        <!--Caja QUERY-->
+        <div class="caja-query">
+            <!--Caja principal 2-->
+            <div class="caja-producto">
+                <div class="caja-foto">
+                    <img class="carrito-fotos" src="/images/productos/product-1622663376784.jpg">            
+                </div>
+    
+                <div class="caja-detalles-compra">
+                    <p class="carrito-nombre">Fernet Branca</p>
+                    <p class="carrito-precioUni">$ 600</p>   
+                    <div class="filaCantidad">
+                        <button class="btn-menos">-</button>
+                        <p class="cantidad">2</p>   
+                        <button class="btn-mas">+</button>
+                        <div class="fas fa-trash"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Caja principal 3-->
+            <div class="caja-valores">
+                <div class="lbl-dto" for="">Cupón de descuento</div>
+                
+                <div class="caja-aplicar">
+                <input type="text" class="aplicar">
+                <button class="btn-aplicar">Aplicar</button>
+                </div>  
+                
+                <div class="caja-subtotal">
+                    <p class="titulo-subtotal">Subtotal</p>
+                    <p class="subtotal">$ 1.200</p>
+                </div>
+                
+                <div class="caja-descuento">
+                    <p class="titulo-descuento">Descuento</p>
+                    <p class="descuento">- $ 200</p>
+                </div>
+    
+                <div class="caja-total">
+                    <p class="titulo-total">Total</p>
+                    <p class="total">$ 1.000</p>
+                </div>
+                
+                <div class="btn-principales">
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-tienda" href="/">Tienda</button>
+                </div>
+            </div>
+        </div>
     </main>
     <%- include('../partials/footer') %>
 </body>
