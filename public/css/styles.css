@@ -674,9 +674,191 @@ background-color: rgb(252, 252, 252);
     
 
 
+/*************************************************************
+**************************************************************
+****************  C   A   R   R   I   T   O   ****************
+**************************************************************
+**************************************************************/
+.caja-query{
+    background-color: #f6f6f6;
+}
+
+.compras{
+    margin: auto;
+    overflow-y: scroll;
+    height: 250px;
+    width: 95%;
+    background-color: #f6f6f6;
+    }
+
+/*------- Caja principal 1 -------*/
+.caja-titulo{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    margin: 0px 10px;    
+    font-size: 20px;
+    font-weight: bold;
+    color:#4e4e4eef;
+}
+/*------- Caja principal 2 -------*/
+.caja-producto{
+    height: 40%;
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    color:#4e4e4eef;
+    background-color: #fff;
+    border-radius: 10px;
+}
+/*------- Caja 2 -------*/
+/*------- Izquierda -------*/
+
+.caja-foto{
+    margin:auto;
+    width: 20%;
+}
+
+.carrito-fotos{
+    width: 100%;
+}
+
+/*------- Caja 2 -------*/
+/*------- Derecha -------*/
+.caja-detalles-compra{
+    width: 45%;
+    padding-right: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fila-cantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.carrito-nombre, .carrito-precioUni{
+    font-size: 15px;
+}
+
+.carrito-nombre, .carrito-precioUni, .fila-cantidad{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.btn-menos, .btn-mas{
+    width: 20px;
+    height: 20px;
+    line-height: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a1a1a1d8;
+    color: #fff;
+
+}
+
+.cantidad{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.fas.fa-trash{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+/*------- Caja principal 3 -------*/
+.caja-valores{
+    height: 40%;
+    width: 100%;
+    margin-top: 3vh;
+    padding: 1vh;
+    background-color: #f6f6f6;;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.lbl-dto{
+    margin-top: 4%;
+}
+.caja-aplicar{
+    margin-top: 3%;
+}
+.aplicar{
+    height: 34px;
+    width: 70%;
+    border: 1px solid #666;
+    border-radius: 10px;
+    outline: none;
+}
+.btn-aplicar{
+    height: 32px;
+    width: 28%;
+    border: none;
+    border-radius: 10px;
+    background-color: #a1a1a1d8;
+}
+.lbl-dto, .titulo-total, .total{
+    font-weight: bold;
+    color:#4e4e4eef;
+}
+.btn-aplicar, .btn-comprar, .btn-tienda{
+    color: white;
+    font-size: 15px;
+}
+.caja-subtotal, .caja-descuento, .caja-total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.caja-subtotal, .caja-total{
+    border-top:#b1afaf 1px solid;
+    padding-top: 3%;
+}
+.btn-comprar{
+    height: 32px;
+    width: 47%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #747272;  
+}
+
+.btn-tienda{
+    height: 32px;
+    width: 47%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #a1a1a1d8;
+}
+.btn-principales{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.total, .subtotal, .descuento{  
+    margin-right: 10px;
+}
+
+
+.total, .subtotal, .descuento,
+.titulo-total, .titulo-subtotal, .titulo-descuento{
+    color:#4e4e4eef;
+}
 
 /*------- MEDIA QUERYS -------*/
-
 /*------- DISEÑO TABLET -------*/
 @media (min-width: 481px){
 
@@ -729,9 +911,33 @@ background-color: rgb(252, 252, 252);
     main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
        width: 70%;
     }
+
+    /* CART */
+
+    .caja-producto{
+        height: 50%;
+    }
 }
 
-/*------- DISEÑO DESKTOP -------*/
+/*------- DISEÑO LAPTOP1 -------*/
+@media (min-width: 500px){
+
+ /* CART */
+
+    .fila-cantidad{
+        width: 50%;
+    }
+
+    .caja-foto{
+        width: 16%;
+    }
+
+    .caja-producto{
+        margin-top: 2vh;
+    }
+}
+
+/*------- DISEÑO LAPTOP2 -------*/
 @media (min-width: 769px){
 
     /* HEADER */
@@ -831,6 +1037,43 @@ background-color: rgb(252, 252, 252);
     main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
         width: 50%;
      }
+
+
+     /* CART */
+
+     .caja-query{
+         display: flex;
+         background-color: #f6f6f6;
+     }
+  
+
+     .caja-producto{
+         display: flex;
+         height: 40vh;
+         width: 80%;
+         margin: auto;
+         margin-top: 20px;
+         border-radius: 10px ;
+         background-color: #fff;
+     }
+
+     .caja-foto{
+         margin: auto;
+         width: 35%;
+     }
+
+     .fila-cantidad{
+         width: 75%;
+     }
+
+     .caja-valores{
+         padding: 0 15px;
+     }
+
+     .compras{
+        height: 350px;
+        }
+     
 }
 
 /*------- DISEÑO LARGER DESKTOP -------*/
@@ -875,5 +1118,15 @@ background-color: rgb(252, 252, 252);
     main form div.ingresoManual, main form div.ingresoRedes, main form div.cajaIngreso, .ingresos{
         width: 35%;
      }
+
+     /* CART */ 
+
+     .fila-cantidad{
+        width: 50%;
+    }
+
+    .carrito-nombre, .carrito-precioUni{
+        font-size: 22px;
+    }
 
 }
