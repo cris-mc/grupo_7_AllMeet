@@ -697,12 +697,21 @@ background-color: rgb(252, 252, 252);
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: #f6f6f6;
+    
+    
+    
 }
 .titulo{
-    margin: 0px 25px 25px 10px;    
+    margin: auto;   
+    margin-top: 15px; 
+    margin-bottom: 25px;
     font-size: 20px;
     font-weight: bold;
     color:#4e4e4eef;
+    text-align: center;
+    font-weight: bold;
+    color: #585858;
 }
 
 /*------- Caja principal 2 -------*/
@@ -785,7 +794,7 @@ background-color: rgb(252, 252, 252);
     width: 100%;
     margin-top: 3vh;
     padding: 1vh;
-    background-color: #f6f6f6;;
+    background-color: #f6f6f6;
     border-radius: 10px;
     font-size: 16px;
 }
@@ -796,14 +805,15 @@ background-color: rgb(252, 252, 252);
     margin-top: 3%;
 }
 .aplicar{
-    height: 34px;
+    height: 40px;
     width: 70%;
     border: 1px solid #666;
     border-radius: 10px;
     outline: none;
+    padding-left: 15px;
 }
 .btn-aplicar{
-    height: 32px;
+    height: 40px;
     width: 28%;
     border: none;
     border-radius: 10px;
@@ -827,8 +837,8 @@ background-color: rgb(252, 252, 252);
     padding-top: 3%;
 }
 .btn-comprar{
-    height: 32px;
-    width: 47%;
+    height: 40px;
+    width: 30%;
     border: none;
     border-radius: 10px;
     margin-top: 3%;
@@ -836,16 +846,28 @@ background-color: rgb(252, 252, 252);
 }
 
 .btn-tienda{
-    height: 32px;
-    width: 47%;
+    height: 40px;
+    width: 30%;
     border: none;
     border-radius: 10px;
     margin-top: 3%;
     background-color: #a1a1a1d8;
 }
+
+.btn-reset{
+    height: 40px;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #b4b4b4d8;
+    color: #fff;
+}
+
 .btn-principales{
     display: flex;
     justify-content: space-between;
+    margin-top: 3vh;
     margin-bottom: 4%;
 }
 
