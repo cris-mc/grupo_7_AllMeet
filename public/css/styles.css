@@ -196,7 +196,7 @@ footer{
     color: #fff;
     font-size: 5vw;
     top: 30%;
-    left: 5%;
+    left: 10%;
     animation: texto-slider 5s infinite;
 }
 
@@ -206,7 +206,7 @@ footer{
     font-weight: 700;
     font-size: 6vw;
     top: 40%;
-    left: 5%;
+    left: 10%;
     animation: texto-slider2 5s infinite;
 }
 
@@ -1127,8 +1127,8 @@ background-color: rgb(252, 252, 252);
 
     .btn-registro{
         display: block;
-        top: 44%;
-        right: 15%;
+        bottom: 26%;
+        left: 10%;
         background-color: #a4a96a;
         width: 250px;
         padding: 15px 25px;
