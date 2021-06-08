@@ -356,14 +356,14 @@ section{
     right: 0;
     bottom: 0;
     width: 25vw;
-    height: 5vh;
+    height: 4vh;
     font-weight: 700;
     text-align: center;
     background-color: #277597;
     color: #fff;
     border-radius: 10px 0 10px 10px;
     padding: auto;
-    line-height: 30px;
+    line-height: 23px;
 }
 
 .slider-productos:hover .precio-producto{
@@ -1023,8 +1023,9 @@ background-color: rgb(252, 252, 252);
 
  /*INDEX*/
     .precio-producto{
-        height: 5vh;
+        height: 6vh;
         width: 20vw;
+        line-height: 5vh
     }
 
   
@@ -1125,8 +1126,9 @@ background-color: rgb(252, 252, 252);
     }
 
     .precio-producto{
-        height: 5vh;
+        height: 6vh;
         width: 13vw;
+        line-height: 5vh
     }
     
     .compralo{
@@ -1243,7 +1245,7 @@ background-color: rgb(252, 252, 252);
 
     .slider-productos{
         width: 32%;
-        height: 34vh;
+        height: 36vh;
     }
 
     .precio-producto{
