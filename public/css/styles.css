@@ -363,7 +363,7 @@ section{
     color: #fff;
     border-radius: 10px 0 10px 10px;
     padding: auto;
-    line-height: 23px;
+    line-height: 4vh;
 }
 
 .slider-productos:hover .precio-producto{
