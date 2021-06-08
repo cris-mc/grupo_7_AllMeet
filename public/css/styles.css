@@ -986,7 +986,7 @@ background-color: rgb(252, 252, 252);
 
     .precio-producto{
         height: 5vh;
-        line-height: 4vh;
+        line-height: 5vh;
     }
 
     .separador-index .titulo-separador, .mira{
@@ -1128,7 +1128,7 @@ background-color: rgb(252, 252, 252);
     .precio-producto{
         height: 6vh;
         width: 13vw;
-        line-height: 5vh
+        line-height: 5.5vh;
     }
     
     .compralo{
