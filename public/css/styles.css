@@ -1265,6 +1265,7 @@ background-color: rgb(252, 252, 252);
     .precio-producto{
         height: 5vh;
         width: 9vw;
+        line-height: 5vh;
     }
 
     .ofe-1 {
