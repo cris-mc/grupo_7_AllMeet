@@ -340,6 +340,7 @@ section{
 }
 
 .slider-productos{
+    position: relative;
     display: flex;
     flex:none;
     width: 80%;
@@ -348,6 +349,33 @@ section{
     border-radius: 10px;
     padding: 30px;
 }
+
+.precio-producto{
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25vw;
+    height: 5vh;
+    font-weight: 700;
+    text-align: center;
+    background-color: #277597;
+    color: #fff;
+    border-radius: 10px 0 10px 10px;
+    padding: auto;
+    line-height: 30px;
+}
+
+.slider-productos:hover .precio-producto{
+    visibility: visible;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.slider-productos:hover .caja-foto-productos{
+    width: 46%;
+}
+
+
 
 .detalle-productos{
     display: flex;
@@ -368,10 +396,12 @@ section{
 .caja-foto-productos{
     right: 10px;
     width: 45%;
+    transition: 0.3s;
 }
 
+
 .fotos{
-    width: 100%;
+    width: 100%; 
 }
 
 
@@ -954,6 +984,11 @@ background-color: rgb(252, 252, 252);
         font-size: 42px;
     }
 
+    .precio-producto{
+        height: 5vh;
+        line-height: 4vh;
+    }
+
     .separador-index .titulo-separador, .mira{
         font-size: 22px;
     }
@@ -985,6 +1020,15 @@ background-color: rgb(252, 252, 252);
 
 /*------- DISEÑO LAPTOP1 -------*/
 @media (min-width: 500px){
+
+ /*INDEX*/
+    .precio-producto{
+        height: 5vh;
+        width: 20vw;
+    }
+
+  
+
 
  /* CART */
 
@@ -1065,7 +1109,9 @@ background-color: rgb(252, 252, 252);
         width: 40%;
     }
 
-    /* INDEX */
+
+     /*INDEX*/
+
     .productos{
         overflow-x: hidden;
         flex-wrap: wrap;
@@ -1078,6 +1124,11 @@ background-color: rgb(252, 252, 252);
         margin-right: 0;
     }
 
+    .precio-producto{
+        height: 5vh;
+        width: 13vw;
+    }
+    
     .compralo{
         margin-top: 5px;
         font-size: 18px;
@@ -1192,6 +1243,26 @@ background-color: rgb(252, 252, 252);
 
     .slider-productos{
         width: 32%;
+        height: 34vh;
+    }
+
+    .precio-producto{
+        visibility: hidden;
+    }
+    
+    .slider-productos:hover .precio-producto{
+        visibility: visible;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .slider-productos:hover .caja-foto-productos{
+        width: 46%;
+    }
+    
+
+    .precio-producto{
+        height: 5vh;
+        width: 9vw;
     }
 
     .ofe-1 {
