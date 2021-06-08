@@ -777,7 +777,7 @@ background-color: rgb(252, 252, 252);
     line-height: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #a1a1a1d8;
+    background-color: #277597;
     color: #fff;
 
 }
@@ -809,6 +809,7 @@ background-color: rgb(252, 252, 252);
 .caja-aplicar{
     margin-top: 3%;
 }
+
 .aplicar{
     height: 40px;
     width: 70%;
@@ -817,13 +818,30 @@ background-color: rgb(252, 252, 252);
     outline: none;
     padding-left: 15px;
 }
+
+.aplicar:focus{
+    outline: none;
+    border: 1px solid #277597;
+    background-color: rgb(252, 252, 252);
+}
+
 .btn-aplicar{
     height: 40px;
     width: 28%;
     border: none;
     border-radius: 10px;
-    background-color: #a1a1a1d8;
+    background-color: #277597;
+    transition: 0.3s;
+    cursor: pointer;
 }
+
+.btn-aplicar:hover{
+    background-color: #3292bb;
+}
+
+
+
+
 .lbl-dto, .titulo-total, .total{
     font-weight: bold;
     color:#4e4e4eef;
@@ -847,7 +865,13 @@ background-color: rgb(252, 252, 252);
     border: none;
     border-radius: 10px;
     margin-top: 3%;
-    background-color: #747272;  
+    background-color: #A4A96A;  
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-comprar:hover{
+    background-color: #bcc27a;
 }
 
 .btn-tienda{
@@ -856,7 +880,13 @@ background-color: rgb(252, 252, 252);
     border: none;
     border-radius: 10px;
     margin-top: 3%;
-    background-color: #a1a1a1d8;
+    background-color: #277597;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-tienda:hover{
+    background-color: #3292bb;
 }
 
 .btn-reset{
@@ -865,8 +895,14 @@ background-color: rgb(252, 252, 252);
     border: none;
     border-radius: 10px;
     margin-top: 3%;
-    background-color: #b4b4b4d8;
+    background-color: #181818d8;
+    transition: 0.3s;
+    cursor: pointer;
     color: #fff;
+}
+
+.btn-reset:hover{
+    background-color: #ff0000;
 }
 
 .btn-principales{

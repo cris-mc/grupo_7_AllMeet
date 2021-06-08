@@ -1,1 +1,4 @@
 Aqui pushearemos los diseños: logo, colores y tipografias
+
+Dorado: #A4A96A
+Verde Agua: #277597
