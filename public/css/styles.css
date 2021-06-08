@@ -94,7 +94,7 @@ nav{
     background-color: white;
     right: 10px;
     line-height: 38px;
-    color: #666;
+    color: #277597 ;
     padding-right: 10px;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -108,7 +108,7 @@ nav{
 
 .busqueda:focus{
     outline: none;
-    border: 1px solid #000;
+    border: 1px solid #277597;
     background-color: rgb(252, 252, 252);
 }
 
@@ -120,7 +120,7 @@ nav{
 footer{
     width: 100%;
     height: 300px;
-    background-color: #585858;
+    background-color: #277597;
     margin-top: 20px;
     border-radius: 20px 20px 0 0;
 }
@@ -307,7 +307,7 @@ footer{
     padding: 1px 20px;
     line-height: 30px;
     border-radius: 10px;
-    background-color: #717171;
+    background-color: #a4a96a;
     height: 35px;
     text-decoration: none;
     color: #fff;
@@ -383,16 +383,16 @@ section{
 .compralo{
     position: relative;
     font-size: 16px;
-    color: #717171;
+    color: #a4a96a;
     top: 10px;
 }
 
 .flecha{
     position: relative;
-    top: 13px;
+    top: 14px;
     left: 8px;
     font-size: 14px;
-    color: #717171;
+    color: #a4a96a;
 }
 
 
@@ -401,7 +401,7 @@ div.separador-index{
     position: relative;
     margin: 30px 0;
     justify-content: space-between;
-    color: #717171 ;
+    color: #666;
 }
 
 /* Estilos del separador más buscados */
@@ -561,7 +561,7 @@ main form div.cajaIngreso label{
 
 main form div.ingresoManual input:focus{
 color: #585858 ;
-border: 1px solid #000;
+border: 1px solid #277597;
 outline: none;
 background-color: rgb(252, 252, 252);
 }
@@ -589,11 +589,11 @@ background-color: rgb(252, 252, 252);
 }
     
 .ingresar{
-        background-color: #585858;
+        background-color: #a4a96a;
 }
 
 .registrate{
-        background-color: #838282;
+        background-color: #277597;
         transition: 0.4s;
 }
 
@@ -1127,9 +1127,9 @@ background-color: rgb(252, 252, 252);
 
     .btn-registro{
         display: block;
-        top: 43%;
+        top: 44%;
         right: 15%;
-        background-color: #0387B7;
+        background-color: #a4a96a;
         width: 250px;
         padding: 15px 25px;
         position: absolute;
@@ -1142,7 +1142,7 @@ background-color: rgb(252, 252, 252);
     }
 
     .btn-registro:hover{
-        background-color: #46bbe6;
+        background-color: #c7ce80;
         color: #000;
     }
     
