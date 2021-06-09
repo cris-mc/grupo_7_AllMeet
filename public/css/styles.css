@@ -356,14 +356,14 @@ section{
     right: 0;
     bottom: 0;
     width: 25vw;
-    height: 4vh;
+    height: 7vw;
     font-weight: 700;
     text-align: center;
     background-color: #277597;
     color: #fff;
     border-radius: 10px 0 10px 10px;
     padding: auto;
-    line-height: 4vh;
+    line-height: 7vw;
 }
 
 .slider-productos:hover .precio-producto{
@@ -984,11 +984,7 @@ background-color: rgb(252, 252, 252);
         font-size: 42px;
     }
 
-    .precio-producto{
-        height: 5vh;
-        line-height: 5vh;
-    }
-
+  
     .separador-index .titulo-separador, .mira{
         font-size: 22px;
     }
@@ -1023,9 +1019,9 @@ background-color: rgb(252, 252, 252);
 
  /*INDEX*/
     .precio-producto{
-        height: 6vh;
+        height: 5vw;
         width: 20vw;
-        line-height: 5vh
+        line-height: 5vw;
     }
 
   
@@ -1126,9 +1122,9 @@ background-color: rgb(252, 252, 252);
     }
 
     .precio-producto{
-        height: 6vh;
+        height: 3.5vw;
         width: 13vw;
-        line-height: 5.5vh;
+        line-height: 3.5vw;
     }
     
     .compralo{
@@ -1263,9 +1259,9 @@ background-color: rgb(252, 252, 252);
     
 
     .precio-producto{
-        height: 5vh;
+        height: 2vw;
         width: 9vw;
-        line-height: 5vh;
+        line-height: 2vw;
     }
 
     .ofe-1 {
